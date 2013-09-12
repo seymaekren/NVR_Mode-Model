@@ -1,0 +1,28 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.5.0.338 (R2007b)
+                               August 9, 2007
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+discarding 2 peaks...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+computing assignments...
+loaded 0 incorrect, 6 correct assignments
+
+ans =
+
+     6
+
+jumping directly to the second phase.
+error. 30th peak is not assignable to anything here
+error. 30th peak is not assignable to anything here
+>> 

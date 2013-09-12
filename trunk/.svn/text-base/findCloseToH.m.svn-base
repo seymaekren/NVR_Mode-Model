@@ -1,0 +1,13 @@
+function hClosePeaks = findCloseToH(h_ppm, HSQCDATA)
+
+H_EPS        = 0.05; 
+numPeaks     = size(HSQCDATA,1);
+hClosePeaks  = [];
+
+for peakIndex   = 1:numPeaks
+  H_CS          = HSQCDATA(peakIndex,2);
+  H_CS_Diff     = abs(H_CS - h_ppm);
+  if (H_CS_Diff < H_EPS) 
+    hClosePeaks = [hClosePeaks peakIndex];
+  end
+end

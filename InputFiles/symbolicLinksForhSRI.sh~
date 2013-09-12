@@ -1,0 +1,7 @@
+ln -s answerkey.m.hSRI answerkey.m
+ln -s myinput.m.hSRI myinput.m
+ln -s NOES.txt.hSRI NOES.txt
+ln -s order.m.hSRI order.m
+ln -s TOCSY.m.hSRI TOCSY.m
+ln -s MySHIFTS.7.model6.hSRI SHIFTS/MySHIFTS.7.model6
+ln -s MySHIFTX.7.model6.hSRI SHIFTX/MySHIFTX.7.model6

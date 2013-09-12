@@ -1,0 +1,11 @@
+ MATRix filename            = pdbmat.sdijb ! 
+ COORdinates filename       = 1EF1-NMA.7.model6.pdb
+ Eigenvector OUTPut filename= diagrtb.eigenfacs
+ Nb of VECTors required     =        106
+ EigeNVALues chosen         =       LOWE   ! LOWEst, HIGHest.
+ Type of SUBStructuring     =       NONE   ! RESIdues, SECOndary, SUBUnits, DOMAins, NONE.
+ Nb of residues per BLOck   =          
+ Origin of MASS values      =       CONS   ! CONStant, COORdinate, PDB.
+ Temporary files cleaning   =       ALL    ! ALL, NOne.
+ Matrix FORMAT              =     BINARY ! FREE ! Free (pdbmat.sdijf), or Binary (pdbmat.sdijb), matrix saved. 
+ Output PRINting level      =          1   ! =1: More detailed; =2: Debug level.

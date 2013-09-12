@@ -1,0 +1,3 @@
+diff BinaryDistances.txt ../WithoutRDCs/BinaryDistances.txt
+diff NOE_List.txt ../WithoutRDCs/NOE_List.txt
+db  combinedScoringMatrix.txt ../WithoutRDCs/combinedScoringMatrix.txt

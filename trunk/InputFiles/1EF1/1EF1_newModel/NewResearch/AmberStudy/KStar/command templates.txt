@@ -1,0 +1,77 @@
+mpijava 32 -Xmx1024M KStar mpi
+
+java -Xmx1024M KStar
+
+genBackbones System.cfg BBF.cfg
+
+genBackbones System_bb.cfg BBF.cfg
+
+genBackbones System_test.cfg BBF.cfg
+
+doDEE System.cfg DEE.cfg
+
+doDEE System_2pcy.cfg DEE_2pcy.cfg
+
+doDEE System_1pga_surface.cfg DEE_1pga_surface.cfg
+
+doDEE System_1pga_core.cfg DEEbb_1pga.cfg
+
+doResEntropy System1scj.cfg ResEntropy1scj.cfg
+
+compEref System1scj.cfg RefEnergy.cfg
+
+selectResidues System1amu.cfg SelectResidues.cfg
+
+minimizeSequences System.cfg minGMEC MinDEERes true leu 1 false true
+
+generateRandConfs System.cfg minGMEC true leu 100
+
+fitEparams System_1vlt.cfg minGMEC_seq_1vlt conf_info/f true asp 6 false
+
+computeEw System.cfg MutSearch.cfg  
+
+computeMutStats LEU2MUT10Sep05.compmut 9 true  
+
+compareLists KSnew MinDEEnew 40 9 
+
+singleKStar System.cfg singleMut 1amuLeuNMPEM none false false 0.0 100.0 true leu false 1.0 false none 100.0 D A W T I A A I C
+
+singleKStar System.cfg singleMut 1amuLeuSCPEMmin 1amuLeuSCPEMmax true false 0.0 100.0 true leu false 1.0 false none 100.0 D A W T I A A I C
+
+singleKStar SystemLipxC.cfg singleMut lipxcSCPEMmin lipxcSCPEMmax true false 0.0 100.0 false none false 1.0 true aq-aeol- 100.0 T F C F D W E I E H I K K V G L G K G G S L K N T L V L
+
+singleKStar System_1pga_surface.cfg singleMut 1pgaSurfacePEMmin 1pgaSurfacePEMmin false 0.0 100.0 false none false 1.0 false none 100.0 K I N K E T E T D A T T T T
+
+singleKStar System_1pga_core.cfg singleMut 1pgaBBPEMmin 1pgaBBPEMmax true true 0.0 100.0 false none false 1.0 false none 100.0 Y L L G A A F A V G F V
+
+singleKStar System_2pcy.cfg singleMut 2pcyPEM 2pcyPEM false 0.0 100.0 false none false 1.0 false none 100.0 L F I I F N F H N I F I V I S L F V L Y F C M V V
+
+singleKStar System_2pcy.cfg singleMut 2pcyPEM 2pcyPEM false 0.0 100.0 false none false 1.0 false none 100.0 L F I I F N F H N I F I V I S L F V L L* F C M V V
+	*The WT has Y at this position, which gives no sterically allowable conformations when using rotamers
+
+singleKStar System_2pcy.cfg singleMut 2pcyPEM 2pcyPEM false 0.0 100.0 false none false 1.0 false none 100.0 L F I I F N H N I F V L Y F C M V V
+
+singleKStar System_2pcy.cfg singleMut 2pcyPEM 2pcyPEM false 0.0 100.0 false none false 1.0 false none 100.0 L F I I F N H N I F V L L* F C M V V
+	*The WT has Y at this position, which gives no sterically allowable conformations when using rotamers
+
+singleKStar System_1vlt.cfg singleMut 1vltAspSCPEMmin 1vltAspSCPEMmax true false 0.0 100.0 false none false 1.0 false none 100.0 R R R S Y F A Q T
+
+singleKStar System_1z16.cfg singleMut 1z16LeuSCPEMmin 1z16LeuSCPEMmax true false 0.0 100.0 true leu false 1.0 false none 100.0 Y L C S A A T Y Y E G F
+
+computeEnergyMol System_2pcy.cfg false none
+
+computeEnergyMol System_eef1.cfg false none
+
+computeEnergyMol System_1pga_Surface.cfg false none
+
+computeEnergyMol System.cfg true phe
+
+KSMaster System.cfg MutSearch.cfg
+
+doSinglePairE System.cfg PrecomputeEnergies.cfg
+
+computePairEnergyMatricesSampling System.cfg PrecomputeEnergies.cfg
+
+computePairEnergyMatricesSampling System_1pga_surface.cfg PrecomputeEnergies.cfg
+
+computePairEnergyMatricesSampling System_2pcy.cfg PrecomputeEnergies.cfg

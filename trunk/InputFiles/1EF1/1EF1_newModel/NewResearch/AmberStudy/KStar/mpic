@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Assumes `mpirun' etc are on path.
+# Should configure in full pathname of executables?
+
+
+MPI=mpich
+MACHINEFILE=./machines
+
+
+if [ $# -lt 1 ]
+then
+  echo "Usage: mpic [-t] <num_processes> <mpioptions> <executable> <program arguments>"
+  exit 1
+fi
+
+TESTMODE=0
+PNUMBER=0
+
+
+if [ $1 = -t ] 
+then 
+ TESTMODE=1
+ shift
+fi
+
+PNUMBER=$1
+
+shift
+
+mpirun -machinefile ./machines -np $PNUMBER $*
+

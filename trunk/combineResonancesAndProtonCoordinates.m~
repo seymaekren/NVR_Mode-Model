@@ -1,0 +1,159 @@
+clear all
+%resonanceFilename = sprintf('parsedResonances.txt')
+resonanceFilename = sprintf('1dmb_cs_parsed.txt');
+
+
+%  protonCoordinatesFilename = sprintf('2A7O.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UBQH.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UBI.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UD7.parsedPDB');
+%  protonCoordinatesFilename = sprintf('FF2Final31_90wSCs306.parsedPDB');
+%  protonCoordinatesFilename =  sprintf('withMetMethyl_noTemplate_refined.parsedPDB');
+%  protonCoordinatesFilename = sprintf('2E71_firstModel.parsedPDB');
+
+
+protonCoordinatesFilename    = sprintf('1dmb.10.model6.parsedPDB');
+%[resonanceAA_Index resonanceAA_Name H_CS N_CS] = textread(resonanceFilename,'%d %s %f %f');
+									
+[resonanceAA_Index H_CS N_CS] = textread(resonanceFilename,'%d %f %f');
+										
+[protonName protonAA_Name protonAA_Index protonX protonY protonZ] ...
+    = textread(protonCoordinatesFilename, '%s %s %d %f %f %f');
+  
+  
+  
+%  outFilename5 = 'answerkey.m.hSRI';
+  outFilename5 = 'answerkey.m';
+  
+  fprintf(1, 'check out %s\n',outFilename5);
+    
+  fid         = fopen(outFilename5,'w');
+  
+  for i = 1:length(protonAA_Index)
+    fprintf(fid, '%d %d\n',i, protonAA_Index(i));
+  end
+  fprintf(1, 'type return to continue.\n');
+  keyboard
+  
+  
+  
+  outFilename4 = 'N-H_medium1.m';
+  
+  fprintf(1, 'check out %s\n',outFilename4);
+    
+  fid         = fopen(outFilename4,'w');
+  
+  nhRdcFilename = 'nhRdc.txt';
+  
+  nhRdcs = load (nhRdcFilename);
+  
+  for i = 1:length(protonName)
+    relRDC_Index = find(nhRdcs(:,1) == ...
+			protonAA_Index(i));
+    if (isempty(relRDC_Index))
+      fprintf(fid, '%d\t%d\n', protonAA_Index(i), -999);
+    else
+      fprintf(fid, '%d\t%f\n', protonAA_Index(i), nhRdcs(relRDC_Index,2));
+    end
+  end
+  
+  fclose(fid);
+  
+  
+  fprintf(1, 'type return to continue.\n');
+  keyboard
+  
+%  outFilename3 = 'C-H_medium1.m';
+  outFilename3 = 'N-C_medium1.m';
+  
+  fprintf(1, 'check out %s\n',outFilename3);
+    
+  fid         = fopen(outFilename3,'w');
+  
+%  chRdcFilename = 'chRdc.txt';
+   ncRdcFilename = 'ncRdc.txt';
+  
+   %chRdcs = load (chRdcFilename);
+   ncRdcs  = load  (ncRdcFilename);
+   
+  for i = 1:length(protonName)
+%    relRDC_Index = find(chRdcs(:,1) == ...
+     relRDC_Index = find(ncRdcs(:,1) == ...
+			 protonAA_Index(i));
+    if (isempty(relRDC_Index))
+      fprintf(fid, '%d\t%d\n', protonAA_Index(i), -999);
+    else
+      %fprintf(fid, '%d\t%f\n', protonAA_Index(i), chRdcs(relRDC_Index,2)*1.000);      
+      %      fprintf(fid, '%d\t%f\n', protonAA_Index(i),
+      %      chRdcs(relRDC_Index,2)*.491);
+      fprintf(fid, '%d\t%f\n', protonAA_Index(i), ncRdcs(relRDC_Index,2));
+    end
+  end
+  
+  fclose(fid);
+  
+  outFilename2_5 = 'C-Ca_medium1.m';
+  
+  fprintf(1, 'check out %s\n',outFilename2_5);
+    
+  fid         = fopen(outFilename2_5,'w');
+  
+%  chRdcFilename = 'chRdc.txt';
+   ccaRdcFilename = 'ccaRdc.txt';
+  
+   %chRdcs = load (chRdcFilename);
+   ccaRdcs  = load  (ccaRdcFilename);
+   
+  for i = 1:length(protonName)
+%    relRDC_Index = find(chRdcs(:,1) == ...
+     relRDC_Index = find(ccaRdcs(:,1) == ...
+			 protonAA_Index(i));
+    if (isempty(relRDC_Index))
+      fprintf(fid, '%d\t%d\n', protonAA_Index(i), -999);
+    else
+      %fprintf(fid, '%d\t%f\n', protonAA_Index(i), chRdcs(relRDC_Index,2)*1.000);      
+      %      fprintf(fid, '%d\t%f\n', protonAA_Index(i),
+      %      chRdcs(relRDC_Index,2)*.491);
+      fprintf(fid, '%d\t%f\n', protonAA_Index(i), ccaRdcs(relRDC_Index,2));
+    end
+  end
+  
+  fclose(fid);
+  
+  
+  
+  fprintf(1, 'type return to continue.\n');
+  keyboard
+  
+  
+  
+  
+  outFilename2 = 'order.m';
+
+  fprintf(1, 'check out %s\n',outFilename2);
+    
+  fid         = fopen(outFilename2,'w');
+  
+  for i = 1:length(protonAA_Index)
+    fprintf(fid, '%d\n',protonAA_Index(i));
+  end
+  fprintf(1, 'type return to continue.\n');
+  keyboard
+  
+  outFilename = 'combinedResonancesAndProtonCoordinates.txt';
+  
+  fprintf(1, 'check out %s\n',outFilename);
+  
+  fid         = fopen(outFilename,'w');
+  
+  for i = 1:length(protonName)
+    relResonanceIndex = find(resonanceAA_Index == ...
+			     protonAA_Index(i));
+    if (isempty(relResonanceIndex))
+      fprintf(fid, '%d\t%s\t%d\t%d\t%f\t%f\t%f\n', protonAA_Index(i), protonAA_Name{i},-999,-999,protonX(i),protonY(i),protonZ(i));
+    else
+      fprintf(fid, '%d\t%s\t%f\t%f\t%f\t%f\t%f\n', protonAA_Index(i), protonAA_Name{i},H_CS(relResonanceIndex),N_CS(relResonanceIndex),protonX(i),protonY(i),protonZ(i));
+    end
+  end
+  
+  fclose(fid);

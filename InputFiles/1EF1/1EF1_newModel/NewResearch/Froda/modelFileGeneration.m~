@@ -1,0 +1,19 @@
+ 
+
+    
+
+    addpath('/home/home4/apaydin/Mist/Matlab/FileProcessing')
+
+   modelDataFilename = '../templateModelData.m';
+    
+    cd Pdb
+
+    for modeIndex = 100:100:10000 
+
+     parsedPdbFilename        = sprintf('$pdbPrefix-NMA.%d.parsedPDB', modeIndex); 
+    
+     matlabFilename           = sprintf('Mode%d.all',modeIndex); 
+
+     generateOneModelData (modelDataFilename, parsedPdbFilename, matlabFilename); 
+
+    end

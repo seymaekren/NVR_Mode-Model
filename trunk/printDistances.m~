@@ -1,0 +1,14 @@
+function printDistances(ALLDISTS, inputModeIndex, inputModelIndex)
+
+filename = sprintf('OutputFiles/1EF1/Distances/Distances_%d_model%d.txt',inputModeIndex, inputModelIndex);
+fid = fopen(filename,'w');
+fprintf(1, 'check out %s\n', filename);
+
+[m,n] = size(ALLDISTS);
+for i = 1:m
+    for j = 1:n
+        fprintf(fid, '%f ', ALLDISTS(i,j));
+    end
+  fprintf(fid, '\n');
+end
+fclose(fid);

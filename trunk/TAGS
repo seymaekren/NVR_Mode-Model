@@ -1,0 +1,5943 @@
+
+printOptimizationFiles_4RDC_Matrices.m,78
+function printOptimizationFiles_4RDC_Matrices 1,0
+fid 87,2638
+fid 107,3140
+
+printNumAvailableRDC_Values.m,53
+nonAvailableCH_RDCs 3,63
+nonAvailableNH_RDCs 4,108
+
+reduceSizeOfTheProblem.m,277
+numTestPeaks 3,78
+numTestResidues 4,100
+%  peakIndicesOffset 5,122
+ROWIN 6,149
+COLIN 7,190
+ASSIGNTABLE 8,234
+MASTER 9,300
+HDE 10,361
+TP 15,498
+CP 20,628
+SXCP 25,758
+SSCP 30,894
+RP1 34,1029
+RP2 38,1163
+RDC1 42,1297
+RDC2 43,1333
+peakIDs 45,1370
+RESNUMS 46,1409
+
+printIndividualScores.m,286
+function printIndividualScores 1,0
+function minusLog 43,1431
+  minusLog 49,1581
+function 84,2422
+minusLog_CP 89,2663
+minusLog_SXCP 90,2742
+minusLog_SSCP 92,2832
+minusLog_TP 94,2922
+minusLog_HDE 96,3010
+  minusLog_RP2 102,3213
+  minusLog_RP1 105,3311
+  minusLog_RP2 106,3333
+
+printOptimizationFilesWithOnlyOneRDC.m,98
+function printOptimizationFilesWithOnlyOneRDC 1,0
+    elseif 53,1577
+fid 92,2702
+fid 112,3204
+
+NVR_RDC2PROB.m,534
+function 2,2
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on RDCs,4,98
+%    This library is free software;29,1071
+%    License as published by the Free Software Foundation;31,1204
+%    version 2.1 of the License,32,1271
+%    version 2.1 of the License, or 32,1271
+logicalM 65,2499
+M 69,2554
+%M M77,2669
+% $$$ f1 91,3030
+% $$$    backcomputed=95,3235
+differenceMatrix 100,3359
+	     continue;118,4082
+%	    firstRun 128,4417
+% $$$ 	     fprintf(1, 'peak %d residue %d has 0 RDC prob.\n', i,j)145,4888
+
+loaddata.m,299
+function 1,0
+numDiscard 7,237
+  numDiscard 21,558
+fprintf(1, 'discarding %d peak(s)...\n', numDiscard)24,594
+H_CS 25,648
+NH_CS 26,697
+RDC1 27,746
+RDC2 28,795
+MOLMOL_HB 29,844
+HSQCDATA 30,901
+VECTORS 31,981
+TYPES 32,1003
+RESNUMS 33,1018
+SSTRUCT 34,1033
+HBOND 35,1049
+ALLDISTS=37,1066
+
+filterScores.m,124
+fid 8,277
+fprintf(1, 'check out %s\n', filename)9,305
+numDiscarded 11,397
+      numDiscarded 18,571
+      break;19,610
+
+checkAssignments.m,163
+load combinedScoringMatrix.txttxt1,0
+%assignments assignments3,85
+assignments 7,169
+assignments 8,202
+score 10,289
+fprintf(1, 'score = %f\n', score)17,542
+
+NVR_SHIFTS2PROB.m,1558
+function 1,0
+%NVR_SHIFTS2PROB: This computes assignment probabilities based on the program SHIFTS,6,261
+%    This library is free software;31,1265
+%    License as published by the Free Software Foundation;33,1398
+%    version 2.1 of the License,34,1465
+%    version 2.1 of the License, or 34,1465
+FILTERS=load('~/speech/NVR/trunk/CHEMSHIFTSTATS/SHIFTSFILTERS');FILTERS=63,2649
+PRED 71,3053
+differenceMatrixH 78,3185
+differenceMatrixN 79,3234
+alphaHelixMatrix 80,3283
+betaStrandMatrix 81,3332
+coilMatrix 82,3381
+% $$$ fid 85,3434
+% $$$   h 89,3592
+% $$$   n 90,3621
+% $$$     n 97,3799
+      S 106,3990
+      h 108,4016
+      n 109,4043
+      elseif(116,4233
+       printDetails 125,4405
+      elseif(130,4556
+M 183,6795
+   %fprintf(1, 'shifts bpg construction removed all entries for peak #%d\n',i)189,6894
+% $$$ nlast 198,7167
+% $$$    nlast 205,7431
+% $$$ M 208,7485
+% $$$    %fprintf(1, 'shifts bpg construction removed all entries for peak #%d\n',i)215,7627
+function p 223,7805
+   xHS 232,8009
+   xN 233,8038
+   xNS 234,8066
+   xHMX 235,8095
+   xHMN 236,8125
+   xNMX 237,8155
+   xNMN 238,8185
+elseif(240,8220
+       fprintf(1, 'Ratio : %f\n',(h-xH)/xHS/xHMX)xHMX283,9129
+       coeff1 284,9181
+       p1 294,9378
+	coeff2 307,9672
+       p1 317,9849
+        fprintf(1, 'Ratio : %f\n',(n-xN)/xNS/xNMX)xNMX327,10085
+	coeff3 329,10141
+       p2 337,10301
+        fprintf(1, 'Ratio : %f\n',-(n-xN)/xNS/xNMN)xNMN346,10528
+	coeff4 348,10585
+      p2 356,10745
+    p1=363,10835
+    p2=364,10861
+p 368,10908
+
+findCloseToH.m,79
+function hClosePeaks 1,0
+numPeaks 4,76
+hClosePeaks 5,109
+  H_CS_Diff 9,199
+
+tcdf.m,244
+function p 1,0
+%   P 3,84
+end22,867
+p=31,1016
+    % See Abramowitz and Stegun,41,1228
+k 44,1348
+    temp 47,1444
+    % Now convert from P(|T| < t)48,1485
+k 53,1600
+    temp 56,1696
+    % Now convert from P(|T| < t)57,1737
+k 62,1844
+
+runexample.m,393
+% $$$     useOrigData 20,1003
+useOrigData 23,1060
+modeIndex 32,1239
+modeIndex = 7; modelIndex 32,1239
+SHIFTX_Filename 34,1273
+SHIFTS_Filename 36,1357
+%      modelDataFilename 38,1441
+   T1 49,1895
+   T1 = load('REALTENM1');T1=49,1895
+   T2 50,1931
+   T2 = load('REALTENM2');T2=50,1931
+   ESTIMATED_TENSOR_1 52,1972
+elseif(61,2255
+  else71,2579
+  dirName 78,2837
+elseif(82,2932
+
+computeMTC.m,722
+function MTC 1,0
+%I think table contains the assignment table,4,118
+%rdc values,5,186
+%rdc values, x,5,186
+% $$$   numMaxTry;13,433
+MTC1s 17,464
+MTC2s 18,527
+MTCs 19,590
+%figure;figure20,618
+%plot(plot21,628
+      keyboard;37,953
+    numIter 40,982
+    %    rp4 42,1036
+    %    selectedElements 43,1064
+    selectedElements 45,1107
+    tableSubset2 49,1184
+    S2 51,1240
+    keyboard;56,1402
+% $$$   S2 60,1428
+% $$$   numIter 61,1444
+% $$$     rp4 66,1591
+% $$$     selectedElements 67,1620
+% $$$     tableSubset2 69,1670
+% $$$     S2 71,1734
+% $$$     keyboard;76,1926
+  MTCs 81,1984
+function SAUPE 88,2134
+M 90,2189
+vec 91,2205
+ct=92,2214
+      ct=102,2536
+   M 112,2663
+s 115,2713
+
+analyzeNormalModeHD_Results.m,674
+maxAssignmentAccuracy 5,56
+minAssignmentAccuracy 6,89
+maxHD_Score 7,124
+bestHD_Score_Accuracy 8,161
+numTemplates 11,196
+dirNames 12,216
+%dirNames{dirNames14,256
+%dirNames{dirNames15,282
+dirNames{dirNames16,308
+dirNames{dirNames17,333
+dirNames{dirNames18,358
+%dirNames{dirNames19,383
+%dirNames{dirNames20,410
+dirNames{dirNames21,435
+origAccuracies 23,460
+  inputFilename 30,567
+  H 32,654
+  maxAssignmentAccuracy 33,702
+  minAssignmentAccuracy 34,768
+    H 50,1177
+    maxAssignmentAccuracy 53,1225
+fprintf(1, 'minAccuracy = %f maxAccuracy = %f bestHDScoreAccuracy=%f\n',minAssignmentAccuracy,maxAssignmentAccuracy,bestHD_Score_Accuracy)70,1686
+
+debugA_StarQueuing.m,680
+% $$$ relPeakIndex 5,60
+% $$$ relResidueIndex 6,118
+% $$$ relResidueIndices 16,535
+g 26,1049
+h 27,1106
+fprintf(1, 'the new node has a combined g of %f ',g)30,1236
+fprintf(1, 'and h of %f\n',h)31,1290
+	newH_Value)36,1460
+g_in_function 38,1475
+g_in_function = newScoreSoFar; h_in_function 38,1475
+g_parent 42,1589
+h_parent 43,1650
+fprintf(1, 'g_parent = %f, h_parent = %f\n',g_parent, h_parent)46,1811
+g_parent_in_function 49,1950
+h_parent_in_function 50,1998
+EPSILON 55,2158
+	fullBayesianMatrix(68,68) - fullBayesianMatrix(69,69) - g)62,2496
+numAssignmentsInParent 85,3207
+numAssignmentsInChild 86,3262
+fprintf(1, 'again, g_child = %f\n', newScoreSoFar)90,3372
+
+a_star_assign.m,3509
+%would be good to make the queue a single structure,9,399
+MAXNUMNODES 15,530
+MAXNUMSOLUTIONS 16,560
+MAX_FRAGMENT_SIZE 17,589
+nodeIndex 21,791
+nodeIndicesArray 22,818
+next 23,866
+foundAnAssignment 24,913
+minScore 25,940
+SCORE_DELTA_THRESHOLD 26,998
+totalNumAssignments 29,1205
+foundMASTERs 30,1232
+%overallMASTER overallMASTER31,1281
+finalScores 32,1345
+assignmentAccuracies 33,1396
+numPeaks 35,1448
+overallMASTER 36,1488
+initiallyNumAssignedPeaks 38,1525
+  %node node51,2004
+  MASTER 53,2036
+  ASSIGNTABLE 54,2075
+  voter 55,2119
+  numVoters 56,2157
+  peakIndices 57,2199
+  residueIndices 58,2243
+  scoreSoFar 59,2290
+  h_value 60,2333
+  score 61,2373
+  %could print the fetched node here. how many assignments it has,63,2415
+  %what is its score,64,2482
+    break;69,2737
+    break;74,2869
+  numAssignedPeaks 77,2889
+  fprintf(1, 'current node is #%d has %d assigned peaks\n', nodeIndex,numAssignedPeaks)78,2928
+	  h_value, score)80,3089
+%	  fprintf(1, 'the initial # assignments was %d\n',initiallyNumAssignedPeaks)89,3432
+    foundAnAssignment 100,3761
+  else110,4108
+  nodeIndex 121,4689
+% $$$ aggregateMASTER 125,4728
+% $$$ totalNumAssignments 126,4817
+% $$$ foundMASTERs{foundMASTERs127,4852
+% $$$ numAssignedPeaks 131,5151
+% $$$ numInitialPeaks 132,5210
+% $$$       hold on,145,5701
+function 152,5854
+MASTERS 163,6313
+voters 164,6355
+numVoterss 165,6397
+peakIndicess 166,6440
+residueIndicess 167,6482
+scoreSoFars 168,6524
+h_values 169,6568
+ASSIGNTABLES{ASSIGNTABLES173,6615
+MASTERS{MASTERS174,6649
+voters{voters175,6678
+peakIndicess{peakIndicess177,6738
+residueIndicess{residueIndicess178,6772
+h_value 179,6809
+% $$$ h_value 180,6883
+% $$$ score 188,7232
+score 192,7429
+%normalizingConstant normalizingConstant194,7455
+scoreSoFars(1)      = -score;%/normalizingConstant;normalizingConstant195,7554
+h_values(1)         = h_value;%/normalizingConstant;normalizingConstant196,7606
+function 202,7664
+%    voteAccordingToLowestScore(voter, numVoters, ASSIGNTABLE, peakIndices,residueIndices); %oror229,8734
+% $$$ 237,9190
+fprintf(1, 'expanding node#%d\n',nodeIndex)248,9572
+  newAssigntable 262,9921
+    continue;289,11199
+% newH_Value 292,11222
+% newH_Value 295,11294
+  newH_Value 297,11370
+%  fprintf(1, 'difference between betterH_Value and newH_Value is %f\n', betterH_Value-newH_Value)newH_Value300,11465
+% $$$   S1 320,12206
+% $$$   S2 321,12281
+% $$$   RP1 323,12365
+% $$$   RP2 324,12463
+% $$$   nvrVoter327,12577
+function 344,13156
+insertToTheBeginningOfEqualValuedNodes 356,13692
+newScore 358,13737
+foundThisNodeBefore 359,13806
+%now find where to insert the new node,364,13908
+      foundThisNodeBefore 395,15346
+      break;396,15377
+      newNumAssignedPeaks 398,15399
+      numAssignedPeaks_nodeIndex 399,15455
+	fprintf(1, '%d vs. %d. Therefore inserting after node %d\n', newNumAssignedPeaks, numAssignedPeaks_nodeIndex,nodeIndex)405,15765
+	insertToTheBeginningOfEqualValuedNodes 406,15887
+  currentNodeIndex 413,15977
+  nodeIndex 414,16009
+	newH_Value)427,16326
+fprintf(1, 'its total score is %f\n', newScore)428,16340
+numNodes 458,17285
+function retval 471,17350
+comparisonMatrix 481,17536
+  retval 487,17642
+function 494,17676
+indexOfNoesThatMatchHN 500,17907
+indexOfNoesThatMatchH2 501,17958
+  indexOfNoesThatMatchH2{indexOfNoesThatMatchH2504,18070
+  secondProtonClosePeaks 509,18247
+function numNOEsBetweenPeaks 521,18789
+      break;534,19379
+      break;548,19840
+
+computeBayesianMatrix.m,2085
+function bayesianMatrix 1,0
+  USE_CDF = 0; USE_HIST 19,622
+   numFiles2Read 27,840
+   filenames 29,866
+   filenames{filenames30,904
+%   filenames{filenames31,1010
+%   filenames{filenames32,1117
+%   filenames{filenames33,1224
+%    filenames{filenames34,1331
+%    filenames{filenames36,1452
+%   filenames{filenames38,1563
+%   numVoters 40,1696
+   numVoters 41,1738
+   fprintf(1,'numVoters = %f\n',numVoters)44,1808
+   correctAssignmentProbability 48,1864
+   incorrectAssignmentProbability 49,1920
+     incorrectAssignmentProbability{incorrectAssignmentProbability52,2062
+   EPSILON 54,2123
+   LARGE_VALUE 55,2167
+      fprintf(1, 'loading %s\n', filenames{filenames65,2477
+      voter 71,2627
+      %  numVoters 72,2717
+	    incorrectAssignmentProbability{incorrectAssignmentProbability84,3124
+   meanCorrect 90,3295
+   meanIncorrect 91,3347
+   standardDeviationCorrect 92,3399
+   standardDeviationIncorrect 93,3451
+   N_histCorrect 103,3945
+   N_histCorrect = cell(numVoters,1); X_histCorrect 103,3945
+  N_histIncorrect 105,4031
+  N_histIncorrect = cell(numVoters,1); X_histIncorrect 105,4031
+% $$$     figure;119,4565
+bayesianScore 131,4790
+% $$$ EPSILON 133,4810
+% $$$ distCorrect 146,5098
+% $$$ distIncorrect 147,5137
+% $$$   distIncorrect{distIncorrect151,5260
+% $$$     distIncorrect{distIncorrect155,5469
+% $$$ x 160,5647
+relativeProbabilityCorrectGivenVoters 168,5865
+pCorrect 169,5975
+%inputVoter inputVoter171,6032
+    residueIndex 180,6278
+    num 182,6345
+    num = zeros(numVoters,1); denum 182,6345
+      elseif 188,6725
+       difference 193,6967
+	    minDifference 196,7150
+       bestBin = -1; minDifference 212,7561
+	  difference 215,7784
+ 	   minDifference 218,7965
+      elseif 228,8330
+%      pCorrectGivenVoterValue 260,9671
+%bayesianScore bayesianScore270,10212
+bayesianMatrix 273,10319
+% $$$ relativeProbabilityCorrectGivenVotersForIncorrectAssignments 276,10407
+% $$$     relativeProbabilityCorrectGivenVotersForIncorrectAssignments 283,10638
+% $$$ figure;288,10877
+% $$$ figure;291,11020
+
+NVR_NOE2PROB.m,728
+function 1,0
+%    This library is free software;28,1043
+%    License as published by the Free Software Foundation;30,1176
+%    version 2.1 of the License,31,1243
+%    version 2.1 of the License, or 31,1243
+possibleAssignmentsBPG=62,2454
+  possibleAbsoluteResidueIndicesForPeak_RelPeakIndex 75,2983
+%    fprintf(1, 'found empty ASSIGNTABLE row (for peak %d). continuing.\n',relPeakIndex)82,3369
+    continue;84,3475
+    %an NOE with peak relPeakIndex,93,3840
+    %previous assignment was incorrect,96,4044
+    %of extra data,97,4117
+    %            szin=113,4636
+    relResidueIndices 115,4730
+      absResidueIndex 123,5111
+      distOfRes_AbsResIdxToPotOfPk_RelPkIdx 125,5168
+	    impossibleToAssign 154,6872
+
+debugRDC_Score.m,50
+S1 38,1357
+S2 39,1394
+RP1 40,1431
+RP2 41,1493
+
+normalModeHD.m,196
+b_printAssignments 15,470
+useOrigData 17,497
+modeIndex 22,574
+modelIndex 24,612
+outputFilename 26,651
+fout 33,851
+SHIFTX_Filename 37,961
+SHIFTS_Filename 39,1045
+modelDataFilename 41,1129
+
+fixTOCSY_File.m,49
+load order.mm2,16
+fid 5,91
+  peakIndex 9,217
+
+extractOrder.m,22
+order 2,19
+fid 3,45
+
+extractOrderFile.m,27
+function M 1,0
+fid 6,192
+
+sanitycheck.m,61
+function 1,0
+      sct=7,152
+sct=10,180
+      sct=15,277
+
+compareHSQC.m,185
+H_EPS 7,228
+N_EPS 8,243
+foundPeaksInMyHSQC 9,257
+foundPeaksInAnsig 10,300
+      peakIndex 21,621
+      residueIndex 22,645
+  elseif 27,790
+extraHSQC_Peaks_In_Ansig_File 43,1348
+
+voteAccordingToMB_Score.m,1883
+function 1,0
+%bestRelPeakIndex bestRelPeakIndex10,365
+%bestRelResidueIndex bestRelResidueIndex11,392
+MAX_NUMCANDIDATES 13,420
+SCORE_DELTA_THRESHOLD 14,453
+relCandidatePeakIndices 15,521
+relCandidateResidueIndices 16,579
+scores 17,637
+numCandidates 18,695
+V 24,764
+%V V28,841
+V 29,902
+origV 31,947
+%maxVotesBeforeMaskingWithASSIGNTABLE maxVotesBeforeMaskingWithASSIGNTABLE36,1077
+V 38,1131
+% $$$ CS_RDC_COMPONENTS 40,1178
+noeScores 42,1233
+stopGeneratingCandidates 44,1282
+% $$$ reducedV 49,1426
+% $$$   remainingRelPeakIndices 54,1607
+% $$$   newRowReducedAssigntable 55,1703
+% $$$   newRowReducedV 56,1784
+% $$$ %    reducedV{reducedV64,2041
+% $$$ %    newV 65,2111
+% $$$ % $$$     newMASTER 66,2173
+% $$$ % $$$ 68,2338
+% $$$     remainingRelResidueIndices 70,2363
+% $$$ %    newAssigntable 72,2478
+% $$$ %    reducedV{reducedV73,2587
+% $$$     newAssigntable 76,2712
+% $$$     reducedV{reducedV77,2811
+% $$$ % $$$     newUnassignedPeakIndices 80,2921
+% $$$ % $$$     newUnassignedResidueIndices 82,3025
+% $$$ % $$$ 83,3118
+% $$$     betterH_Value 90,3536
+% $$$ % $$$     debugH_Value 93,3664
+% $$$ % $$$     CS_RDC_Component_Of_H_Value 101,3966
+      newMASTER 117,4706
+V 132,5479
+V 135,5601
+% $$$   score 138,5744
+% $$$     score 142,5896
+% $$$   fprintf(1, 'score of this assignment is %f\n', score)144,5988
+firstScore 149,6084
+  %endend163,6429
+    bestRelResidueIndex 172,6598
+    break;178,6754
+    break;183,6864
+  numCandidates 188,6890
+end200,7753
+sortedRelCandidatePeakIndices 203,7824
+sortedRelCandidateResidueIndices 204,7884
+relCandidatePeakIndices 212,8145
+relCandidateResidueIndices 213,8205
+scores 214,8268
+function totalVotes 220,8413
+      c 226,8578
+         elseif(230,8707
+      c 253,9444
+         elseif(257,9573
+	totalVotes 274,10299
+% $$$ function 279,10355
+% $$$ ASSIGNTABLE=283,10546
+
+updateTen_CH.m,139
+function 1,0
+M 6,160
+vec 7,176
+ct 8,185
+         ct 19,578
+         ct 28,929
+flag 33,971
+   flag=36,1011
+   M 43,1111
+s 46,1161
+
+renumberParsedNOEs.m,36
+parsedBackboneNOEs 2,28
+fout 3,73
+
+voteAccordingToBayesianScore.m,550
+function 1,0
+MAX_NUMCANDIDATES 7,232
+relCandidatePeakIndices 8,264
+relCandidateResidueIndices 9,322
+scores 10,380
+numCandidates 11,438
+V 17,507
+V 22,533
+origV 24,562
+V 28,581
+% $$$ CS_RDC_COMPONENTS 30,628
+stopGeneratingCandidates 34,685
+% $$$ reducedV 39,849
+  %endend57,1241
+    bestRelResidueIndex 66,1410
+    break;72,1566
+  numCandidates 79,1594
+end91,2472
+sortedRelCandidatePeakIndices 94,2543
+sortedRelCandidateResidueIndices 95,2603
+relCandidatePeakIndices 103,2864
+relCandidateResidueIndices 104,2924
+scores 105,2987
+
+removeAssignedPeaksAndResidues_CH.m,383
+%correspond to the rows and columns of ASSIGNTABLE,6,465
+overallUnassignedPeakIndices = []; overallUnassignedResidueIndices 15,805
+relPeakIndices 30,1209
+relPeakIndices = []; relResidueIndices 30,1209
+ASSIGNTABLE 53,2165
+SSCP 55,2232
+SXCP 56,2280
+CP 57,2328
+unassignedPeakIndicesCorrespondingToAssigntable 60,2378
+unassignedResidueIndicesCorrespondingToAssigntable 61,2496
+
+plotIterativeAssignmentAccuracy.m,46
+numCorrect 1,0
+numIncorrect 2,40
+plot(3,75
+
+computeMB_H_Value.m,741
+function 1,0
+newH_Value 9,320
+  peakIndex 15,444
+  minScore 21,610
+    residueIndex 27,717
+    score 29,785
+%    fprintf(1, 'score of assigning peak #%d to residue#%d is %f\n',peakIndex,residueIndex,score)36,994
+  newH_Value 40,1107
+CS_RDC_Component 44,1153
+noeScore 48,1259
+newH_Value 53,1370
+%newH_Value newH_Value54,1422
+% $$$ 56,1472
+% $$$     numNOEsBetweenPeaks 95,2865
+% $$$       relResidue1Indices 106,3214
+% $$$       residue1Indices 107,3286
+% $$$       residue1Indices 109,3380
+% $$$       relResidue2Indices 118,3671
+% $$$       residue2Indices 119,3743
+% $$$       residue2Indices 121,3837
+% $$$     distances 124,3910
+% $$$     minDistance 125,3987
+% $$$       newH_Value 128,4205
+newH_Value 133,4326
+
+testAlignmentTensors.m,573
+S1_partial 6,124
+S2_partial 7,199
+fullMASTER 11,277
+S1_full 17,421
+S2_full 20,520
+percentile1 23,619
+percentile2 26,706
+fprintf(1, ' is %f and %f\n', percentile1, percentile2)29,859
+figure;31,917
+figure; plot(percentile1, percentile2, 'r*'), hold on;31,917
+maxNumIter 33,973
+maxNumIter = 1000; numPartialAssignments 33,973
+percentiles1 34,1019
+percentiles1 = []; percentiles2=34,1019
+  randomOrder 38,1113
+  S1_partial_random 44,1294
+  S2_partial_random 45,1354
+  percentile1 47,1417
+  percentile2 48,1475
+  percentiles1 49,1534
+  percentiles2 50,1579
+
+HD.m,4443
+function 1,0
+%    License as published by the Free Software Foundation;51,2915
+%    version 2.1 of the License,52,2981
+%    version 2.1 of the License, or 52,2981
+HSHIFTS 89,4653
+NSHIFTS 90,4675
+RDC1 91,4697
+RDC2 92,4718
+mu 96,4794
+   NTH = NTH + (mu-12.9); NTH 99,4840
+fprintf(1, 'the original NTH is %f\n',NTH)102,4889
+%NTH NTH103,4933
+NTH 104,4947
+fprintf(1, 'set NTH to %f Angstroms.\n',NTH)105,4959
+ASSIGNTABLE 108,5015
+OASSIGNTABLE 109,5085
+ROWIN 112,5201
+COLIN 113,5239
+MASTER 115,5314
+HDE 120,5386
+ASSIGNTABLE 121,5443
+TP 123,5481
+TP 124,5509
+ASSIGNTABLE 125,5610
+ASSIGNTABLE 128,5750
+%prune via the program shiftx130,5787
+ASSIGNTABLE 132,5939
+%prune via the program shifts134,5981
+ASSIGNTABLE 137,6158
+SSCP=139,6197
+SSCP=SSCP.*ASSIGNTABLE;SXCP=139,6197
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=139,6197
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=139,6197
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=139,6197
+S1 142,6334
+S2 143,6371
+RP1 144,6408
+RP2 145,6471
+% $$$ numIncorrectAssignmentsAtStart 149,6572
+% $$$ numAssignmentsAtStart 150,6614
+% $$$   absoluteResidueIndex 154,6766
+% $$$   residueIndex 155,6824
+% $$$ numCorrectAssignmentsAtStart 162,7128
+% $$$ 164,7228
+% $$$ 165,7301
+% $$$ 166,7354
+% $$$ 168,7493
+% $$$ fprintf(1, 'loaded %d incorrect, %d correct assignments\n',numIncorrectAssignmentsAtStart,numCorrectAssignmentsAtStart)169,7546
+   nlast 192,8368
+ilast 195,8464
+   V = vote5(CP,TP,SSCP,SXCP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);V=197,8508
+   V2 198,8603
+   V3 199,8696
+   FOO 200,8779
+   FOO = or(V2,or(V,V3));ASSIGNTABLE=200,8779
+   nlast 201,8834
+      nlast 210,9408
+   ilast 215,9509
+   V2 220,9702
+   V 221,9795
+   ASSIGNTABLE 222,9812
+   nlast 223,9894
+      nlast 232,10468
+   end239,10628
+   S1 248,11305
+   S2 249,11345
+   RP1 250,11385
+   RP2 251,11451
+last 257,11613
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 260,11713
+      nV=261,11804
+      onV=264,12208
+      V=265,12222
+      V=thresh(oV,7);nV 265,12222
+      X 266,12266
+   last 283,13006
+   V2 288,13206
+   V3 289,13299
+   X 292,13506
+   V 293,13551
+   ASSIGNTABLE 294,13568
+   nlast 295,13650
+      nlast 304,14224
+   end312,14385
+   S1 321,15062
+   S2 322,15102
+   RP1 323,15142
+   RP2 324,15208
+   RP1 374,18249
+end375,18278
+   RP2 381,18412
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 386,18517
+      nV=387,18608
+      onV=392,19026
+      V=393,19040
+      V=thresh(oV,16);nV 393,19040
+      X 394,19085
+   last 412,19832
+RP1 419,19970
+RP2 420,20033
+isum 422,20097
+   V2 425,20230
+   V3 426,20334
+   X 430,20567
+   V 431,20613
+   ASSIGNTABLE 432,20630
+   nlast 433,20712
+      nlast 442,21286
+   isum 447,21387
+fail=451,21426
+   S1 464,22126
+   S2 465,22166
+   RP1 466,22206
+   RP2 467,22272
+currsize=470,22343
+sthr=471,22375
+sthr=10;VTH=471,22375
+sthr=10;VTH=79;BTH=471,22375
+   nV=477,22500
+   onV=478,22650
+   V 481,22684
+   V = vote(CP,SXCP,SSCP,TP,RP1,RP2,HDE, ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,lv);oV=481,22684
+   V=485,23038
+   V=thresh(oV,VTH);nV 485,23038
+   X 486,23084
+      V=490,23253
+      V=thresh(oV,VTH);nV 490,23253
+      X 491,23302
+      X = thresh(V,max(max(V)));X 495,23487
+      X = thresh(V,max(max(V)));X = X(1:size(ASSIGNTABLE,1),1:size(ASSIGNTABLE,2));X=495,23487
+      S1 514,24196
+      S2 515,24239
+      RP1 516,24282
+      RP2 517,24351
+      S1 533,25202
+      S2 534,25245
+      RP1 535,25288
+      RP2 536,25357
+      V2 542,25554
+      V 543,25661
+      ASSIGNTABLE 544,25681
+      nlast 545,25766
+         S1 551,26292
+         S2 552,26338
+         RP1 553,26384
+         RP2 554,26456
+         nlast 558,26604
+   sthr=561,26661
+      VTH=564,26736
+   BTH=570,26854
+         break;579,27041
+         break;586,27168
+HD_SCORE 592,27226
+weightedHD_Score 593,27244
+%HD_SCORE HD_SCORE596,27272
+%weightedHD_SCORE weightedHD_SCORE602,27518
+ASSIGNTABLE=629,28500
+function 632,28544
+THR;633,28736
+   S1 640,29301
+   S2 641,29341
+   RP1 642,29381
+   RP2 643,29447
+function V 648,29520
+      c 660,29751
+      A 678,30148
+      A 679,30196
+      V 680,30234
+function V 686,30263
+      c 697,30486
+      A 711,30793
+      A 712,30841
+      V 713,30879
+
+NOE_PRUNE.m,433
+function prunedPossibleAssignmentsBPG 1,0
+%    This library is free software;28,1024
+%    License as published by the Free Software Foundation;30,1157
+%    version 2.1 of the License,31,1224
+%    version 2.1 of the License, or 31,1224
+%an NOE with peak relPeakIndex,83,3591
+%previous assignment was incorrect,86,3783
+%of extra data,87,3852
+	    distOfRes_AbsResIdxToPotOfPk_RelPkIdx 100,4349
+	  %            szout=118,5282
+
+NVR_COMP_TEN.m,662
+ function percentile 1,0
+%    License as published by the Free Software Foundation;34,1377
+%    version 2.1 of the License,35,1444
+%    version 2.1 of the License, or 35,1444
+eigvect1 66,2656
+Vx1 71,2751
+Vx1 72,2780
+Vy1 74,2804
+Vy1 75,2833
+Vz1 77,2857
+Vz1 78,2886
+eigval2 81,2915
+eigvect2 82,2939
+Vx2 87,3034
+Vx2 88,3063
+Vy2 90,3087
+Vy2 91,3116
+Vz2 93,3140
+Vz2 94,3169
+AngleX 98,3197
+AngleY 99,3227
+AngleZ 100,3257
+AngleX 102,3289
+AngleY 103,3325
+AngleZ 104,3361
+Angles 107,3401
+SXX=109,3443
+SYY=110,3465
+SZZ=111,3487
+alpha 113,3511
+beta 114,3531
+prob1 116,3553
+prob2 118,3594
+degen 120,3620
+prob 122,3634
+percentile 124,3663
+
+computeScoreOfAssignment.m,376
+%combinedScoringMatrix combinedScoringMatrix2,1
+%MASTER MASTER3,217
+MASTER 6,422
+count 8,451
+MASTER 10,500
+score 12,614
+score = 0; numAssigned 12,614
+  residue 17,714
+    score 20,805
+fprintf(1, 'assignment accuracy = %f\n', count/numRows)numRows23,869
+fprintf(1, 'precision = %f\n', count/numAssigned)numAssigned24,926
+fprintf(1, 'score = %f\n', score)25,977
+
+MC_Move.m,186
+function MASTER 1,0
+moveType=6,76
+  sumOfRows 12,306
+  unassignedResidueIndices 13,334
+  newResidueIndex 15,388
+  peak1Index 24,575
+  residue1Index 31,741
+  residue2Index 32,787
+
+generateAnswerkey.m,88
+name 1,0
+outFilename5 5,75
+fprintf(1, 'check out %s\n',outFilename5)7,117
+fid 9,161
+
+pickLargerCoefficient.m,57
+bmrb_1CMZ 1,0
+shifts 16,703
+shiftx 17,752
+max(19,802
+
+betterNVR_withCH.m,2357
+  nlast 15,518
+% $$$ 19,831
+% $$$ 20,916
+% $$$ 21,1037
+  nlast 25,1249
+    numPeaks 46,1577
+    S1 52,1698
+%    S2 54,1816
+    labelFilename 58,2143
+    vectorsFilename 59,2184
+    fprintf(1, 'printed files %s and %s\n', labelFilename, vectorsFilename)66,2569
+  origCP 80,3221
+  origCP = CP; origSXCP 80,3221
+  origCP = CP; origSXCP = SXCP; origSSCP=80,3221
+	   = HDE; origROWIN 81,3281
+	   = HDE; origROWIN = ROWIN; origCOLIN 81,3281
+  relRowIndices 88,3617
+  relRowIndices = []; relColIndices 88,3617
+  CP 98,3898
+  SXCP 99,3945
+  SSCP 100,3994
+  HDE 101,4045
+end124,4571
+numAssignedPeaks 134,4632
+numUnassignedPeaks 135,4670
+numNvrVoters 137,4721
+%numVoters numVoters138,4759
+notCompletedAssignments 139,4798
+prevNumAssignedPeaks 140,4836
+fullMASTER 142,4890
+S1_full 148,5036
+% $$$ S2_full 152,5177
+percentiles1 155,5288
+percentiles1 = []; percentiles2=155,5288
+numCorrectPerIter 156,5325
+numCorrectPerIter   = []; numTotalAssignmentsPerIter 156,5325
+initialMASTER 157,5384
+initialASSIGNTABLE 158,5411
+initialROWIN 159,5445
+initialCOLIN 160,5467
+initialSSCP 161,5489
+initialSXCP 162,5509
+initialCP 163,5529
+initialHDE 164,5545
+secondRun 165,5564
+S1 169,5644
+  RP2 180,5892
+  percentile1 182,5991
+  fprintf(1, ' is %f\n', percentile1)186,6148
+  percentiles1 188,6188
+  peakIndices 193,6277
+  residueIndices 194,6321
+  nvrVoter 195,6365
+  bayesianMatrix 199,6493
+  differenceMatrix 207,6830
+   numVoters 216,7092
+   voter 217,7115
+   voter{voter218,7154
+  DO_INDIVIDUAL_PIECE_MANUALLY 219,7190
+  DO_INDIVIDUAL_PIECE_MANUALLY = 0; DO_MANUAL_MERGING 219,7190
+  STOCHASTIC_SEARCH 220,7250
+  elseif 239,8048
+    aggregateMASTER 266,9062
+  numCorrect 271,9171
+  numCorrect = 0; numAssignedPeaks 271,9171
+  fprintf(1, 'the aggregate assignment has %d correct out of %d positions.\n',numCorrect, numAssignedPeaks)283,9524
+  numCorrectPerIter 285,9636
+  numTotalAssignmentsPerIter 286,9690
+  MASTER 289,9772
+  numAssignedPeaks 298,9971
+      secondRun 304,10167
+      MASTER 305,10188
+      prevNumAssignedPeaks 306,10221
+      ASSIGNTABLE 307,10275
+      ROWIN 308,10315
+      COLIN 309,10343
+      SSCP 310,10371
+      SXCP 311,10397
+      CP 312,10423
+      HDE 313,10445
+	  S1 S1_full;315,10543
+      continue;316,10558
+    prevNumAssignedPeaks 319,10589
+  elseif 331,10954
+
+aggregateComputeScoreAndPickTwoRandomAssignments.m,259
+function 1,0
+LARGE_VALUE 8,522
+EPSILON 9,543
+scoreMatrix 11,565
+squareScoreMatrix 15,714
+aggregatedMatrix 29,1231
+prevScore 36,1375
+assignments 40,1581
+resultMaster1 41,1643
+voter 44,1747
+voter = cell(1,1); numVoters 44,1747
+resultMaster2 50,2019
+
+AssignFirstFiveResidues_withCH.m,2036
+function 1,0
+  origMASTER 10,320
+  origASSIGNTABLE 11,348
+  origROWIN 12,381
+  origCOLIN 13,408
+  origCP 14,435
+  origSSCP 15,459
+  origSXCP 16,485
+  origHDE 17,511
+  origRP1 18,536
+  origRP2 19,561
+    V2 29,761
+    V 30,855
+    nlast 34,963
+      nlast 46,1721
+  end49,1771
+   RP1 72,2625
+   RP2 73,2697
+   S1 75,2777
+   S1 = ones(3);S2=75,2777
+   RP1 76,2800
+   RP2 80,2887
+   V2 87,3069
+   V 88,3158
+   nlast 91,3258
+      nlast 101,4008
+last 106,4098
+      nV=110,4275
+      nV=111,4409
+      V=115,4703
+      X 117,4731
+   ilast 128,5032
+      S1 140,5989
+      RP1 141,6062
+      RP2 142,6137
+      ilast 151,6365
+   last 157,6468
+ilast 164,6601
+   S1 178,7497
+   RP1 179,7567
+   RP2 180,7639
+   ilast 189,7840
+S1 195,7882
+RP1 196,7949
+RP2 197,8018
+   S1 212,8993
+   RP1 213,9063
+   RP2 214,9135
+   V2 227,9432
+   V 228,9521
+   nlast 231,9621
+      S1 242,10326
+      RP1 243,10399
+      RP2 244,10474
+      nlast 250,10633
+end252,10677
+scores 255,10755
+  assignedResidueIndex 258,10945
+end268,11439
+MASTER 271,11499
+ASSIGNTABLE 272,11551
+ROWIN 273,11608
+COLIN 274,11659
+CP 275,11710
+SSCP 276,11758
+SXCP 277,11808
+HDE 278,11858
+RP1 279,11907
+RP2 280,11956
+%assignedPeakIndices assignedPeakIndices283,12016
+%assignedResidueIndices assignedResidueIndices284,12052
+assignedPeakIndices 285,12091
+assignedResidueIndices 286,12130
+%assignedPeakIndices assignedPeakIndices287,12169
+%assignedResidueIndices assignedResidueIndices288,12211
+%  residueIndex 293,12421
+  residueIndex 296,12611
+end300,12849
+RP1 310,13134
+RP2 311,13247
+nlast 315,13363
+% $$$ 319,13674
+% $$$ 320,13759
+% $$$ 321,13880
+  nlast 325,14092
+function 333,14135
+ASSIGNTABLE=338,14510
+function V 342,14555
+%doublesdoubles349,14888
+%triplestriples360,15465
+%quadsquads371,16146
+V 378,16634
+function V 392,16719
+%doublesdoubles397,16953
+%triplestriples401,17136
+V 403,17214
+function 405,17234
+THR;406,17418
+    S1 417,18252
+    RP1 418,18314
+    RP2 419,18381
+
+computeH_Value.m,302
+function  newH_Value 1,0
+newH_Value 4,90
+  minScore 14,305
+    score 20,402
+      score 25,540
+%    fprintf(1, 'score of assigning peak #%d to residue#%d is %f\n',peakIndex,residueIndex,score)32,692
+%  fprintf(1, 'score of assigning peak #%d is %f\n',peakIndex,score)36,804
+  newH_Value 38,877
+
+twoMatricesAreClose.m,63
+function retval 1,0
+comparisonMatrix 11,208
+  retval 16,327
+
+secondMin.m,21
+function retval 1,0
+
+doMergingManually.m,1412
+%filename1=filename15,281
+%filename1= 'patch1-4-Total_20Peaks-MoreNOEs.mat'; filename2 5,281
+%relPeakIndicesToBeAllowed relPeakIndicesToBeAllowed6,384
+%relPeakIndicesToBeAllowed = 1:7;outputFilename 6,384
+filename2 7,463
+filename1 8,594
+relPeakIndicesToBeAllowed 9,725
+relPeakIndicesToBeAllowed = 1:6;outputFilename 9,725
+ASSIGNTABLE 14,879
+peakIndices 15,935
+foundMASTERsL 19,1009
+foundMASTERsL = foundMASTERs;finalScoresL 19,1009
+foundMASTERsL = foundMASTERs;finalScoresL  = finalScores;assignmentAccuraciesL=19,1009
+foundMASTERsL = foundMASTERs;finalScoresL  = finalScores;assignmentAccuraciesL=assignmentAccuracies;totalNumAssignmentsL=19,1009
+foundMASTERsR 21,1169
+foundMASTERsR = foundMASTERs;finalScoresR 21,1169
+foundMASTERsR = foundMASTERs;finalScoresR  = finalScores;assignmentAccuraciesR=21,1169
+foundMASTERsR = foundMASTERs;finalScoresR  = finalScores;assignmentAccuraciesR=assignmentAccuracies;totalNumAssignmentsR=21,1169
+  totalNumAssignments 24,1461
+  foundMASTERs 25,1489
+  finalScores 26,1525
+  assignmentAccuracies 27,1554
+  fprintf(1, 'noeCoefficient = %f csCoefficient = %f\n',noeCoefficient,csCoefficient)31,1633
+		       residueIndices, voter,numVoters,ASSIGNTABLE,NOES,ALLDISTS,IALLDISTS,NTH,peakIDs,RESNUMS,RDC1,RDC2,VECTORS,MB_ShiftScore, MB_RDC_Score, numCS, numRDC, HSQCDATA, csCoefficient, rdcCoefficient, noeCoefficient,numHN_NOES);%,totalNumPeaks)34,1940
+
+adjustOneSHIFTS_File.m,146
+%and the SHIFTS file,4,128
+%SHIFTS file is defined below,5,156
+outputShiftsFilename 11,451
+shiftsData 13,522
+function writeShiftsFile 22,778
+
+studyVoters.m,2522
+TEST_MB_SCORE 7,271
+  MB_Score 16,448
+  MB_Score = MB_RDC_Score; absoluteIndexed 16,448
+  %MB_Score MB_Score17,496
+  %MB_Score = RP2; absoluteIndexed 17,496
+  %MB_Score = RP1; absoluteIndexed 18,535
+  %MB_Score MB_Score19,575
+  %MB_Score = MB_ShiftScore; absoluteIndexed 19,575
+  %MB_Score MB_Score20,625
+  %MB_Score = SSCP; absoluteIndexed 20,625
+  %MB_Score MB_Score23,672
+% $$$ MB_Score 24,711
+  numPeaks 25,754
+% $$$ voterGetsItRight 26,794
+% $$$ rankOfCorrectVote 27,841
+% $$$ 30,981
+% $$$   rankOfCorrectVote 31,1055
+% $$$   maxScore 32,1153
+% $$$ figure;40,1426
+% $$$ figure;42,1475
+% $$$ correctResiduesForVoter 44,1523
+  voterGetsItRight 48,1648
+  peakIndices 54,1885
+  residueIndices 55,1928
+  %peakIndices peakIndices56,1971
+  %residueIndices residueIndices57,2021
+      possibleResidueIndices 65,2319
+      score 70,2536
+      possibleRelResidueIndices 72,2628
+    thisRank 76,2814
+    rankOfCorrectVote 77,2880
+      maxScore 84,3105
+	score2 95,3398
+  figure;109,3642
+  figure;111,3683
+  correctResiduesForVoter 113,3723
+  voterGetsItRight 125,3871
+  rankOfCorrectVote 126,3911
+    possibleResidueIndices 129,4013
+    sortedScores 130,4074
+    rankOfCorrectVote 131,4144
+    minScore 132,4217
+  figure;141,4467
+  figure;143,4508
+  correctResiduesForVoter 145,4548
+%  voter 157,4809
+  voter 158,4866
+  numPeaks 159,4952
+% $$$     figure;169,5372
+% $$$   voterGetsItRight 172,5426
+  entropy 176,5533
+  information 177,5585
+      continue;193,6133
+% $$$       p 194,6149
+% $$$       maxProb 195,6205
+% $$$   correctResiduesForVoter 205,6458
+% $$$     correctResiduesForVoter{correctResiduesForVoter209,6610
+figure;213,6728
+% $$$    case 223,7226
+% $$$    case 224,7262
+% $$$    case 225,7296
+% $$$    case 226,7330
+% $$$    case 227,7360
+% $$$    case 228,7390
+coefficients 233,7456
+coefficientsCell 234,7490
+coefficientsCell{coefficientsCell235,7523
+coefficientsIndex 236,7559
+EPSILON 238,7585
+averageWeightedDiffProbs 239,7601
+	    sum_coefficients 280,9275
+	    sumWeightedDiffProb 289,9490
+		  secondMaxProb 298,9783
+		  diffProb 299,9846
+		weightedDiffProb 301,9928
+		sumWeightedDiffProb 302,10006
+	    coefficientsCell{coefficientsCell305,10090
+	    averageWeightedDiffProb 306,10155
+	    coefficientsIndex 309,10320
+figure;318,10460
+fprintf(1, 'the max. probability difference that distinguishes the correct assignment has an average of %f weighted probability and has the following coefficients:\n',maxV)327,10706
+
+adjustSHIFTS_File.m,64
+%and the SHIFTS file,4,93
+%SHIFTS file is defined below,5,121
+
+renumberRdcFile.m,37
+fout 3,44
+fout 10,244
+fout 18,492
+
+printAssignments.m,31
+function printAssignments 1,0
+
+reduceAll.m,14
+function 1,0
+
+readParsedPDBFile.m,572
+function 1,0
+fin 12,501
+discard 17,692
+    i 28,1115
+    i = i + 1; %skipping the next line,28,1115
+  i 31,1225
+numDiscarded 34,1243
+numCoords 35,1272
+numCoordsCheck 36,1325
+N_Coords 39,1490
+H_Coords 40,1521
+parsedPDBFileResidueIDs 41,1552
+atomIndex 43,1599
+i 44,1649
+i = 1;         %corresponds to the input  vectors,44,1649
+i = 1;         %corresponds to the input  vectors, should go 44,1649
+    atomIndex 55,2159
+    i 59,2287
+  i 67,2580
+fprintf('Total %d pairs of N,H atoms are read and %d atoms are discarded\n', atomIndex, numDiscarded)71,2611
+
+computeSaupes.m,110
+function 1,0
+M 6,72
+vec 7,88
+ct=8,97
+      ct=18,420
+flag 21,446
+   flag=24,486
+   M 31,585
+s 34,635
+
+debugComputeBetterH_Value.m,361
+function  newH_Value 2,1
+EPSILON 7,197
+LARGE_VALUE 9,217
+peaks2BeAssigned 11,237
+residues2BeAssigned 12,271
+relPeaks2BeAssigned 14,306
+relResidues2BeAssigned 15,335
+  relPeaks2BeAssigned 23,529
+  relResidueIndex 25,595
+  relResidues2BeAssigned 29,730
+newH_Value 36,947
+minusCombinedProbabilityMatrix 38,964
+  minusCombinedProbabilityMatrix 43,1145
+
+convertResidueIndicesToPeakIndicesInNOE_File.m,89
+function noes 1,0
+noes 15,483
+  index2 18,549
+  newIndex1 19,584
+  newIndex2 20,621
+
+pickUnambiguousNOEs.m,1797
+unadjustedNOEs 8,320
+ppm1 9,356
+ppm2 10,393
+ppm3 11,430
+residue1Index 12,467
+residue2Index 13,504
+h1_CS_Difference 16,647
+h1_CS_Difference = []; h2_CS_Difference 16,647
+h1_CS_Difference = []; h2_CS_Difference = []; n_CS_Difference 16,647
+  hsqc2Index 20,799
+  hsqc_h1_CS 21,851
+  hsqc_h2_CS 22,885
+  hsqc_n_CS 23,919
+figure;29,1132
+figure;31,1211
+figure;33,1290
+keyboard35,1367
+H_EPS 44,1484
+N_EPS 45,1498
+%useOrigData useOrigData50,1575
+%filename filename52,1639
+case1 54,1764
+case1 = 0; case2 54,1764
+warning1 55,1786
+warning1 = 0; warning2 55,1786
+% $$$ 	      caseNumber 76,2254
+% $$$ 	      noeIndex 77,2293
+% $$$ 	      secondH_CS_1_peakNum 78,2332
+% $$$ 	      secondH_CS_2_peakNum 79,2371
+% $$$ 	      secondN_CS_peakNum 80,2410
+% $$$ 	      secondH1_ppm_diff 82,2456
+% $$$ 	      secondH2_ppm_diff 83,2516
+% $$$ 	      secondN_ppm_diff 84,2576
+% $$$ 		H_CS_2_peakNum 91,2865
+% $$$ 		N_CS_peakNum 92,2912
+% $$$ 		numFoundCloseHSQC_Peaks 94,3013
+% $$$ 		numFoundCloseHSQC_Peaks 98,3212
+	    caseNumber 104,3303
+	    noeIndex 105,3328
+	    H_CS_1_peakNum 106,3353
+	    H_CS_2_peakNum 107,3378
+	    N_CS_peakNum 108,3403
+	    H1_ppm_diff 109,3428
+	    H2_ppm_diff 110,3474
+	    N_ppm_diff 111,3520
+% $$$ 	    caseNumber 120,3775
+% $$$ 	    noeIndex 121,3806
+% $$$ 	    H_CS_1_peakNum 122,3837
+% $$$ 	    H_CS_2_peakNum 123,3868
+% $$$ 	    N_CS_peakNum 124,3899
+% $$$     fprintf(1, 'case number is %d\n',caseNumber)138,4576
+% $$$     fprintf(1, 'case number is %d\n',caseNumber)146,5200
+% $$$ 		H_CS_2_peakNum 183,6440
+% $$$ 		N_CS_peakNum 184,6487
+    correctPeak2Index 201,7293
+    fprintf(1, 'case number is %d\n',caseNumber)204,7502
+	case2 215,7875
+	warning2 224,8039
+fprintf(1, 'case1 = %d, case2 = %d\n',case1,case2)232,8190
+
+testRanking.m,300
+csCoefficient 3,124
+csCoefficient = 0.22; rdcCoefficient 3,124
+csCoefficient = 0.22; rdcCoefficient = 0.05; noeCoefficient 3,124
+scores 4,192
+  end11,408
+    residueIndex 15,528
+  fprintf(1, 'max. scoring candidate is peak %d and residue %d, score=%f\n',peakIndex,residueIndex,maxScore)21,672
+
+a_star_assign_CH.m,3510
+%would be good to make the queue a single structure,9,423
+MAXNUMNODES 15,554
+MAXNUMSOLUTIONS 16,584
+MAX_FRAGMENT_SIZE 17,613
+nodeIndex 21,814
+nodeIndicesArray 22,841
+next 23,889
+foundAnAssignment 24,936
+minScore 25,963
+SCORE_DELTA_THRESHOLD 26,1021
+totalNumAssignments 29,1228
+foundMASTERs 30,1255
+%overallMASTER overallMASTER31,1304
+finalScores 32,1368
+assignmentAccuracies 33,1419
+numPeaks 35,1471
+overallMASTER 36,1511
+initiallyNumAssignedPeaks 38,1548
+  %node node51,2027
+  MASTER 53,2059
+  ASSIGNTABLE 54,2098
+  voter 55,2142
+  numVoters 56,2180
+  peakIndices 57,2222
+  residueIndices 58,2266
+  scoreSoFar 59,2313
+  h_value 60,2356
+  score 61,2396
+  %could print the fetched node here. how many assignments it has,63,2438
+  %what is its score,64,2505
+    break;69,2760
+    break;74,2892
+  numAssignedPeaks 77,2912
+  fprintf(1, 'current node is #%d has %d assigned peaks\n', nodeIndex,numAssignedPeaks)78,2951
+	  h_value, score)80,3112
+%	  fprintf(1, 'the initial # assignments was %d\n',initiallyNumAssignedPeaks)89,3455
+    foundAnAssignment 100,3784
+  else110,4131
+  nodeIndex 121,4733
+% $$$ aggregateMASTER 125,4772
+% $$$ totalNumAssignments 126,4861
+% $$$ foundMASTERs{foundMASTERs127,4896
+% $$$ numAssignedPeaks 131,5195
+% $$$ numInitialPeaks 132,5254
+% $$$       hold on,145,5745
+function 152,5898
+MASTERS 163,6357
+voters 164,6399
+numVoterss 165,6441
+peakIndicess 166,6484
+residueIndicess 167,6526
+scoreSoFars 168,6568
+h_values 169,6612
+ASSIGNTABLES{ASSIGNTABLES173,6659
+MASTERS{MASTERS174,6693
+voters{voters175,6722
+peakIndicess{peakIndicess177,6782
+residueIndicess{residueIndicess178,6816
+h_value 179,6853
+% $$$ h_value 180,6927
+% $$$ score 188,7276
+score 192,7473
+%normalizingConstant normalizingConstant194,7499
+scoreSoFars(1)      = -score;%/normalizingConstant;normalizingConstant195,7598
+h_values(1)         = h_value;%/normalizingConstant;normalizingConstant196,7650
+function 202,7708
+%    voteAccordingToLowestScore(voter, numVoters, ASSIGNTABLE, peakIndices,residueIndices); %oror229,8799
+% $$$ 237,9255
+fprintf(1, 'expanding node#%d\n',nodeIndex)248,9637
+  newAssigntable 262,9986
+    continue;289,11288
+% newH_Value 292,11311
+% newH_Value 295,11383
+  newH_Value 297,11459
+%  fprintf(1, 'difference between betterH_Value and newH_Value is %f\n', betterH_Value-newH_Value)newH_Value300,11554
+% $$$   S1 320,12295
+% $$$   S2 321,12370
+% $$$   RP1 323,12454
+% $$$   RP2 324,12552
+% $$$   nvrVoter327,12666
+function 344,13245
+insertToTheBeginningOfEqualValuedNodes 356,13781
+newScore 358,13826
+foundThisNodeBefore 359,13895
+%now find where to insert the new node,364,13997
+      foundThisNodeBefore 395,15435
+      break;396,15466
+      newNumAssignedPeaks 398,15488
+      numAssignedPeaks_nodeIndex 399,15544
+	fprintf(1, '%d vs. %d. Therefore inserting after node %d\n', newNumAssignedPeaks, numAssignedPeaks_nodeIndex,nodeIndex)405,15854
+	insertToTheBeginningOfEqualValuedNodes 406,15976
+  currentNodeIndex 413,16066
+  nodeIndex 414,16098
+	newH_Value)427,16415
+fprintf(1, 'its total score is %f\n', newScore)428,16429
+numNodes 458,17374
+function retval 471,17439
+comparisonMatrix 481,17625
+  retval 487,17731
+function 494,17765
+indexOfNoesThatMatchHN 500,17996
+indexOfNoesThatMatchH2 501,18047
+  indexOfNoesThatMatchH2{indexOfNoesThatMatchH2504,18159
+  secondProtonClosePeaks 509,18336
+function numNOEsBetweenPeaks 521,18878
+      break;534,19468
+      break;548,19929
+
+computeBayesianMatrix_CH.m,2144
+function bayesianMatrix 1,0
+  USE_CDF = 0; USE_HIST 19,625
+   numFiles2Read 27,843
+   filenames 29,869
+%   filenames{filenames30,907
+%   filenames{filenames31,1014
+%   filenames{filenames32,1121
+%   filenames{filenames33,1228
+%filenames{filenames34,1335
+%    filenames{filenames35,1447
+    filenames{filenames36,1574
+    numVoters 38,1707
+   fprintf(1,'numVoters = %f\n',numVoters)41,1751
+   correctAssignmentProbability 45,1807
+   incorrectAssignmentProbability 46,1863
+     incorrectAssignmentProbability{incorrectAssignmentProbability49,2005
+   EPSILON 51,2066
+   LARGE_VALUE 52,2110
+      fprintf(1, 'loading %s\n', filenames{filenames62,2420
+      voter 68,2570
+      %  numVoters 69,2653
+      rankOfCorrectAssignment 74,2795
+	    incorrectAssignmentProbability{incorrectAssignmentProbability88,3223
+	plot(99,3656
+   N_histCorrect 119,4466
+   N_histCorrect = cell(numVoters,1); X_histCorrect 119,4466
+  N_histIncorrect 121,4552
+  N_histIncorrect = cell(numVoters,1); X_histIncorrect 121,4552
+% $$$     figure;135,5086
+bayesianScore 147,5311
+% $$$ EPSILON 149,5331
+% $$$ distCorrect 162,5619
+% $$$ distIncorrect 163,5658
+% $$$   distIncorrect{distIncorrect167,5781
+% $$$     distIncorrect{distIncorrect171,5990
+% $$$ x 176,6168
+relativeProbabilityCorrectGivenVoters 184,6386
+pCorrect 185,6496
+%inputVoter inputVoter187,6553
+    residueIndex 196,6799
+    num 198,6866
+    num = zeros(numVoters,1); denum 198,6866
+      elseif 204,7246
+	  difference 209,7491
+	    minDifference 212,7670
+       bestBin = -1; minDifference 228,8081
+	  difference 231,8304
+ 	   minDifference 234,8485
+      elseif 244,8850
+%      pCorrectGivenVoterValue 276,10191
+%bayesianScore bayesianScore286,10732
+bayesianMatrix 289,10839
+rankOfThisPeak 291,10934
+  correctAssignmentScore = -1; otherScores 293,11030
+      otherScores 300,11325
+figure;308,11589
+copyOfBayesianMatrix 312,11718
+% $$$ relativeProbabilityCorrectGivenVotersForIncorrectAssignments 325,12125
+% $$$     relativeProbabilityCorrectGivenVotersForIncorrectAssignments 332,12356
+% $$$ figure;337,12595
+% $$$ figure;340,12738
+
+testResultsScript.m,732
+% $$$ MASTER 1,0
+% $$$ mypeakIndices 2,32
+% $$$ myresidueIndices 3,93
+% $$$ 5,161
+% $$$ 10,377
+% $$$     v 13,565
+% $$$       impossibleToAssign 19,912
+% $$$       break;20,948
+% $$$ fprintf(1, 'impossibleToAssign is %d\n',impossibleToAssign)25,1010
+% $$$ 28,1099
+% $$$ score 31,1351
+% $$$ 33,1375
+% $$$ fprintf(1, 'impossibleToAssign as in the merge code is %d\n',impossibleToAssign)42,1766
+noeCompliantAssignments 45,1870
+  noeCompliant 50,2081
+      residueIndex1 60,2354
+      residueIndex2 61,2403
+	break;64,2541
+    noeCompliantAssignments 73,2677
+figure;78,2762
+figure; plot(78,2762
+  score 84,3047
+  computedScore 85,3061
+    relPeakIndex 89,3216
+      continue;92,3361
+    relResidueIndex 94,3385
+
+removeAssignedPeaksAndResidues.m,408
+%correspond to the rows and columns of ASSIGNTABLE,6,476
+overallUnassignedPeakIndices = []; overallUnassignedResidueIndices 15,816
+relPeakIndices 30,1220
+relPeakIndices = []; relResidueIndices 30,1220
+ASSIGNTABLE 53,2176
+SSCP 55,2243
+SXCP 56,2291
+CP 57,2339
+TP 58,2387
+HDE 59,2435
+unassignedPeakIndicesCorrespondingToAssigntable 61,2484
+unassignedResidueIndicesCorrespondingToAssigntable 62,2602
+
+computeMB_Score.m,393
+function score 1,0
+%shiftCoefficient = 2; rdcCoefficient 5,175
+%shiftCoefficient = 2; rdcCoefficient = 1; noeCoefficient 5,175
+score 6,238
+numPeaks 7,249
+%computeMB_NoeScore;computeMB_NoeScore22,659
+noeScore 23,680
+noeScore = 0; numHN_NOES 23,680
+%noeScore noeScore28,829
+%numHN_NOES numHN_NOES29,846
+%score score30,863
+score 32,987
+%score score33,1109
+%score score34,1133
+
+updateVoters.m,125
+function 1,0
+[S1,flag]  = updateTen(MASTER,RDC1,VECTORS); if (flag) return; end8,156
+numVoters 11,291
+voter{voter14,309
+
+divideAndConquer.m,1061
+function 1,0
+NUM_PEAKS_TO_ASSIGN_WITHOUT_RECURSION=10,434
+fprintf(1, 'wanna assign %d peaks and %d residues in divideAndConquer\n',numPeaks,numResidues)14,524
+  voterR 19,705
+    voterR{voterR23,798
+  ASSIGNTABLE_L 26,866
+  ASSIGNTABLE_R 27,920
+  peakIndicesL 32,1036
+  peakIndicesR 33,1088
+% $$$   MASTER_L 35,1152
+% $$$   MASTER_L      = []; MASTER_R 35,1152
+% $$$   totalNumPeaks 37,1202
+% $$$     relPeakIndexR 41,1363
+% $$$       MASTER_R 47,1671
+% $$$       MASTER_L 50,1818
+% $$$       MASTER_R 53,1965
+% $$$       keyboard;56,2142
+% $$$   end58,2178
+    totalNumAssignments 84,3255
+    foundMASTERs 85,3285
+    finalScores 86,3323
+    assignmentAccuracies 87,3354
+		       residueIndices, voter,numVoters,ASSIGNTABLE,NOES,ALLDISTS,IALLDISTS,NTH,peakIDs,RESNUMS,RDC1,RDC2,VECTORS);%,totalNumPeaks)94,3668
+%  keyboard;96,3840
+function resolveConflicts(115,4275
+    voterConflicting 132,4849
+    conflictingRelPeakIndices 134,4896
+    unassignedRelResidueIndices 135,4975
+    end140,5227
+    ASSIGNTABLE_Conflicting 158,5909
+
+uthresh.m,28
+function out 1,0
+out 5,51
+
+HD_ForBlameAssignmentWithSeparateVectors.m,3977
+function 1,0
+%    License as published by the Free Software Foundation;51,2966
+%    version 2.1 of the License,52,3032
+%    version 2.1 of the License, or 52,3032
+HSHIFTS 91,4732
+NSHIFTS 92,4754
+RDC1 93,4776
+RDC2 94,4797
+mu 98,4873
+   NTH = NTH + (mu-12.9); NTH 101,4919
+ASSIGNTABLE 104,4968
+OASSIGNTABLE 105,5038
+ROWIN 108,5154
+COLIN 109,5192
+MASTER 111,5267
+HDE 114,5337
+ASSIGNTABLE 115,5394
+TP 117,5432
+TP 118,5460
+ASSIGNTABLE 119,5561
+ASSIGNTABLE 122,5701
+%prune via the program shiftx124,5738
+ASSIGNTABLE 126,5890
+%prune via the program shifts128,5932
+ASSIGNTABLE 131,6109
+SSCP=133,6148
+SSCP=SSCP.*ASSIGNTABLE;SXCP=133,6148
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=133,6148
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=133,6148
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=133,6148
+RDC1_VECTORS 136,6285
+RDC2_VECTORS 137,6309
+S1 139,6338
+S2 140,6380
+RP1 141,6422
+RP2 142,6476
+nlast 144,6531
+   nlast 153,7078
+ilast 158,7119
+   V = vote5(CP,TP,SSCP,SXCP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);V=160,7163
+   V2 161,7258
+   V3 162,7351
+   FOO 163,7434
+   FOO = or(V2,or(V,V3));ASSIGNTABLE=163,7434
+   nlast 164,7489
+      nlast 173,8063
+   ilast 178,8164
+   V2 183,8300
+   V 184,8393
+   ASSIGNTABLE 185,8410
+   nlast 186,8492
+      nlast 195,9066
+   end202,9169
+   S1 211,9864
+   S2 212,9909
+   RP1 213,9954
+   RP2 214,10011
+last 220,10107
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 223,10207
+      nV=224,10298
+      onV=227,10702
+      V=228,10716
+      V=thresh(oV,7);nV 228,10716
+      X 229,10760
+   last 246,11500
+   V2 251,11643
+   V3 252,11736
+   X 255,11943
+   V 256,11988
+   ASSIGNTABLE 257,12005
+   nlast 258,12087
+      nlast 267,12661
+   end275,12765
+   S1 284,13460
+   S2 285,13505
+   RP1 286,13550
+   RP2 287,13607
+end288,13664
+   RP1 294,13793
+end295,13822
+   RP2 301,13952
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 306,14057
+      nV=307,14148
+      onV=312,14566
+      V=313,14580
+      V=thresh(oV,16);nV 313,14580
+      X 314,14625
+   last 332,15372
+RP1 339,15520
+RP2 340,15574
+isum 342,15629
+   V2 345,15763
+   V3 346,15867
+   X 350,16100
+   V 351,16146
+   ASSIGNTABLE 352,16163
+   nlast 353,16245
+      nlast 362,16819
+   isum 367,16920
+fail=371,16959
+   S1 385,17690
+   S2 386,17735
+   RP1 387,17780
+   RP2 388,17837
+currsize=391,17899
+sthr=392,17931
+sthr=10;VTH=392,17931
+sthr=10;VTH=79;BTH=392,17931
+   nV=398,18056
+   onV=399,18206
+   V 402,18240
+   V = vote(CP,SXCP,SSCP,TP,RP1,RP2,HDE, ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,lv);oV=402,18240
+   V=406,18594
+   V=thresh(oV,VTH);nV 406,18594
+   X 407,18640
+      V=411,18809
+      V=thresh(oV,VTH);nV 411,18809
+      X 412,18858
+      X = thresh(V,max(max(V)));X 416,19043
+      X = thresh(V,max(max(V)));X = X(1:size(ASSIGNTABLE,1),1:size(ASSIGNTABLE,2));X=416,19043
+      S1 435,19752
+      S2 436,19800
+      RP1 437,19848
+      RP2 438,19908
+      S1 454,20768
+      S2 455,20816
+      RP1 456,20864
+      RP2 457,20924
+      V2 463,21112
+      V 464,21219
+      ASSIGNTABLE 465,21239
+      nlast 466,21324
+         S1 472,21850
+         S2 473,21901
+         RP1 474,21952
+         RP2 475,22015
+         nlast 479,22154
+   sthr=482,22211
+      VTH=485,22286
+   BTH=491,22403
+         break;500,22590
+         break;507,22717
+%HD_SCORE HD_SCORE513,22775
+weightedHD_Score 514,22794
+HD_SCORE 517,22822
+%weightedHD_SCORE weightedHD_SCORE523,23068
+ASSIGNTABLE=550,24050
+function 553,24094
+THR;554,24304
+   S1 561,24869
+   S2 562,24914
+   RP1 563,24959
+   RP2 564,25016
+function V 569,25080
+      c 581,25311
+      A 599,25708
+      A 600,25756
+      V 601,25794
+function V 607,25823
+      c 618,26046
+      A 632,26353
+      A 633,26401
+      V 634,26439
+
+MC_AroundCorrectAssignment.m,1701
+%MB_Score MB_Score9,498
+%MB_Score MB_Score12,600
+%MB_Score MB_Score14,674
+%+ 70 * numRDC)15,725
+%MB_Score MB_Score17,743
+printAssignmentAccuracy 18,788
+%numVoters numVoters19,817
+%voter voter20,833
+%voter voter21,888
+%numVoters numVoters23,980
+%voter voter24,996
+%voter voter25,1020
+%voter     = MB_Score; %MB_ShiftScore;MB_ShiftScore25,1020
+%myMASTER myMASTER26,1059
+%MASTER MASTER27,1089
+%candidateScores candidateScores30,1114
+%csCoefficient = 0.22; rdcCoefficient 37,1177
+%csCoefficient = 0.22; rdcCoefficient = 0.05; noeCoefficient 37,1177
+%csCoefficient csCoefficient39,1247
+%csCoefficient = 0.35; rdcCoefficient 39,1247
+%csCoefficient = 0.35; rdcCoefficient = 0.06; noeCoefficient 39,1247
+csCoefficient 41,1317
+csCoefficient = 0.19; rdcCoefficient 41,1317
+csCoefficient = 0.19; rdcCoefficient = 0.03; noeCoefficient 41,1317
+numPeaks 52,1426
+MASTER 54,1455
+%score score59,1522
+score 60,1567
+%score score61,1610
+%score score62,1650
+prevScore 63,1796
+scores 68,1829
+assignmentAccuracy 69,1845
+scoreIndex 70,1870
+percentiles1 75,2019
+percentiles2 76,2039
+S1_full 79,2114
+S2_full 82,2209
+iter 89,2406
+maxNumIters 90,2421
+    iter 95,2531
+%      score 98,2674
+        score 100,2738
+	%       score 104,2811
+      %      score 105,2857
+  scoreIndex 116,3145
+  S1_full_partiallyCorrect 121,3366
+  S2_full_partiallyCorrect 122,3430
+  percentile1 124,3497
+  percentile2 125,3563
+  MASTER 131,3730
+  prevScore 132,3776
+  fprintf(1, 'iter = %d\n', iter)133,3797
+figure;138,3852
+figure;141,3920
+figure;144,3964
+correlationOfScore 146,4009
+correlationOfScore 147,4067
+	correlationOfScore)149,4168
+figure;150,4190
+figure;152,4243
+
+printOptimumScoringMatrix.m,9
+fid 1,0
+
+writeShiftxFile.m,500
+fout 4,164
+fprintf(1, 'writing adjusted SHIFTX data to file %s...\n', outputShiftxFilename)5,205
+function 32,1335
+numElements 37,1547
+averageCS1 46,1757
+averageCS2 47,1773
+averageCS3 48,1789
+averageCS4 49,1805
+averageCS5 50,1821
+averageCS6 51,1837
+  averageCS2 55,1910
+  averageCS3 56,1946
+  averageCS4 57,1982
+  averageCS5 58,2018
+  averageCS6 59,2054
+  averageCS1 63,2096
+  averageCS2 64,2137
+  averageCS3 65,2178
+  averageCS4 66,2219
+  averageCS5 67,2260
+  averageCS6 68,2301
+
+MC_Accept.m,66
+function retval 1,0
+score 5,59
+prevScore 6,75
+  retval 17,226
+
+prepareBPGs.m,751
+function 1,0
+NTH 10,414
+ASSIGNTABLE 12,434
+ROWIN 14,461
+COLIN 16,499
+RP1_A 18,537
+RP1_A       = NVR_RDC2PROB  (ASSIGNTABLE,RDC1,VECTORS,S1)+minval;RP1_A 18,537
+RP2_A 20,622
+RP2_A       = NVR_RDC2PROB  (ASSIGNTABLE,RDC2,VECTORS,S2)+minval;RP2_A 20,622
+HDE_A 22,707
+HDE_A       = HD_HD2PROB    (ASSIGNTABLE ,HDEXCHANGE,HBOND)+minval;HDE_A=22,707
+TP_A 24,793
+TP_A        = NVR_TOCSY2PROB(peakIDs,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,IALLDISTS,NTH,ROWIN,COLIN)+minval;TP_A 24,793
+CP_A 26,917
+CP_A        = HD_CS2PROB    (ASSIGNTABLE ,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN)+minval;CP_A 26,917
+SXCP_A 28,1045
+			     SHIFTX_Filename)+minval;SXCP_A 30,1164
+SSCP_A 32,1218
+			     SHIFTX_Filename)+minval;SSCP_A 34,1354
+
+replaceLabilityField.m,454
+%parsedHBondFilename parsedHBondFilename6,132
+%inputModelDataFilename inputModelDataFilename7,182
+%outputModelDataFilename outputModelDataFilename8,240
+  HBondInfo 16,435
+  adjustedHBondInfo 17,478
+function  adjustedHBondInfo 28,679
+numEntries 29,741
+adjustedHBondInfo 30,766
+  pos 33,849
+    adjustedHBondInfo{adjustedHBondInfo37,955
+function 42,1004
+% $$$ function 50,1155
+% $$$ 53,1330
+% $$$ function   writeNewModelDataFile(55,1408
+
+reduce.m,141
+function 1,0
+bin=3,58
+ct=4,65
+ct=1;row=4,65
+ct=1;row=[1:size(A,1)];col=4,65
+B=12,211
+col=28,462
+B=29,477
+ROWIN=41,713
+COLIN=42,731
+
+myHD2PROB.m,313
+function M 2,2
+%NVR_HD2PROB: This computes assignment probabilities based on amide exchange rates,4,54
+%    This library is free software;29,1051
+%    License as published by the Free Software Foundation;31,1184
+%    version 2.1 of the License,32,1251
+%    version 2.1 of the License, or 32,1251
+M 67,2503
+
+HD_debugging.m,3100
+function 1,0
+%    License as published by the Free Software Foundation;47,2745
+%    version 2.1 of the License,48,2811
+%    version 2.1 of the License, or 48,2811
+   nlast 89,4540
+ilast 94,4581
+   V = vote5(CP,TP,SSCP,SXCP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);V=96,4625
+   V2 97,4720
+   V3 98,4813
+   FOO 99,4896
+   FOO = or(V2,or(V,V3));ASSIGNTABLE=99,4896
+   nlast 100,4951
+      nlast 109,5525
+   ilast 114,5626
+   V2 119,5762
+   V 120,5855
+   ASSIGNTABLE 121,5872
+   nlast 122,5954
+      nlast 131,6528
+   end138,6631
+   S1 147,7308
+   S2 148,7348
+   RP1 149,7388
+   RP2 150,7440
+last 156,7531
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 159,7631
+      nV=160,7722
+      onV=163,8126
+      V=164,8140
+      V=thresh(oV,7);nV 164,8140
+      X 165,8184
+   last 182,8924
+   V2 187,9067
+   V3 188,9160
+   X 191,9367
+   V 192,9412
+   ASSIGNTABLE 193,9429
+   nlast 194,9511
+      nlast 203,10085
+   end211,10189
+   S1 220,10866
+   S2 221,10906
+   RP1 222,10946
+   RP2 223,10998
+end224,11050
+   RP1 230,11169
+end231,11198
+   RP2 237,11318
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 242,11423
+      nV=243,11514
+      onV=248,11932
+      V=249,11946
+      V=thresh(oV,16);nV 249,11946
+      X 250,11991
+   last 268,12738
+RP2 278,12965
+isum 280,13015
+   V2 283,13149
+   V3 284,13253
+   X 288,13486
+   V 289,13532
+   ASSIGNTABLE 290,13549
+   nlast 291,13631
+      nlast 300,14205
+   isum 305,14306
+fail=309,14345
+   S1 322,15045
+   S2 323,15085
+   RP1 324,15125
+   RP2 325,15177
+currsize=328,15234
+sthr=329,15266
+sthr=10;VTH=329,15266
+sthr=10;VTH=79;BTH=329,15266
+   nV=335,15391
+   onV=336,15541
+   V 339,15575
+   V = vote(CP,SXCP,SSCP,TP,RP1,RP2,HDE, ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,lv);oV=339,15575
+   V=343,15929
+   V=thresh(oV,VTH);nV 343,15929
+   X 344,15975
+      V=348,16144
+      V=thresh(oV,VTH);nV 348,16144
+      X 349,16193
+      X = thresh(V,max(max(V)));X 353,16378
+      X = thresh(V,max(max(V)));X = X(1:size(ASSIGNTABLE,1),1:size(ASSIGNTABLE,2));X=353,16378
+      S1 372,17087
+      S2 373,17130
+      RP1 374,17173
+      RP2 375,17228
+      S1 391,18065
+      S2 392,18108
+      RP1 393,18151
+      RP2 394,18206
+      V2 400,18389
+      V 401,18496
+      ASSIGNTABLE 402,18516
+      nlast 403,18601
+         S1 409,19127
+         S2 410,19173
+         RP1 411,19219
+         RP2 412,19277
+         nlast 416,19411
+   sthr=419,19468
+      VTH=422,19543
+   BTH=428,19660
+         break;437,19847
+         break;444,19974
+%HD_SCORE HD_SCORE450,20032
+weightedHD_Score 451,20051
+HD_SCORE 454,20079
+%weightedHD_SCORE weightedHD_SCORE460,20320
+ASSIGNTABLE=487,21302
+function 490,21346
+THR;491,21538
+   S1 498,22103
+   S2 499,22143
+   RP1 500,22183
+   RP2 501,22235
+function V 506,22294
+      c 518,22525
+      A 536,22922
+      A 537,22970
+      V 538,23008
+function V 544,23037
+      c 555,23260
+      A 569,23567
+      A 570,23615
+      V 571,23653
+
+analyzeOverallAssignments.m,431
+function analyzeOverallAssignments(1,0
+  foo 14,317
+  correctResidueIndex 15,343
+  relResidueIndex 16,377
+  numAssignmentsThatAssignTheCorrectResidue 17,435
+  ratioOfAssignmentsThatAssignTheCorrectResidue 24,665
+  fprintf(1, 'peak %d, correct residue %d, %% correct in the set of assignments %f\n',pk,correctResidueIndex,100*ratioOfAssignmentsThatAssignTheCorrectResidue)ratioOfAssignmentsThatAssignTheCorrectResidue26,785
+
+computeMarsH_Value.m,302
+function  newH_Value 1,0
+newH_Value 4,94
+  minScore 14,309
+    score 20,406
+      score 25,544
+%    fprintf(1, 'score of assigning peak #%d to residue#%d is %f\n',peakIndex,residueIndex,score)32,696
+%  fprintf(1, 'score of assigning peak #%d is %f\n',peakIndex,score)36,808
+  newH_Value 38,881
+
+prepareGuohuiLinInputFile.m,403
+numDiscard 6,176
+  numDiscard 20,497
+fprintf(1, 'discarding %d peak(s)...\n', numDiscard)23,533
+H_CS 24,587
+NH_CS 25,634
+RDC1 26,683
+RDC2 27,731
+MOLMOL_HB 28,779
+fid 31,838
+%just write the aa number,34,932
+%just write the aa number, aa code (translate it), sse code,34,932
+%    coil helix strand,35,1002
+%    coil helix strand, one of them to be 35,1002
+  elseif(41,1142
+  elseif 84,2344
+
+normalize.m,14
+function 1,0
+
+loadHSRI_Data.m,55
+function 1,0
+ALLDISTS 6,171
+    distance_sqr 11,374
+
+initialize9Voters.m,174
+function voter 1,0
+voter{voter4,255
+voter{voter5,296
+voter{voter6,337
+voter{voter7,378
+voter{voter8,419
+voter{voter9,457
+voter{voter10,495
+voter{voter11,528
+
+changeLabilityInfoInModelData.m,16
+  elseif 8,253
+
+learnWeights.m,1321
+end10,407
+numAdditions 19,598
+numAdditions = 0; csWeight 19,598
+numAdditions = 0; csWeight = 0; rdcWeight 19,598
+numAdditions = 0; csWeight = 0; rdcWeight = 0; noeWeight 19,598
+soleCS_Distinguishes 20,660
+soleCS_Distinguishes = 0; soleRDC_Distinguishes 20,660
+    = 0;nooneDistinguishes 21,739
+myAlmostCompleteMASTER 25,812
+end29,927
+correctAssignmentNoeScore 31,1038
+csScoreDiff 34,1119
+csScoreDiff = []; rdcScoreDiff 34,1119
+csScoreDiff = []; rdcScoreDiff = [];noeScoreDiff 34,1119
+csScoreEntropy 35,1174
+csScoreEntropy = 0; rdcScoreEntropy 35,1174
+    newNoeScore 54,1591
+    newNoeScore 55,1675
+    p_noe 57,1718
+    p_cs 59,1780
+    p_rdc 61,1890
+%    fprintf(1, 'p_cs = %f p_rdc = %f p_noe = %f\n', p_cs, p_rdc, p_noe)68,2097
+%    p_cs 71,2181
+%    p_rdc 73,2293
+%    plot(p_cs,p_rdc,'*'); hold on;76,2409
+    numAdditions 113,3288
+fprintf(1, 'case ler %f\n', soleCS_Distinguishes/numAdditions)numAdditions122,3527
+	soleNOE_Distinguishes/numAdditions)numAdditions124,3663
+fprintf(1, 'the cs weight would be %f\n',csWeight/numAdditions)numAdditions127,3814
+fprintf(1, 'the rdc weight would be %f\n',rdcWeight/numAdditions)numAdditions128,3879
+fprintf(1, 'the noe weight would be %f\n',noeWeight/numAdditions)numAdditions129,3946
+figure;130,4013
+figure;133,4086
+figure;136,4158
+
+compareTwoAssignments.m,183
+hSRI_withoutRDC 1,0
+hSRI_withRDC 4,183
+withoutRDC 9,420
+withRDC 10,482
+consensusMatrix 12,545
+same 14,593
+same = 0; different 14,593
+  residue2 17,667
+      different 22,800
+
+extractHCoordsFromModeldata.m,324
+  fid 20,591
+function 28,751
+numDiscard 33,936
+  numDiscard 47,1235
+fprintf(1, 'discarding %d peaks...\n', numDiscard)50,1274
+H_CS 51,1327
+NH_CS 52,1370
+RDC1 53,1416
+RDC2 54,1460
+MOLMOL_HB 55,1504
+HSQCDATA 56,1562
+VECTORS=57,1642
+TYPES=58,1662
+RESNUMS=59,1672
+SSTRUCT=60,1684
+HBOND 61,1697
+ALLDISTS=63,1712
+
+initialize6Voters.m,115
+function voter 1,0
+voter{voter4,210
+voter{voter5,251
+voter{voter6,292
+voter{voter7,333
+voter{voter8,374
+
+updateTen.m,113
+function 1,0
+M 6,140
+vec 7,156
+ct=8,165
+      ct=18,489
+flag 21,515
+   flag=24,555
+   M 31,655
+s 34,705
+
+initialize5Voters.m,95
+function voter 1,0
+voter{voter4,85
+voter{voter5,103
+voter{voter6,121
+voter{voter7,137
+
+formNOE_Matrix.m,55
+function NOES 1,0
+NOES 3,44
+  x 9,135
+    y 15,325
+
+reportAndStoreAssignments.m,271
+function 1,0
+foundThisAssignmentBefore 5,267
+    fprintf(1, 'found this assignment as assignment #%d\n', i)9,394
+    break;10,458
+end16,521
+overallMASTER 20,616
+fprintf(1, 'score is %f\n', score)22,677
+totalNumAssignments 24,714
+foundMASTERs{foundMASTERs26,762
+
+getUACMB.m,129
+function 1,0
+%A cycle of making unambiguous assignments,4,109
+tot=8,295
+   UA 17,497
+      tot 21,583
+   %apply noes32,823
+
+printOptimizationFiles.m,84
+function printOptimizationFiles 1,0
+    elseif 53,1563
+fid 93,2767
+fid 113,3269
+
+computeBetterH_Value.m,159
+function  newH_Value 2,1
+EPSILON 6,165
+LARGE_VALUE 8,185
+newH_Value 13,343
+minusCombinedProbabilityMatrix 15,360
+  minusCombinedProbabilityMatrix 20,541
+
+loadNMR_Data.m,146
+function 1,0
+  unadjustedNOEs 13,308
+  order 14,346
+  noes 15,383
+  HSQCDATA 20,546
+  noes 21,626
+NOES 24,707
+   x 28,788
+      y=31,934
+
+computeMarsRDC_Score.m,391
+function M 2,2
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on RDCs,4,74
+%    This library is free software;29,1047
+%    License as published by the Free Software Foundation;31,1180
+%    version 2.1 of the License,32,1247
+%    version 2.1 of the License, or 32,1247
+% $$$ 64,2466
+% $$$ M 66,2512
+%M M74,2669
+backcomputed2 78,2769
+elseif(88,3066
+elseif(95,3335
+
+assembleMyInput.m,229
+nhRDCs 2,25
+chRDCs 3,57
+nhVectors 13,423
+outfilename 15,459
+fprintf(1, 'check out %s\n', outfilename)16,486
+fid 17,529
+function sseType 27,946
+sseIndex 30,1044
+   break;34,1176
+  sseTypeName 41,1239
+    elseif 44,1338
+
+HD_SHIFTS2PROB.m,708
+function 1,0
+%NVR_HD2PROB: This computes assignment probabilities based on the program SHIFTS,5,152
+%    This library is free software;30,1156
+%    License as published by the Free Software Foundation;32,1289
+%    version 2.1 of the License,33,1356
+%    version 2.1 of the License, or 33,1356
+FILTERS=load('~/speech/NVR/CHEMSHIFTSTATS/SHIFTSFILTERS');FILTERS=62,2540
+PRED 68,2770
+      S 79,2953
+      h 81,2979
+      n 82,3006
+      elseif(87,3121
+   TABLE 141,4752
+   nlast 142,4774
+      nlast 149,5020
+   M 151,5060
+function p 164,5227
+   xHS 170,5337
+   xN 171,5366
+   xNS 172,5394
+   xHMX 173,5423
+   xHMN 174,5456
+   xNMX 175,5489
+   xNMN 176,5522
+elseif(178,5560
+p 231,6525
+
+computeAssignmentAccuracy.m,207
+function 1,0
+assignments=5,166
+correct=6,181
+incorr=7,192
+numResidues 8,202
+numResiduesCheck 9,232
+  x 17,415
+    rn=24,540
+  foo 29,628
+assignmentAccuracy 38,748
+    missing=68,1461
+	ct=74,1599
+
+computeMB_RDC_Score.m,471
+function 2,2
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on RDCs,4,82
+%    This library is free software;29,1055
+%    License as published by the Free Software Foundation;31,1188
+%    version 2.1 of the License,32,1255
+%    version 2.1 of the License, or 32,1255
+% $$$ 64,2474
+% $$$ M 66,2520
+%M M74,2677
+backcomputed2 78,2777
+elseif(88,3074
+elseif(95,3343
+     numRDC 130,4339
+	 elseif 140,4618
+     numRDC 158,5022
+	 elseif 168,5300
+
+combineResonancesAndProtonCoordinates.m,802
+resonanceFilename 2,10
+%  protonCoordinatesFilename 5,123
+%  protonCoordinatesFilename 6,182
+protonCoordinatesFilename 7,240
+%  protonCoordinatesFilename 8,295
+%  protonCoordinatesFilename 10,372
+%  protonCoordinatesFilename 11,459
+%  outFilename5 20,869
+  outFilename5 21,907
+  fprintf(1, 'check out %s\n',outFilename5)23,942
+  fid 25,992
+  outFilename4 35,1191
+  fprintf(1, 'check out %s\n',outFilename4)37,1228
+  fid 39,1278
+  nhRdcFilename 41,1322
+  nhRdcs 43,1356
+  outFilename3 61,1757
+  fprintf(1, 'check out %s\n',outFilename3)63,1794
+  fid 65,1844
+  chRdcFilename 67,1888
+  chRdcs 69,1922
+  outFilename2 89,2419
+  fprintf(1, 'check out %s\n',outFilename2)91,2448
+  fid 93,2498
+  outFilename 101,2685
+  fprintf(1, 'check out %s\n',outFilename)103,2750
+  fid 105,2797
+
+mergeAssignments.m,2086
+function 2,58
+printAssignmentAccuracy 17,821
+%thereIsConflict thereIsConflict19,855
+% $$$ peakIndexL 20,884
+% $$$ peakIndexR 21,918
+%minScore minScore22,940
+%score score40,2196
+leftAssignmentIndex 41,2237
+rightAssignmentIndex 42,2270
+totalNumAssignments 43,2303
+finalScores 44,2336
+foundMASTERs 45,2378
+assignmentAccuracies 46,2419
+    mergedMASTER 63,2927
+    %unassignedPeakIndices unassignedPeakIndices64,2991
+    numCommonAssignedPeaks 67,3037
+    mergedMASTER 69,3175
+    %    fprintf(1,' score is %f before removing conflicts.\n',score)71,3301
+% $$$ 74,3479
+    thereAreConflicts 77,3611
+      %	    score)82,3836
+      continue;83,3856
+% $$$      continue; %bypassing all conflicting assignments,90,4001
+    numMergedAssignments 96,4189
+	j 104,4576
+%      keyboard;115,4784
+      continue;116,4801
+%    end122,4895
+%impossibleToAssign impossibleToAssign137,5479
+      score 141,5529
+  %    fprintf(1, 'noe pruned. impossibleToAssign is %d\n',impossibleToAssign)154,6098
+%      numMergedAssignments 173,6653
+      totalNumAssignments 175,6751
+      foundMASTERs{foundMASTERs180,7176
+end190,7369
+reorderedAssignmentAccuracies 196,7458
+reorderedMASTERs 197,7526
+  reorderedMASTERs{reorderedMASTERs200,7701
+foundMASTERs 203,7776
+assignmentAccuracies 204,7832
+finalScores 205,7901
+function numCommonAssignedPeaks 207,7960
+numCommonAssignedPeaks 209,8044
+  residueIndex2 213,8198
+function  mergedMASTER 223,8425
+mergedMASTER 226,8538
+% $$$   relPeakIndexR 232,8696
+% $$$     peakIndexR 236,8886
+% $$$       peakIndexL 238,8962
+% $$$     peakIndexR 240,9040
+  residueIndexL 244,9107
+  residueIndexR 245,9153
+      %     thereIsConflict 257,9583
+  elseif (isempty(residueIndexR)) & (~isempty(259,9624
+    thereAreConflicts 284,10451
+    break;285,10499
+% $$$     numConflicts 289,10521
+% $$$     conflictingAbsPeakIndices 291,10644
+% $$$     relPeakIndex1 293,10756
+% $$$     relPeakIndex2 294,10827
+% $$$     relResidueIndex 298,10993
+% $$$       deltaScore 308,11286
+% $$$     unassignedAbsResidueIndices 317,11607
+
+checkAssignments2.m,536
+AssignmentMatrix 4,77
+B 5,261
+AssignmentMatrix 7,457
+useOrigData 8,561
+NOE_List 9,593
+%FullCorrectAssigmentMatrix FullCorrectAssigmentMatrix11,852
+%AssignmentMatrix AssignmentMatrix12,913
+numPeaks 14,972
+  residue1 17,1052
+  entryIndexInNOE_List 21,1143
+%  peaksHavingAnNOE_WithThisOne 22,1198
+  peaksHavingAnNOE_WithThisOne 23,1254
+    residue2 26,1456
+	      peak1, peak2, residue1, residue2)33,1725
+%      fprintf(1, 'peak1 %d peak2 %d have an NOE and their assignment',peak1,peak2)36,1791
+%	      residue2)38,1953
+
+prepareCorrectAssignmentFile.m,9
+fid 1,0
+
+runBetter.m,904
+useCH_RDCs 10,162
+refineWithRDCs 11,198
+assignmentMatrixFilename 12,234
+b_printOptimizationFiles 13,410
+useHD_Routines 14,446
+useTOCSY 15,483
+runOriginalNVR 16,519
+runOriginalHD 17,555
+b_printIndividualScores 18,591
+useFourRDCsPerResidue 19,627
+b_printNumAvailableRDC_Values 20,663
+b_printIndividualScoringMatrix=21,699
+b_printCP 22,735
+b_printSSCP 23,771
+b_printSXCP 24,807
+b_printHDE 25,843
+b_printTP 26,879
+b_printRP1 27,915
+b_printRP2 28,951
+truncateProbabilities 29,987
+      modeIndex = 7; modelIndex 61,1751
+      SHIFTX_Filename 63,1797
+      SHIFTS_Filename 65,1904
+         NH_RDCS 70,2086
+         VECTORS_CH 71,2143
+         VECTORS_NH 72,2200
+	 CH_RDCS 74,2259
+	 NH_RDCS 75,2289
+	 VECTORS_CH 76,2319
+	 VECTORS_NH 77,2354
+       else91,2789
+    peaks 111,3359
+    rdcs 112,3394
+    HDEXCHANGE 113,3429
+    peakIDs 114,3463
+    else125,3893
+% $$$ 147,4603
+
+runHungarianAlgorithm.m,389
+% $$$ ASSIGNTABLE=10,346
+  squareBipartiteGraphToVoteOn 17,580
+  squareBipartiteGraphToVoteOn 23,820
+assignmentsBipartiteGraph 26,884
+EPSILON 32,1092
+cost 39,1315
+cost2 45,1502
+% $$$   sz=61,1902
+% $$$       in2=64,1983
+% $$$       ind=65,2008
+% $$$       ind=ind(in2);x=65,2008
+% $$$       assignmentVector=75,2321
+% $$$   keyboard;79,2452
+% $$$ %  assignmentVector=80,2470
+
+endOfIndividualPieceManual.m,1239
+%origPeakIndices origPeakIndices2,119
+%peakIndices peakIndices15,891
+%peakIndices peakIndices16,967
+csCoefficient 20,1163
+csCoefficient = 0.22; rdcCoefficient 20,1163
+csCoefficient = 0.22; rdcCoefficient = 0.05; noeCoefficient 20,1163
+%csCoefficient csCoefficient21,1230
+%csCoefficient = 2/77; rdcCoefficient 21,1230
+%csCoefficient = 2/77; rdcCoefficient = 70/77; noeCoefficient 21,1230
+	rdcCoefficient, noeCoefficient)24,1366
+foundIt 26,1401
+foundIt = 0; maxNumCorrectPeaks 26,1401
+foundIt = 0; maxNumCorrectPeaks = 0;MB_Scores 26,1401
+foundIt = 0; maxNumCorrectPeaks = 0;MB_Scores = []; overallMASTER=26,1401
+numPeaks 27,1487
+  overallMASTER 31,1585
+    residueIndex 35,1776
+      foundIt 50,2389
+% $$$     break;55,2504
+    foundPosition 60,2616
+%  figure;74,3213
+numPeaks 78,3241
+MB_Scores 93,3762
+MB_Scores = [];BayesianScores 93,3762
+Scores 104,4144
+newRank 107,4217
+fprintf(1, 'the result at %dth position becomes at %d th position.\n',foundPosition,newRank)108,4265
+%	rdcCoefficient, noeCoefficient)110,4434
+numCorrect 113,4531
+numCorrect = 0; numAssignedPeaks 113,4531
+fprintf(1, 'the best assignment has %d correct out of %d positions.\n',numCorrect, numAssignedPeaks)125,4895
+figure;127,4998
+
+generateOneModelData.m,50
+%which contains updated H and NH bond info,4,128
+
+pickRandomAssignments.m,113
+function resultMaster 1,0
+resultMaster 6,169
+  numVotes 10,286
+  ratioOfVotes 11,342
+  uniformNumber=13,443
+
+findAggregateMASTER.m,145
+function aggregateMASTER 1,0
+%confidenceThreshold confidenceThreshold19,621
+  squareOverallMaster 27,914
+end28,953
+aggregateMASTER 38,1146
+
+noePruneAndDoMoreAssignments.m,1531
+function 1,0
+numPotentialAssignments 18,582
+%keyboardkeyboard36,1240
+  numAssignedPeaks 69,2109
+    break;87,2713
+  newNumPotentialAssignments 107,3050
+  numPotentialAssignments 113,3187
+%score score118,3261
+% $$$ numPeaks 122,3424
+% $$$ score 131,3793
+% $$$ score 132,3889
+function 143,4081
+impossibleToAssign 147,4240
+madeAnAssignment 149,4265
+madeAnAssignment   = 1;%initializinginitializing149,4265
+	madeAnAssignment 181,5199
+	madeAnAssignment=211,5861
+%next,next224,6027
+%next, make assignments 224,6027
+       score 245,7069
+%updates peakIndices,257,7365
+function 263,7641
+end281,8294
+ASSIGNTABLE 292,8523
+peakIndices 295,8587
+residueIndices 296,8648
+%removes from consideration those peaks and residues 299,8714
+impossibleToAssign 312,9441
+%  impossibleToAssign 315,9555
+%BPG_TO_UPDATE_IN BPG_TO_UPDATE_IN320,9627
+BPG_TO_UPDATE 321,9664
+%BPG_TO_UPDATE BPG_TO_UPDATE323,9714
+%BPG_TO_UPDATE = reinitializeAndNormalizeBPG_Entries_If_Necessary(BPG_TO_UPDATE);%, BPG_TO_UPDATE_IN)323,9714
+BPG_TO_UPDATE 325,9818
+BPG_TO_UPDATE_IN 327,9911
+BPG_TO_UPDATE 331,10022
+BPG_TO_UPDATE = BPG_TO_UPDATE_IN; %undoing renormalization,331,10022
+%BPG_TO_UPDATE BPG_TO_UPDATE335,10149
+function 337,10237
+unassignedRelResidueIndices 340,10410
+unassignedRelPeakIndices 361,10930
+unassignedRelResidueIndices=362,10990
+% $$$ function 370,11169
+% $$$ vec 372,11247
+% $$$ ct=373,11262
+% $$$       ct=383,11645
+% $$$ flag 386,11689
+% $$$    flag=389,11747
+% $$$    M 396,11888
+% $$$ s 399,11956
+
+updateAssignTable.m,28
+function   ASSIGNTABLE 1,0
+
+NVR_CS2PROB.m,1606
+function 1,0
+%NVR_HD2PROB: This computes assignment probabilities based on BMRB statistics,4,121
+%    This library is free software;29,1110
+%    License as published by the Free Software Foundation;31,1243
+%    version 2.1 of the License,32,1310
+%    version 2.1 of the License, or 32,1310
+FILTERS=load('~/speech/NVR/trunk/CHEMSHIFTSTATS/FILTERS');FILTERS=61,2494
+   cols=69,2783
+mH=71,2801
+mH=mean(H);sH=71,2801
+mN=72,2824
+mN=mean(N);sN=72,2824
+   n 76,2887
+   p1 77,2901
+   p2 78,2928
+   prior=79,2955
+       printDetails 85,3061
+      elseif(92,3249
+M 137,5834
+% $$$ %make square,147,5974
+% $$$    HM=151,6111
+% $$$    HM=156,6229
+% $$$ V 159,6264
+% $$$ V = HM*0;TABLE 159,6264
+% $$$ last 160,6300
+% $$$    V 163,6379
+% $$$    foo 167,6473
+% $$$    TABLE 168,6517
+% $$$    nlast 170,6562
+% $$$       nlast 177,6847
+% $$$    HM 180,6910
+% $$$ M=198,7336
+function p 209,7553
+   xHS 219,7758
+   xN 220,7787
+   xNS 221,7815
+   xHMX 222,7844
+   xHMN 223,7874
+   xNMX 224,7904
+   xNMN 225,7934
+elseif(227,7969
+       fprintf(1, 'Ratio : %f\n',(h-xH)/xHS/xHMX)xHMX268,8868
+       coeff1 269,8920
+     p1 277,9099
+      coeff2 289,9388
+      p1 300,9593
+        fprintf(1, 'Ratio : %f\n',(n-xN)/xNS/xNMX)xNMX311,9832
+	coeff3 313,9888
+      p2 324,10056
+        fprintf(1, 'Ratio : %f\n',-(n-xN)/xNS/xNMN)xNMN333,10281
+	coeff4 335,10338
+      p2 346,10507
+  p1=353,10598
+  p2=354,10623
+p 356,10653
+function M 364,10903
+h 384,11252
+dum 385,11271
+dum 390,11329
+dum 391,11346
+bad 394,11423
+sin 406,11676
+mk 407,11696
+M 408,11729
+killing 410,11743
+
+myRenormalize.m,45
+function 1,0
+%    impossibleToAssign 8,211
+
+distchck.m,364
+function 1,0
+    scalararg1 18,408
+    scalararg2 19,450
+        out1 29,708
+        out2 34,808
+    scalararg1 42,939
+    scalararg2 43,981
+    scalararg3 44,1023
+    rows 76,1635
+   columns 77,1663
+     out4 88,1929
+    scalararg1 97,2073
+   scalararg2 98,2115
+    scalararg3 99,2156
+    scalararg4 100,2198
+   rows 158,3293
+   columns 159,3323
+
+stochasticSearch.m,431
+MAX_NUM_ITERATIONS 3,28
+unassignedPeakIndices 5,55
+unassignedResidueIndices 6,95
+%first making a descent7,138
+overallMASTER=19,618
+numIterations 24,758
+  numIterations 37,1339
+  %  gather new overall matrix from both set of matrices;71,2629
+  overallMASTER 75,2764
+  numIterations 84,3032
+    numIterations 98,3649
+      resultMASTER1 = resultMatrix1; resultMASTER2 105,3909
+      break;106,3976
+  prevScore 120,4259
+
+prepareGistSVM_InputFile.m,415
+numFiles2Read 1,0
+filenames 3,23
+%filenames{filenames4,58
+filenames{filenames5,187
+%filenames{filenames7,316
+%   filenames{filenames8,422
+%   filenames{filenames9,529
+%   filenames{filenames10,636
+%   filenames{filenames11,743
+%    filenames{filenames12,850
+%numVoters numVoters15,972
+  fprintf(1, 'loading %s\n', filenames{filenames22,1280
+  labelFilename 25,1365
+  vectorsFilename 26,1403
+
+printSVM_Information.m,619
+numVoters 10,395
+correctAssignmentProbability 11,435
+incorrectAssignmentProbability 12,492
+correctAssignmentsPeakIndices 13,549
+incorrectAssignmentsPeakIndices 14,590
+incorrectAssignmentsResidueIndices 15,631
+  incorrectAssignmentProbability{incorrectAssignmentProbability19,753
+%  voter 22,809
+%voter voter23,890
+voter 24,1084
+%  numVoters 25,1322
+  relPeakIndex 33,1456
+  correctResidueIndex 40,1557
+  correctRelResidueIndex 42,1595
+      relResidueIndex 61,2258
+	  incorrectAssignmentsResidueIndices 73,2698
+f_labels 81,2834
+f_vectors 82,2872
+numCorrectVotes 86,3029
+numIncorrectVotes 109,3954
+
+marsFindAssignmentChanges.m,949
+function marsFindAssignmentChanges(1,0
+  includeBidirectionalMode 9,291
+elseif 10,324
+      assignments1Filename 30,673
+      assignments2Filename 32,790
+        continue;37,1038
+        continue;43,1198
+      assignments1 46,1227
+      assignments2 48,1286
+      assignments2 51,1346
+        assignments2Filename 68,2019
+            continue;73,2298
+            continue;79,2478
+          assignments1 82,2515
+          assignments2 84,2578
+          assignments2 86,2641
+function assignments2Pruned 99,3122
+  residueIndex 104,3307
+  indexInSecondAssignment 106,3358
+        fprintf (1, '%d %d %d %d %d -1\n',model1Index,model2Index,peakIndex,residueIndex,peakIndex)112,3613
+    residue2Index 116,3736
+	fprintf (1, '%d %d %d %d %d %d\n',model1Index,model2Index,peakIndex,residueIndex,peakIndex,residue2Index)121,3992
+assignments2Pruned 129,4186
+function assignments2Pruned 133,4250
+counter 135,4350
+      counter 142,4587
+
+assign.m,2939
+function 1,0
+%MAX_NUM_RETURNED_ASSIGNMENTS MAX_NUM_RETURNED_ASSIGNMENTS10,605
+numAssignmentsSoFar 12,643
+numPeaks 13,683
+stopGeneratingAssignments 15,722
+	fprintf(1, 'score too high. it is : %f\n', scoreSoFar)41,1644
+	stopGeneratingAssignments 42,1701
+                                     %lower probability,43,1763
+  foundAnAssignment 62,2451
+  fprintf(1, 'assigned %d peaks so far\n', numAssignmentsSoFar)67,2504
+      voteAccordingToMBM_EM(voter, numVoters, ASSIGNTABLE);%, NOES,71,2660
+      continue;107,3803
+    %      newAssignmensMadeSoFar 112,3860
+    %newProbabilityOfAssignmentsSoFar newProbabilityOfAssignmentsSoFar116,4026
+    %      newAssignTable 120,4238
+    %			  newVoters=122,4361
+    %      newNumVoters 123,4397
+    %      update voters;125,4451
+      break;139,5204
+% $$$ 159,5731
+% $$$   bestPeakIndex 166,6046
+% $$$   bestResidueIndex 167,6104
+% $$$ 	  bestResidueIndex)170,6250
+% $$$ 171,6278
+% $$$    votes 172,6350
+% $$$ %  scores 173,6400
+% $$$   relPeakIndex 174,6425
+% $$$     votes 178,6603
+% $$$   ASSIGNTABLE 193,7060
+% $$$   numPotentialAssignments 195,7173
+% $$$ 201,7446
+% $$$ 202,7557
+% $$$ 204,7673
+% $$$ 207,7847
+% $$$     newNumPotentialAssignments 210,7972
+% $$$     numPotentialAssignments 216,8153
+% $$$   numAssignedPeaks 220,8247
+% $$$   numUnassignedPeaks 221,8297
+% $$$       sct=254,9092
+% $$$ sct=257,9138
+% $$$       sct=262,9274
+tentativeAssignResidue 290,9984
+% $$$   tentAssignProb 291,10038
+tentativeAssignScore 292,10092
+%  scores 298,10278
+    votes 302,10416
+  winnerRelResidueIndices 307,10518
+end	317,10887
+bestRelPeakIndices 321,10961
+%    bestRelPeakIndex 331,11302
+bestRelResidueIndex 334,11400
+% $$$     bestRelResidueIndex 346,11592
+% $$$     break;347,11627
+function 356,11855
+% $$$     find the best residue and second best residue;361,12011
+% $$$     compute the probability difference between them;362,12068
+% $$$ 	  all voters; record this case;367,12236
+bestPeakNumConcurringVoters 393,12880
+bestPeakIndices 395,12939
+bestPeakIndex 400,13125
+%bestResidueIndex bestResidueIndex404,13243
+assignmentProb 412,13376
+  SecondBestAssignmentProb 422,13865
+  desiredRelResidueIndex 451,14763
+  votes 455,14916
+    rankOfCorrectAssignmentAccordingToVoter 462,15163
+    votes 474,15744
+  sortedVotes 483,15908
+% $$$ function 492,16041
+% $$$   voter{voter499,16320
+% $$$   voter{voter500,16346
+% $$$   voter{voter501,16372
+% $$$   voter{voter502,16396
+% $$$   voter{voter503,16420
+% $$$   numAssignedPeaks 505,16452
+% $$$       S2 510,16621
+% $$$       RP1 511,16674
+% $$$       RP2 512,16735
+% $$$       numVoters 514,16809
+% $$$       voter{voter515,16836
+% $$$       voter{voter516,16864
+a 526,17004
+assignments=527,17029
+correct=528,17044
+incorr=529,17055
+   x 533,17124
+   rn=535,17155
+   foo 540,17264
+assignmentAccuracy 555,17503
+   missing=573,18059
+         ct=579,18202
+
+testUnambiguousNOEs.m,258
+%noeList noeList4,109
+%noeList noeList5,160
+%noeList noeList9,282
+numNOEs 11,400
+distances 12,427
+numNOEs 13,457
+noeMatrix 15,530
+numUniqueRestraints 17,592
+  aa2Index 20,687
+  relAA2Index 28,879
+    numUniqueRestraints 37,1167
+figure;41,1229
+
+makeBipartiteGraphToVoteOnSquare.m,50
+function 1,0
+squareBipartiteGraphToVoteOn=5,237
+
+computeKemenyScore.m,132
+function HD_SCORE 1,0
+S2 8,271
+MASTER 12,514
+%JOINT JOINT14,620
+%JOINT JOINT15,697
+HD_SCORE 18,734
+    actualScore 50,1768
+
+weightCH_RDCs.m,22
+chRDCs 1,0
+fid 3,65
+
+NVR_FINDUACMB.m,361
+function M 1,0
+%    License as published by the Free Software Foundation;28,1071
+%    version 2.1 of the License,29,1138
+%    version 2.1 of the License, or 29,1138
+   ASSIGNTABLE=63,2584
+ASSIGNTABLE=68,2716
+D 70,2761
+M 75,2841
+M=76,2869
+M=79,2906
+M=80,2940
+M=81,2958
+M=82,2975
+   HM=96,3184
+   HM=101,3272
+M=103,3287
+h=104,3296
+   h=105,3302
+
+NVR_withCH.m,4163
+function 1,0
+%    License as published by the Free Software Foundation;46,2812
+%    version 2.1 of the License,47,2878
+%    version 2.1 of the License, or 47,2878
+HSHIFTS 84,4497
+NSHIFTS 85,4519
+%dontUseRDC1 dontUseRDC186,4541
+%dontUseRDC2 dontUseRDC287,4567
+RDC1 88,4593
+RDC2 89,4612
+mu=94,4682
+   NTH=NTH+(mu-12.9); %NTH=NTH96,4721
+fprintf(1, 'the original NTH is %f\n',NTH)98,4764
+%NTH NTH99,4808
+%NTH NTH100,4822
+%NTH NTH101,4838
+%NTH NTH102,4852
+NTH 104,4867
+NTH=105,4931
+fprintf(1, 'set NTH to %f Angstroms.\n',NTH)106,4950
+ASSIGNTABLE 108,5005
+ROWIN 111,5162
+COLIN 112,5199
+MASTER 114,5273
+HDE 117,5329
+%HDE HDE118,5378
+ASSIGNTABLE 122,5545
+nlast 123,5581
+   nlast 129,5764
+%prune via BMRB stats132,5804
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=134,5897
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP 134,5897
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP = CP;RP1 134,5897
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP = CP;RP1 = CP;RP2 134,5897
+ASSIGNTABLE 137,6051
+   V2 140,6195
+   V 141,6278
+   nlast 144,6378
+      nlast 150,6578
+%prune via the program shiftx154,6627
+ASSIGNTABLE 160,6888
+   V2 164,7077
+   V 165,7170
+   nlast 167,7266
+      nlast 173,7466
+%prune via the program shifts179,7517
+ASSIGNTABLE 184,7776
+   V2 190,7968
+   V 191,8061
+   nlast 195,8165
+      nlast 207,8924
+end210,8969
+   RP1 236,10014
+   RP2 237,10080
+   S1 239,10157
+   S1 = ones(3);S2=239,10157
+   RP1 240,10180
+   RP2 244,10267
+   V2 251,10449
+   V 252,10538
+   nlast 255,10638
+      nlast 265,11388
+last 270,11478
+      nV=274,11655
+      nV=275,11789
+      V=279,12083
+      X 281,12111
+   ilast 292,12412
+      S1 304,13360
+      RP1 305,13424
+      RP2 306,13493
+      ilast 315,13718
+   last 321,13821
+ilast 328,13954
+   S1 342,14841
+   RP1 343,14902
+   RP2 344,14968
+   ilast 353,15166
+S1 359,15208
+RP1 360,15266
+RP2 361,15329
+   S1 376,16292
+   RP1 377,16353
+   RP2 378,16419
+   V2 391,16713
+   V 392,16802
+   nlast 395,16902
+      S1 406,17607
+      RP1 407,17671
+      RP2 408,17740
+      nlast 414,17896
+lv 419,17954
+   V 427,18092
+   V = vote(CP,SXCP,SSCP,RP1,RP2,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,0);oV=427,18092
+   %compute the assignment, given the distribution in the vote table432,18346
+   V 435,18609
+   nV=438,18698
+   nV=439,18730
+   dontrun=440,18768
+   X 447,18923
+         V = thresh(oV,max(max(max(V))-ct,1));ct=451,19111
+         X 452,19166
+   nlast 466,19485
+      S1 476,20183
+      RP1 477,20247
+      RP2 478,20316
+      nlast 484,20478
+      S1 506,21624
+      RP1 507,21688
+      RP2 508,21757
+   V 520,22016
+   V2 521,22098
+   lv 522,22187
+   V 523,22208
+   nlast 525,22304
+      S1 534,22995
+      RP1 535,23059
+      RP2 536,23128
+      nlast 541,23295
+         break;551,23502
+         break;558,23629
+ASSIGNTABLE 567,23730
+ROWIN=568,23756
+COLIN=569,23785
+NTH=571,23815
+NTH=5.5;minval=571,23815
+RP1_A 577,23861
+RP1_A = NVR_RDC2PROB(ASSIGNTABLE,RDC1,VECTORS,S1,ROWIN,COLIN)+minval;RP1_A 577,23861
+RP2_A 578,23949
+RP2_A = NVR_RDC2PROB_CH(ASSIGNTABLE,RDC2,VECTORS_CH,S1,ROWIN,COLIN)+minval;RP2_A 578,23949
+HDE_A 580,24044
+HDE_A = NVR_HD2PROB(ASSIGNTABLE ,HDEXCHANGE,HBOND)+minval;HDE_A=580,24044
+CP_A 581,24120
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities)+minval;CP_A 582,24192
+SXCP_A 583,24270
+			 truncateProbabilities)+minval;SXCP_A 585,24397
+SSCP_A 586,24452
+			SHIFTX_Filename, truncateProbabilities)+minval;SSCP_A 588,24579
+NVR_SCORE 590,24657
+JOINT 592,24788
+oldNVR_SCORE=593,24816
+ASSIGNTABLE=611,25327
+function 613,25370
+THR;614,25554
+    S1 625,26388
+    RP1 626,26450
+    RP2 627,26517
+function V 634,26608
+%doublesdoubles641,26941
+%triplestriples652,27518
+%quadsquads663,28199
+V 670,28687
+function V 673,28761
+%doublesdoubles678,28995
+%triplestriples682,29178
+V 684,29256
+function V 693,29283
+%doublesdoubles700,29527
+%triplestriples711,29994
+%quadsquads722,30565
+V 729,30987
+function score=732,31061
+bpg 733,31109
+bpg 734,31135
+score 735,31159
+
+noePruneAndDoMoreAssignments_CH.m,1791
+function 1,0
+numPotentialAssignments 18,594
+  numAssignedPeaks 67,2116
+    break;85,2720
+  newNumPotentialAssignments 105,3057
+  numPotentialAssignments 111,3194
+%score score116,3268
+% $$$ numPeaks 120,3431
+% $$$ score 129,3800
+% $$$ score 130,3896
+function 134,4002
+mypeakIndices 139,4227
+myresidueIndices 140,4282
+                                                             %PEAKINDICES,PEAKINDICES145,4537
+    v 156,5144
+      impossibleToAssign 162,5455
+      break;163,5485
+NP 167,5516
+ASSIGNTABLE 168,5596
+function 177,5819
+impossibleToAssign 181,5978
+madeAnAssignment 183,6003
+madeAnAssignment   = 1;%initializinginitializing183,6003
+	madeAnAssignment 215,6937
+	madeAnAssignment=245,7599
+%next,next258,7765
+%next, make assignments 258,7765
+       score 279,8807
+%updates peakIndices,291,9103
+function 297,9379
+end315,10032
+ASSIGNTABLE 326,10261
+peakIndices 329,10325
+residueIndices 330,10386
+%removes from consideration those peaks and residues 333,10452
+impossibleToAssign 346,11179
+%  impossibleToAssign 349,11293
+%BPG_TO_UPDATE_IN BPG_TO_UPDATE_IN354,11365
+BPG_TO_UPDATE 355,11402
+%BPG_TO_UPDATE BPG_TO_UPDATE357,11452
+%BPG_TO_UPDATE = reinitializeAndNormalizeBPG_Entries_If_Necessary(BPG_TO_UPDATE);%, BPG_TO_UPDATE_IN)357,11452
+BPG_TO_UPDATE 359,11556
+BPG_TO_UPDATE_IN 361,11649
+BPG_TO_UPDATE 365,11760
+BPG_TO_UPDATE = BPG_TO_UPDATE_IN; %undoing renormalization,365,11760
+%BPG_TO_UPDATE BPG_TO_UPDATE369,11887
+function 371,11975
+unassignedRelResidueIndices 374,12148
+unassignedRelPeakIndices 395,12668
+unassignedRelResidueIndices=396,12728
+% $$$ function 404,12907
+% $$$ vec 406,12985
+% $$$ ct=407,13000
+% $$$       ct=417,13383
+% $$$ flag 420,13427
+% $$$    flag=423,13485
+% $$$    M 430,13626
+% $$$ s 433,13694
+
+findCommonAssignments.m,202
+hSRI_withoutRDC 1,0
+hSRI_withRDC 4,183
+withoutRDC 9,419
+withRDC 10,481
+consensusMatrix 12,544
+  residue2 17,642
+    fprintf(1, 'i = %d residue1 = residue2 = %d\n', i,residue1)21,792
+fid 35,1108
+
+computeAssignmentAccuracy2.m,41
+function computeAssignmentAccuracy2(1,0
+
+adjustAndSSE_InfoToSHIFTX_FileWithoutTemplateShiftxFile.m,186
+%based on the template SHIFTX file,4,107
+%and the SHIFTX file,5,143
+%the same information as in the original SHIFTX file,7,260
+outputShiftxFilename 17,665
+%resIndex resIndex21,839
+
+updateMASTER.m,146
+function 1,0
+%first,first2,56
+recur=3,85
+rm=4,94
+cm=5,116
+ain=6,138
+            recur=16,321
+            recur=27,543
+%next,next38,674
+
+iterateSVM_Assignments.m,1232
+numFiles2Read 1,0
+filenames 3,23
+%filenames{filenames4,62
+%filenames{filenames5,192
+filenames{filenames6,259
+NEGATIVE_LARGE_VALUE 12,508
+  dummyVoter 16,576
+%  hsriFirst10Assignments 17,1040
+%  candidatePeakIndices 18,1110
+    relPeakIndex 33,1751
+    relResidueIndex 34,1811
+    newASSIGNTABLE 46,2080
+    scoreSoFar 51,2300
+				     IALLDISTS, ALLDISTS, NTH);%, NH_RDCS,60,2608
+							       %				 CH_RDCS,61,2659
+							       %				 CH_RDCS, VECTORS_NH,61,2659
+							       %				 CH_RDCS, VECTORS_NH,MB_ShiftScore,61,2659
+							       %				 MB_RDC_Score,62,2718
+							       %				 MB_RDC_Score, numCS,62,2718
+							       %				 MB_RDC_Score, numCS, numRDC,62,2718
+							       %				 HSQCDATA,63,2771
+							       %				 HSQCDATA, csCoefficient,63,2771
+							       %				 rdcCoefficient,64,2820
+							       %				 rdcCoefficient, noeCoefficient,64,2820
+							       %				 numHN_NOES)66,2892
+      ASSIGNTABLE 69,2985
+      ROWIN 70,3021
+      COLIN 71,3051
+  numCorrect 83,3295
+  numCorrect = 0; numAssignedPeaks 83,3295
+  fprintf(1, 'the aggregate assignment has %d correct out of %d positions.\n',numCorrect, numAssignedPeaks)95,3630
+  numAssignments 98,3755
+vectorsFilename 106,4162
+
+compareSHIFTX_Files.m,92
+PRED1 5,157
+PRED2 9,273
+xlabelStr 11,298
+ylabelStr 12,342
+figure;15,388
+figure;22,504
+
+debugVoterMatrices.m,176
+SSCP_1UBI 2,50
+unassignedResidueIndices 3,83
+unassignedPeakIndices 4,117
+SSCP_allPeaks 7,214
+SSCP_original 19,556
+EPSILON 23,581
+SSCP_newBayesianScoring_allPeaks 33,757
+
+fixDoubleAssignments.m,134
+function MASTER 1,0
+%peak or residue. If so,4,172
+  S1 20,552
+  S2 21,591
+  cand 23,633
+  X 36,888
+  h 37,951
+  MASTER 38,986
+
+range.m,16
+function y 1,0
+
+compareSHIFTS_Files.m,92
+PRED1 5,121
+PRED2 9,201
+xlabelStr 11,226
+ylabelStr 12,270
+figure;15,316
+figure;22,447
+
+renormalize.m,16
+function M 1,0
+
+bayesianScoringFunction.m,1440
+EPSILON 7,197
+LARGE_VALUE 8,238
+numVoters 11,329
+voter 12,367
+voter 13,421
+numVoters 14,511
+correctAssignmentProbability 16,550
+incorrectAssignmentProbability 17,603
+  incorrectAssignmentProbability{incorrectAssignmentProbability20,736
+      incorrectAssignmentProbability{incorrectAssignmentProbability33,1145
+meanCorrect 38,1303
+meanIncorrect 39,1352
+standardDeviationCorrect 40,1401
+standardDeviationIncorrect 41,1450
+% $$$ N_histCorrect 51,1915
+% $$$ N_histCorrect = cell(numVoters,1); X_histCorrect 51,1915
+% $$$ N_histIncorrect 53,2010
+% $$$ N_histIncorrect = cell(numVoters,1); X_histIncorrect 53,2010
+% $$$ 59,2281
+% $$$   figure;61,2407
+% $$$   figure;65,2537
+% $$$ distCorrect 74,2718
+% $$$ distIncorrect 75,2757
+% $$$   distIncorrect{distIncorrect79,2880
+% $$$     distIncorrect{distIncorrect83,3089
+% $$$ x 88,3267
+relativeProbabilityCorrectGivenVoters 96,3485
+pCorrect 97,3553
+    num = zeros(numVoters,1); denum 105,3676
+% $$$       bestBin 110,4040
+% $$$       bestBin = -1; minDifference 110,4040
+% $$$ 	   minDifference 115,4346
+% $$$       bestBin 129,4761
+% $$$       bestBin = -1; minDifference 129,4761
+% $$$ 	   minDifference 134,5071
+%      pCorrectGivenVoterValue 174,6797
+relativeProbabilityCorrectGivenVotersForIncorrectAssignments 186,7318
+    relativeProbabilityCorrectGivenVotersForIncorrectAssignments 193,7507
+figure;198,7716
+figure;201,7841
+figure; plot(201,7841
+
+HD_CS2PROB.m,835
+function 1,0
+%NVR_CS2PROB: This computes assignment probabilities based on BMRB stats,3,85
+%    This library is free software;28,1062
+%    License as published by the Free Software Foundation;30,1195
+%    version 2.1 of the License,31,1262
+%    version 2.1 of the License, or 31,1262
+FILTERS=load('~/speech/NVR/CHEMSHIFTSTATS/FILTERS');FILTERS=60,2446
+   cols=68,2729
+mH=70,2747
+mH=mean(H);sH=70,2747
+mN=71,2770
+mN=mean(N);sN=71,2770
+   n 75,2833
+   p1 76,2847
+   p2 77,2874
+   prior=78,2901
+      elseif(82,3041
+M 128,5062
+  M 140,5324
+  M_beforeNOE_Applying 146,5589
+  TABLE 148,5622
+   nlast 149,5643
+      nlast 157,5927
+   M 160,5972
+function p 182,6431
+   xHS 188,6541
+   xN 189,6570
+   xNS 190,6598
+   xHMX 191,6627
+   xHMN 192,6660
+   xNMX 193,6693
+   xNMN 194,6727
+elseif(196,6766
+p 245,7723
+
+NVR_HD2PROB.m,302
+function M 1,0
+%NVR_HD2PROB: This computes assignment probabilities based on amide exchange rates,3,54
+%    This library is free software;28,1053
+%    License as published by the Free Software Foundation;30,1186
+%    version 2.1 of the License,31,1253
+%    version 2.1 of the License, or 31,1253
+
+voteAccordingToLowestScore.m,2517
+function 1,0
+%bestRelPeakIndex bestRelPeakIndex3,177
+%bestRelResidueIndex bestRelResidueIndex4,204
+MAX_NUMCANDIDATES 6,232
+relCandidatePeakIndices 7,266
+relCandidateResidueIndices 8,324
+scores 9,378
+numCandidates 10,432
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5};%CP,CP17,521
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5};%CP,SXCP,17,521
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5};%CP,SXCP,SSCP,17,521
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5};%CP,SXCP,SSCP,TP,17,521
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5};%CP,SXCP,SSCP,TP,HDE,17,521
+  %ASSIGNTABLE)ASSIGNTABLE18,604
+elseif 19,621
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{voter20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,CP20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,SSCP,20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,SSCP,TP,20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,SSCP,TP,RP1,20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,SSCP,TP,RP1,RP2,20,645
+  V       = voter{1}.*voter{2}.*voter{3}.*voter{4}.*voter{5}.*voter{6}.*voter{7};%,...%CP,SXCP,SSCP,TP,RP1,RP2,HDE,20,645
+%	   ASSIGNTABLE)21,761
+elseif 22,780
+V 26,831
+%maxVotesBeforeMaskingWithASSIGNTABLE maxVotesBeforeMaskingWithASSIGNTABLE28,892
+V 30,946
+stopGeneratingCandidates 32,975
+% $$$ combinedVoter 36,1008
+% $$$ 42,1269
+% $$$   relResidueIndex 50,1689
+% $$$   score 52,1871
+% $$$     score 56,2023
+% $$$   fprintf(1, 'score of this assignment is %f\n', score)58,2115
+  %endend77,2559
+    bestRelResidueIndex 84,2738
+  numCandidates 90,2810
+      stopGeneratingCandidates 99,3220
+      break;100,3256
+% $$$ 	stopGeneratingCandidates 111,3565
+% $$$ 	break;112,3602
+end121,3937
+sortedRelCandidatePeakIndices 124,4008
+sortedRelCandidateResidueIndices 125,4068
+relCandidatePeakIndices 133,4329
+relCandidateResidueIndices 134,4389
+scores 135,4452
+function totalVotes 141,4597
+      c 147,4762
+         elseif(151,4891
+      c 174,5628
+         elseif(178,5757
+	totalVotes 195,6483
+% $$$ function 200,6539
+% $$$ ASSIGNTABLE=204,6730
+
+computeMB_ShiftScore.m,380
+function 1,0
+%    License as published by the Free Software Foundation;30,1200
+%    version 2.1 of the License,31,1267
+%    version 2.1 of the License, or 31,1267
+%FILTERS=load('/home/home4/apaydin/Mist/NVR/CHEMSHIFTSTATS/SHIFTSFILTERS');FILTERS=60,2451
+PRED 66,2699
+numCS 68,2722
+%S S78,2907
+      h 80,2928
+      n 81,2960
+      elseif 85,3045
+      elseif 91,3165
+
+extractHN_NOES.m,30
+dnnIndices 3,108
+fid 11,236
+
+tmpBetterHD.m,598
+%function function1,0
+  numTestPeaks 39,2252
+  numTestResidues 40,2275
+  ROWIN 41,2298
+  COLIN 42,2337
+  ASSIGNTABLE 43,2379
+  MASTER 44,2443
+  HDE 45,2502
+  TP 50,2645
+  CP 55,2785
+  SXCP 60,2925
+  SSCP 65,3071
+  RDC1 69,3214
+  RDC2 70,3252
+  peakIDs 72,3291
+  RESNUMS 73,3332
+end75,3387
+numAssignedPeaks 78,3441
+numUnassignedPeaks 79,3479
+numVoters 81,3530
+peakIndices 84,3583
+residueIndices 85,3607
+voter 86,3631
+voter 87,3659
+%useMBM_EM useMBM_EM93,3817
+foundAnAssignment 97,3864
+minScore 98,3887
+overallMASTER 99,3901
+scoreSoFar 100,3925
+overallMASTER 102,3942
+
+stripTOCSY_File.m,27
+function M 1,0
+fid 5,121
+
+computeDeltaScore.m,98
+function score 1,0
+score 5,161
+  newResidue 8,246
+    relResidueIndex 13,396
+  elseif 23,723
+
+secondMax.m,21
+function retval 1,0
+
+readNMR_Data.m,241
+function 1,0
+  noes 12,270
+  filename 16,360
+  unadjustedNOEs 19,486
+  order 20,524
+  noes 21,561
+NOES 26,628
+HN_SHIFTS 28,670
+RDCs 29,703
+HDEXCHANGE 30,736
+peakIDs 31,767
+HSHIFTS 33,799
+NSHIFTS 34,830
+RDC1 35,861
+RDC2 36,892
+
+HD_TOCSY2PROB.m,1013
+function M 1,0
+%NVR_TOCSY2PROB: This computes assignment probabilities based on BMRB side-chain statistics,3,88
+%    This library is free software;28,1097
+%    License as published by the Free Software Foundation;30,1230
+%    version 2.1 of the License,31,1297
+%    version 2.1 of the License, or 31,1297
+M 63,2538
+   NUMTOCSYPEAKS=70,2658
+   TOCSYPEAKS=71,2699
+      elseif(81,2970
+      elseif(87,3172
+      elseif(93,3371
+      elseif(99,3573
+      elseif(106,3786
+      elseif(112,3985
+      elseif(118,4184
+      elseif(124,4383
+      elseif(130,4589
+      elseif(136,4788
+      elseif(142,4987
+      elseif(148,5186
+      elseif(154,5385
+      elseif(162,5697
+      elseif(168,5896
+      elseif(174,6095
+      elseif(180,6295
+         PROBLEM 187,6506
+M 195,6623
+TABLE 197,6665
+nlast 198,6684
+   nlast 206,6963
+   M 207,6992
+function tp=220,7159
+SHIFTS=223,7301
+SHIFTS=load(nm);SHIFTS=223,7301
+MB=224,7340
+h=231,7495
+tp=234,7597
+         p=241,7724
+      tp=243,7772
+
+runBetter_withCH.m,1679
+      modeIndex = 7; modelIndex 14,308
+      SHIFTX_Filename 16,354
+      SHIFTS_Filename 18,461
+%      modelDataFilename 20,568
+         CH_RDCS 26,919
+% $$$ % $$$ % $$$       %      CH_RDCS 27,973
+         NH_RDCS 28,1047
+         VECTORS_CH 29,1101
+         VECTORS_NH 30,1158
+% $$$         CH_RDCS 33,1225
+% $$$ % $$$ % $$$       %      CH_RDCS 34,1281
+% $$$         NH_RDCS 35,1355
+% $$$         VECTORS_CH 36,1411
+% $$$         VECTORS_NH 37,1470
+% $$$       CH_RDCS 39,1537
+% $$$       %      CH_RDCS 40,1588
+% $$$       NH_RDCS 41,1650
+% $$$       VECTORS_CH 42,1701
+% $$$       VECTORS_NH 43,1755
+% $$$         CH_RDCS 45,1811
+% $$$ % $$$ % $$$       %      CH_RDCS 46,1866
+% $$$         NH_RDCS 47,1940
+% $$$         VECTORS_CH 48,1995
+% $$$         VECTORS_NH 49,2053
+% $$$       CH_RDCS 53,2141
+% $$$ % $$$ % $$$       %      CH_RDCS 54,2194
+% $$$       NH_RDCS 55,2268
+% $$$       VECTORS_CH 56,2321
+% $$$       VECTORS_NH 57,2377
+% $$$        CH_RDCS 59,2441
+% $$$ % $$$ % $$$ % $$$ % $$$ % $$$       %      CH_RDCS 60,2498
+% $$$        NH_RDCS 61,2590
+% $$$        VECTORS_CH 62,2647
+% $$$        VECTORS_NH 63,2707
+% $$$          CH_RDCS 65,2775
+% $$$ % $$$ % $$$ % $$$ % $$$ % $$$       %      CH_RDCS 66,2835
+% $$$          NH_RDCS 67,2927
+% $$$          VECTORS_CH 68,2987
+% $$$          VECTORS_NH 69,3050
+      CH_RDCS 71,3115
+      NH_RDCS 72,3146
+      VECTORS_CH 73,3177
+      VECTORS_NH 74,3216
+    useMBM_EM 88,3520
+    peaks 95,3769
+ %   rdcs 96,3804
+    rdcs 97,3840
+    HDEXCHANGE 98,3878
+    peakIDs 99,3912
+%fprintf(1, 'the assignment accuracy is %f\n', assignmentAccuracy)115,4501
+% $$$ 118,4574
+
+testOneMediumAlignmentTensor.m,585
+MASTER 4,95
+S1 8,195
+%S1 S19,262
+backcomputed 10,307
+rdcsToBePlotted 16,445
+diff_NH_RDCs 17,467
+fid 18,508
+    fprintf(1, 'skipping %d th RDC.\n',i)27,805
+corrcoef(36,996
+rdcsToBePlotted 53,1785
+diff_CH_RDCs 54,1807
+fid 55,1848
+    fprintf(1, 'skipping %d th RDC.\n',i)64,2153
+corrcoef(71,2342
+  glycineVectors 89,3094
+  glyResidueIndices 91,3162
+  glyRDCs 92,3208
+  backcomputedRDCs 94,3257
+    relVectorIndex 99,3391
+    backcomputed 101,3500
+      backcomputed 104,3587
+    backcomputedRDCs 107,3679
+  plot(backcomputedRDCs, glyRDCs, 'r*'); hold on;110,3744
+
+adjustTOCSY.m,109
+m 5,149
+newTRN 6,166
+count 7,187
+rows 8,198
+    count 14,382
+rows 18,432
+newTOCSY 19,451
+fout 21,515
+
+NVR_RDC2PROB_CH.m,331
+function M 2,2
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on RDCs,4,82
+%    This library is free software;29,1055
+%    License as published by the Free Software Foundation;31,1188
+%    version 2.1 of the License,32,1255
+%    version 2.1 of the License, or 32,1255
+M 66,2496
+%M M74,2611
+elseif(86,2924
+
+compareNOEs.m,213
+NOES 2,28
+temp 4,88
+parsedBackboneNOEs 5,115
+NOES 6,142
+NOE_Matrix1 8,156
+end12,359
+  residue2 18,443
+    fprintf(1, 'did not find the NVR NOE between %d and %d in MZ noe_file.\n',residue1,residue2)23,578
+
+simp.m,31
+function h 1,0
+      r 8,130
+
+voteAccordingToMBM_EM.m,2417
+function 1,0
+%bestRelPeakIndex bestRelPeakIndex3,172
+%bestRelResidueIndex bestRelResidueIndex4,199
+MAX_NUMCANDIDATES 6,227
+relCandidatePeakIndices 8,252
+relCandidateResidueIndices 9,310
+scores 10,364
+numCandidates 11,418
+  V       = vote5(voter{1},voter{2},voter{3},voter{4},voter{5});%CP,CP18,507
+  V       = vote5(voter{1},voter{2},voter{3},voter{4},voter{5});%CP,SXCP,18,507
+  V       = vote5(voter{1},voter{2},voter{3},voter{4},voter{5});%CP,SXCP,SSCP,18,507
+  V       = vote5(voter{1},voter{2},voter{3},voter{4},voter{5});%CP,SXCP,SSCP,TP,18,507
+  V       = vote5(voter{1},voter{2},voter{3},voter{4},voter{5});%CP,SXCP,SSCP,TP,HDE,18,507
+  %ASSIGNTABLE)ASSIGNTABLE19,593
+  V 21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,CP21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,SSCP,21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,SSCP,TP,21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,SSCP,TP,RP1,21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,SSCP,TP,RP1,RP2,21,615
+  V       = vote (voter{1},voter{2},voter{3},voter{4},voter{5},voter{6},voter{7});%,...%CP,SXCP,SSCP,TP,RP1,RP2,HDE,21,615
+%	   ASSIGNTABLE)22,732
+V 25,756
+%maxVotesBeforeMaskingWithASSIGNTABLE maxVotesBeforeMaskingWithASSIGNTABLE27,817
+V 29,871
+stopGeneratingCandidates 31,900
+% $$$ combinedVoter 35,933
+% $$$ 41,1194
+% $$$   relResidueIndex 49,1620
+% $$$   score 51,1802
+% $$$     score 55,1954
+% $$$   fprintf(1, 'score of this assignment is %f\n', score)57,2046
+  %endend77,2463
+    bestRelResidueIndex 84,2628
+  numCandidates 90,2700
+      stopGeneratingCandidates 99,3102
+      break;100,3138
+	stopGeneratingCandidates 111,3417
+	break;112,3448
+end121,3782
+sortedRelCandidatePeakIndices 124,3853
+sortedRelCandidateResidueIndices 125,3913
+relCandidatePeakIndices 133,4174
+relCandidateResidueIndices 134,4234
+scores 135,4297
+function totalVotes 141,4442
+      c 147,4607
+         elseif(151,4736
+      c 174,5473
+         elseif(178,5602
+	totalVotes 195,6328
+% $$$ function 200,6384
+% $$$ ASSIGNTABLE=204,6575
+
+testChemicalShiftPredictions.m,157
+SHIFTX_Filename 1,0
+name 2,51
+SHIFTS_Filename 3,87
+PRED 7,226
+csToPlot 13,381
+figure;15,410
+figure;19,650
+PRED 26,947
+figure;29,969
+figure;33,1209
+
+initialize_withCH.1.1.2.4.m,1360
+function 1,0
+HSHIFTS 8,323
+NSHIFTS 9,345
+%dontUseRDC1 dontUseRDC110,367
+%dontUseRDC2 dontUseRDC211,393
+RDC1 12,419
+RDC2 13,438
+mu=17,507
+   NTH=NTH+(mu-12.9); NTH=19,546
+fprintf(1, 'the original NTH is %f\n',NTH)21,588
+NTH 22,632
+%NTH NTH23,647
+%NTH NTH24,661
+fprintf(1, 'set NTH to %f Angstroms.\n',NTH)25,675
+ASSIGNTABLE 27,730
+ROWIN 30,893
+COLIN 31,930
+MASTER 33,1004
+%HDE HDE35,1034
+HDE 36,1084
+ASSIGNTABLE 41,1249
+ nlast 42,1285
+    nlast 48,1474
+ end49,1510
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=51,1516
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP 51,1516
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 51,1516
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 = CP;RP2 51,1516
+ASSIGNTABLE 57,1800
+    V2 62,1984
+    V 63,2068
+    nlast 66,2171
+       nlast 72,2377
+%prune via the program shiftx77,2430
+ASSIGNTABLE 80,2590
+    V2 86,2822
+    V 87,2916
+    nlast 89,3014
+       nlast 95,3220
+%prune via the program shifts100,3273
+ASSIGNTABLE 105,3447
+function V 114,3530
+%doublesdoubles121,3863
+%triplestriples132,4440
+%quadsquads143,5121
+V 150,5609
+
+writeModelData.m,324
+fout 11,386
+fprintf(1, 'writing model data to file %s...\n', modelDataFilename)12,424
+parsedPDBFileDisplacementStartIndex 24,910
+parsedPDBFileDisplacementEndIndex 28,1195
+parsedPDBFileFirstResidueIndex 29,1236
+  parsedPDBFileDisplacementEndIndex 38,1607
+    %seek baseFileResidueID in parsedPDBFileResidueIDs(58,2386
+
+betterHD.1.1.2.7.m,680
+%function function1,0
+  numTestPeaks 39,2252
+  numTestResidues 40,2275
+  ROWIN 41,2298
+  COLIN 42,2337
+  ASSIGNTABLE 43,2379
+  MASTER 44,2443
+  HDE 45,2502
+  TP 50,2645
+  CP 55,2785
+  SXCP 60,2925
+  SSCP 65,3071
+  RDC1 69,3214
+  RDC2 70,3252
+  peakIDs 72,3291
+  RESNUMS 73,3332
+end75,3387
+numAssignedPeaks 78,3441
+numUnassignedPeaks 79,3479
+numVoters 81,3530
+peakIndices 84,3583
+residueIndices 85,3607
+voter 86,3631
+voter 87,3659
+%useMBM_EM useMBM_EM93,3817
+totalNumAssignments 97,3864
+totalNumAssignments = 0;%foundAnAssignment foundAnAssignment97,3864
+%minScore minScore98,3912
+overallMASTER 99,3927
+scoreSoFar 100,3951
+overallMASTER 102,3968
+
+readNMR_Data2.m,159
+function 1,0
+  NOE_ListWithResidueIndices 11,253
+  order 12,314
+  noes 13,374
+  HSQCDATA 19,641
+  noes 20,715
+NOES 25,838
+   x 29,919
+      y=32,1065
+
+betterHD.m,5161
+  else25,664
+  b_reduceSizeOfTheProblem 39,1126
+    numPeaks 50,1345
+      fprintf(1, 'reading %s...\n', assignmentMatrixFilename)54,1491
+      myMASTER 57,1702
+      numCorrectAssignmentsInTheFileRead 61,1906
+	RP1 74,2400
+	RP2 75,2497
+	  S3 79,2698
+	  RP3 80,2773
+	  RP4 81,2869
+	S2 87,3078
+	RP1 88,3148
+	RP2 89,3239
+      RP1 92,3349
+      RP1 = []; RP2 92,3349
+    useBayesianMatrix 97,3386
+      nvrVoter 102,3505
+      bayesianMatrix 103,3595
+      elseif 117,4065
+	elseif 121,4204
+  origCP 149,4914
+  origCP = CP; origSXCP 149,4914
+  origCP = CP; origSXCP = SXCP; origSSCP=149,4914
+  origCP = CP; origSXCP = SXCP; origSSCP= SSCP; origTP 149,4914
+  origCP = CP; origSXCP = SXCP; origSSCP= SSCP; origTP = TP; origHDE 149,4914
+  CP 156,5306
+  CP = origCP(ROWIN,COLIN); SXCP 156,5306
+  CP = origCP(ROWIN,COLIN); SXCP = origSXCP(ROWIN,COLIN); SSCP 156,5306
+       origSSCP (ROWIN, COLIN); TP 157,5375
+       origSSCP (ROWIN, COLIN); TP = origTP(ROWIN, COLIN); HDE 157,5375
+% $$$ debugNOES 189,6522
+% $$$ numPeaks 190,6546
+% $$$       residueIndex1 = order(i); residueIndex2 196,6707
+% $$$       %fprintf(1, 'could write an NOE between residues %d and %d\n',residueIndex1,residueIndex2)197,6771
+% $$$ 	  fprintf(1, 'could write an NOE between residues %d and %d\n',residueIndex1,residueIndex2)208,7297
+% $$$ 216,7474
+% $$$   RP2 240,7998
+% $$$ 243,8102
+% $$$ RP1 266,8800
+% $$$ RP2 267,8884
+% $$$ 270,8982
+% $$$ keyboard288,9622
+numHN_NOES 292,9695
+csCoefficient 294,9724
+csCoefficient = 0.22; rdcCoefficient 294,9724
+csCoefficient = 0.22; rdcCoefficient = 0.05; noeCoefficient 294,9724
+numAssignedPeaks 299,9842
+numUnassignedPeaks 300,9880
+numNvrVoters 302,9931
+%numVoters numVoters303,9969
+notCompletedAssignments 304,10008
+prevNumAssignedPeaks 305,10046
+fullMASTER 307,10100
+S1_full 313,10246
+S2_full 316,10345
+percentiles1 319,10444
+percentiles1 = []; percentiles2=319,10444
+numCorrectPerIter 320,10481
+numCorrectPerIter   = []; numTotalAssignmentsPerIter 320,10481
+initialMASTER 321,10540
+initialASSIGNTABLE 322,10567
+initialROWIN 323,10601
+initialCOLIN 324,10623
+initialSSCP 325,10645
+initialSXCP 326,10665
+initialCP 327,10685
+initialTP 328,10701
+initialHDE 329,10717
+secondRun 330,10736
+%S1 S1334,10815
+%S2 S2335,10883
+% $$$   S1 350,11213
+% $$$   S2 351,11318
+  RP1 360,11694
+  RP2 361,11786
+  percentile1 363,11879
+  percentile2 366,11964
+  fprintf(1, ' is %f and %f\n', percentile1, percentile2)369,12115
+  percentiles1 371,12175
+  percentiles2 372,12220
+% $$$   keyboard;379,12368
+  %  marsRdcScore 381,12389
+%  marsScore 384,12486
+% $$$   marsShiftScore 392,12778
+% $$$   marsRdcScore 393,12833
+% $$$   marsScore 394,12888
+% $$$   LARGE_VALUE 396,12952
+  peakIndices 410,13335
+  residueIndices 411,13379
+%  nvrVoter 412,13423
+  nvrVoter 413,13480
+%  numVoters 415,13567
+%  voter 416,13608
+%  voter{voter417,13657
+%  MB_Score 418,13706
+%  MB_Score 432,14393
+%  voter{voter433,14430
+%  voter{voter437,14591
+%numVoters numVoters439,14612
+%voter voter440,14628
+    bayesianMatrix 443,14654
+% $$$    fullBayesianMatrix 447,14779
+   numVoters 458,15074
+   voter 459,15097
+   voter{voter460,15136
+%csCoefficient csCoefficient463,15174
+%csCoefficient = 1; rdcCoefficient 463,15174
+%csCoefficient = 1; rdcCoefficient = 0; noeCoefficient 463,15174
+  %  voter 468,15250
+%useMBM_EM useMBM_EM474,15432
+%INITIAL_MAX_NUM_RETURNED_ASSIGNMENTS INITIAL_MAX_NUM_RETURNED_ASSIGNMENTS479,15481
+%totalNumAssignments totalNumAssignments480,15526
+%foundMASTERs foundMASTERs481,15552
+%foundAnAssignment foundAnAssignment482,15614
+%minScore minScore483,15638
+%overallMASTER overallMASTER484,15653
+%scoreSoFar scoreSoFar485,15678
+%finalScores finalScores486,15695
+%assignmentAccuracies assignmentAccuracies487,15758
+% $$$ possibleAssignmentsBPG 491,15854
+% $$$ 497,16019
+% $$$ prunedAssigntable 500,16155
+% $$$ 502,16275
+  DO_INDIVIDUAL_PIECE_MANUALLY = 0; DO_MANUAL_MERGING 512,16525
+  STOCHASTIC_SEARCH 513,16585
+  elseif 532,17383
+    aggregateMASTER 555,18214
+  numCorrect 560,18323
+  numCorrect = 0; numAssignedPeaks 560,18323
+  fprintf(1, 'the aggregate assignment has %d correct out of %d positions.\n',numCorrect, numAssignedPeaks)572,18676
+  numCorrectPerIter 574,18788
+  numTotalAssignmentsPerIter 575,18842
+  MASTER 585,19285
+    S2 590,19414
+  numAssignedPeaks 595,19511
+      secondRun 601,19707
+      MASTER 602,19728
+      prevNumAssignedPeaks 603,19761
+      ASSIGNTABLE 604,19815
+      ROWIN 605,19855
+      COLIN 606,19883
+      SSCP 607,19911
+      SXCP 608,19937
+      CP 609,19963
+      TP 610,19985
+      HDE 611,20007
+	  S1 S2 S1_full S2_full;613,20102
+      continue;614,20128
+    prevNumAssignedPeaks 617,20159
+% $$$ 627,20435
+% $$$   voter 630,20543
+% $$$   SSCP 634,20839
+% $$$   SSCP = voter{1}; SXCP 634,20839
+% $$$   SSCP = voter{1}; SXCP = voter{2}; CP 634,20839
+% $$$   SSCP = voter{1}; SXCP = voter{2}; CP = voter{3}; TP 634,20839
+% $$$   HDE 635,20912
+% $$$   HDE = voter{5}; RP1=635,20912
+% $$$   HDE = voter{5}; RP1= voter{6}; RP2 635,20912
+  elseif 637,20972
+
+computeScoreOfCorrectAssignmentForPatch.m,108
+relPeakIndicesToBeAllowed 1,0
+%ASSIGNTABLE ASSIGNTABLE7,147
+figure;8,208
+score 9,262
+    score 13,424
+
+meanDistanceAndNOE_Stats.m,135
+useOrigData 1,0
+mu=8,192
+maxNOE_Distance 10,218
+      residue2 15,331
+fprintf(1, 'maxNOE_Distance = %f\n', maxNOE_Distance)24,496
+
+thresh.m,28
+function out 1,0
+out 5,50
+
+findReliableAssignments.m,2759
+function 1,0
+  includeBidirectionalMode 6,258
+elseif 7,291
+%dirNames{dirNames30,1091
+%dirNames{dirNames31,1114
+%dirNames{dirNames32,1137
+%dirNames{dirNames33,1160
+load idealAssignments.txttxt40,1237
+numResidues 43,1316
+idealAssignmentMatrix 45,1382
+assignmentAccuracies 54,1553
+assignmentAccuracies = [];MB_Scores 54,1553
+assignmentAccuracies = [];MB_Scores  = []; BayesianScores 54,1553
+    []; marsScores=55,1623
+%      assignmentsFilename 67,1926
+      thisMASTER 69,2019
+	continue;74,2207
+      numModels 77,2235
+      assignments{assignments79,2275
+	relResidueIndex 85,2455
+      assignmentAccuracy 99,2733
+      MB_Score 102,2858
+      BayesianScore 104,3039
+      marsScore 106,3113
+      marsScores 108,3179
+      BayesianScores 110,3239
+      assignmentAccuracies 112,3307
+      MB_Scores 114,3386
+	assignmentsFilename 127,3716
+	%assignmentsFilename assignmentsFilename128,3829
+	  continue;133,4046
+	numModels 136,4065
+	assignments{assignments138,4095
+	  relResidueIndex 144,4264
+	assignmentAccuracy 159,4561
+	MB_Score 162,4680
+	BayesianScore 164,4851
+	assignmentAccuracies 166,4915
+	MB_Scores 168,4984
+	BayesianScores 170,5032
+	marsScore 172,5089
+	marsScores 174,5145
+corrCoefMatrix 183,5238
+figure;184,5299
+corrCoefMatrix 193,5475
+figure;194,5540
+corrCoefMatrix 203,5724
+figure;204,5784
+correctness 214,5968
+concurRatio 215,6001
+figure;217,6029
+correctPeaks 219,6038
+correctConfidences 220,6065
+incorrectPeaks 221,6092
+incorrectConfidences 222,6119
+allConfidences 224,6147
+assignments 226,6175
+squareAssignmentMatrix 230,6238
+len_MBM_Assignments 250,6699
+newFormat_MBM_Assignments 251,6746
+%   residueIndex 263,7036
+   numConcurringAssignments 267,7118
+   assignments 269,7196
+   peaksAssignedToThisResidue 271,7257
+   numPeaksAssignedToThisResidue 274,7340
+   correctResidueIndex 292,7778
+   allConfidences 298,8016
+     fprintf(1, 'correct residue = %d\n', correctResidueIndex)302,8244
+     correctPeaks 304,8341
+     correctConfidences 305,8393
+     fprintf(1, 'numConcurringAssignments = %d, peak %d WRONG assignment\n' ,numConcurringAssignments,peakIndex)309,8491
+     incorrectPeaks 313,8794
+     incorrectConfidences 314,8844
+end317,8945
+newCorrectPeaks 323,9016
+newIncorrectPeaks 324,9046
+newCorrectConfidences 325,9076
+newIncorrectConfidences 326,9106
+  isCorrect 330,9218
+    newCorrectConfidences 334,9344
+    newIncorrectPeaks 336,9438
+    newIncorrectConfidences 337,9502
+fid 344,9607
+resonanceAssignmentAccuracy 359,9966
+numConfidentPeaks 365,10118
+confidentResonanceAssignmentAccuracy 370,10361
+confidentAssignmentsFilename 388,10772
+fid 389,10839
+fprintf    (1,'check out %s\n',confidentAssignmentsFilename)390,10919
+figure;416,11832
+
+NVR_TOCSY2PROB.m,1058
+function M 1,0
+%NVR_TOCSY2PROB: This computes assignment probabilities based on BMRB side-chain statistics,3,89
+%    This library is free software;28,1098
+%    License as published by the Free Software Foundation;30,1231
+%    version 2.1 of the License,31,1298
+%    version 2.1 of the License, or 31,1298
+M 63,2550
+   NUMTOCSYPEAKS=69,2667
+   TOCSYPEAKS=70,2708
+      elseif(85,3126
+      elseif(91,3328
+      elseif(97,3527
+      elseif(103,3729
+      elseif(110,3942
+      elseif(116,4133
+      elseif(122,4332
+      elseif(128,4531
+      elseif(134,4729
+      elseif(140,4928
+      elseif(146,5127
+      elseif(152,5326
+      elseif(158,5525
+      elseif(166,5837
+      elseif(172,6036
+      elseif(178,6235
+      elseif(184,6435
+         PROBLEM 191,6646
+M 208,6933
+TABLE 218,7133
+nlast 219,7152
+   nlast 227,7431
+   M 228,7460
+function tp=246,7781
+SHIFTS=249,7913
+SHIFTS=load(nm);SHIFTS=249,7913
+MB=250,7952
+h=257,8107
+tp=264,8292
+         p=273,8499
+      tp=277,8651
+%      fprintf(1, 'tp = %f\n', tp)278,8727
+
+computeMarsScore.m,98
+function score 1,0
+  %marsScore marsScore11,336
+score 15,421
+numPeaks 16,435
+  score 22,581
+
+debugDifferenceAnAdditionalPeakMakes.m,323
+ALLDISTS_ubi_debug 3,28
+COLIN_ubi_debug 4,59
+HSHIFTS_ubi_debug 5,84
+NSHIFTS_ubi_debug 6,113
+ROWIN_ubi_debug 7,142
+TYPES_ubi_debug 8,167
+ASSIGNTABLE_ubi_debug 9,192
+CP_ubi_debug 10,229
+NOES_ubi_debug 11,248
+NTH_ubi_debug 12,271
+SSTRUCT_ubi_debug 13,292
+ALLDISTS(1,:)-ALLDISTS_ubi_debug(ALLDISTS_ubi_debug15,337
+
+loadmodeldata.m,121
+function 1,0
+TORS,TYP4,130
+VECTORS=8,212
+TYPES=9,231
+RESNUMS=10,240
+SSTRUCT=11,251
+HBOND 12,263
+ALLDISTS=14,276
+
+debugDifferenceInBayesianMatrix.m,274
+% $$$ bayesianMatrix_debug 2,36
+% $$$ bayesianMatrix_debug2 5,125
+SSCP_debug 10,210
+SXCP_debug 11,230
+CP_debug 12,250
+RP1_debug 13,268
+RP2_debug 14,287
+SSCP_debug2 17,338
+SXCP_debug2 18,358
+CP_debug2 19,378
+RP1_debug2 20,396
+RP2_debug2 21,415
+SSCP_debug(23,435
+
+FINDUACMB.m,362
+function M 1,0
+%    License as published by the Free Software Foundation;45,1601
+%    version 2.1 of the License,46,1668
+%    version 2.1 of the License, or 46,1668
+   ASSIGNTABLE=80,3114
+ASSIGNTABLE=85,3246
+D 87,3291
+M 92,3371
+M=93,3399
+M=96,3436
+M=97,3470
+M=98,3488
+M=99,3505
+   HM=113,3714
+   HM=118,3802
+M=120,3817
+h=121,3826
+   h=122,3832
+
+HD_withTwoVectors.m,3976
+function 1,0
+%    License as published by the Free Software Foundation;51,2943
+%    version 2.1 of the License,52,3009
+%    version 2.1 of the License, or 52,3009
+HSHIFTS 91,4709
+NSHIFTS 92,4731
+RDC1 93,4753
+RDC2 94,4774
+mu 98,4850
+   NTH = NTH + (mu-12.9); NTH 101,4896
+ASSIGNTABLE 104,4945
+OASSIGNTABLE 105,5015
+ROWIN 108,5131
+COLIN 109,5169
+MASTER 111,5244
+HDE 114,5314
+ASSIGNTABLE 115,5371
+TP 117,5409
+TP 118,5437
+ASSIGNTABLE 119,5538
+ASSIGNTABLE 122,5678
+%prune via the program shiftx124,5715
+ASSIGNTABLE 126,5867
+%prune via the program shifts128,5909
+ASSIGNTABLE 131,6086
+SSCP=133,6125
+SSCP=SSCP.*ASSIGNTABLE;SXCP=133,6125
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=133,6125
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=133,6125
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=133,6125
+RDC1_VECTORS 136,6262
+RDC2_VECTORS 137,6286
+S1 139,6315
+S2 140,6357
+RP1 141,6399
+RP2 142,6453
+nlast 144,6508
+   nlast 153,7055
+ilast 158,7096
+   V = vote5(CP,TP,SSCP,SXCP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);V=160,7140
+   V2 161,7235
+   V3 162,7328
+   FOO 163,7411
+   FOO = or(V2,or(V,V3));ASSIGNTABLE=163,7411
+   nlast 164,7466
+      nlast 173,8040
+   ilast 178,8141
+   V2 183,8277
+   V 184,8370
+   ASSIGNTABLE 185,8387
+   nlast 186,8469
+      nlast 195,9043
+   end202,9146
+   S1 211,9841
+   S2 212,9886
+   RP1 213,9931
+   RP2 214,9988
+last 220,10084
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 223,10184
+      nV=224,10275
+      onV=227,10679
+      V=228,10693
+      V=thresh(oV,7);nV 228,10693
+      X 229,10737
+   last 246,11477
+   V2 251,11620
+   V3 252,11713
+   X 255,11920
+   V 256,11965
+   ASSIGNTABLE 257,11982
+   nlast 258,12064
+      nlast 267,12638
+   end275,12742
+   S1 284,13437
+   S2 285,13482
+   RP1 286,13527
+   RP2 287,13584
+end288,13641
+   RP1 294,13770
+end295,13799
+   RP2 301,13929
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 306,14034
+      nV=307,14125
+      onV=312,14543
+      V=313,14557
+      V=thresh(oV,16);nV 313,14557
+      X 314,14602
+   last 332,15349
+RP1 339,15497
+RP2 340,15551
+isum 342,15606
+   V2 345,15740
+   V3 346,15844
+   X 350,16077
+   V 351,16123
+   ASSIGNTABLE 352,16140
+   nlast 353,16222
+      nlast 362,16796
+   isum 367,16897
+fail=371,16936
+   S1 385,17667
+   S2 386,17712
+   RP1 387,17757
+   RP2 388,17814
+currsize=391,17876
+sthr=392,17908
+sthr=10;VTH=392,17908
+sthr=10;VTH=79;BTH=392,17908
+   nV=398,18033
+   onV=399,18183
+   V 402,18217
+   V = vote(CP,SXCP,SSCP,TP,RP1,RP2,HDE, ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,lv);oV=402,18217
+   V=406,18571
+   V=thresh(oV,VTH);nV 406,18571
+   X 407,18617
+      V=411,18786
+      V=thresh(oV,VTH);nV 411,18786
+      X 412,18835
+      X = thresh(V,max(max(V)));X 416,19020
+      X = thresh(V,max(max(V)));X = X(1:size(ASSIGNTABLE,1),1:size(ASSIGNTABLE,2));X=416,19020
+      S1 435,19729
+      S2 436,19777
+      RP1 437,19825
+      RP2 438,19885
+      S1 454,20745
+      S2 455,20793
+      RP1 456,20841
+      RP2 457,20901
+      V2 463,21089
+      V 464,21196
+      ASSIGNTABLE 465,21216
+      nlast 466,21301
+         S1 472,21827
+         S2 473,21878
+         RP1 474,21929
+         RP2 475,21992
+         nlast 479,22131
+   sthr=482,22188
+      VTH=485,22263
+   BTH=491,22380
+         break;500,22567
+         break;507,22694
+%HD_SCORE HD_SCORE513,22752
+weightedHD_Score 514,22771
+HD_SCORE 517,22799
+%weightedHD_SCORE weightedHD_SCORE523,23045
+ASSIGNTABLE=550,24027
+function 553,24071
+THR;554,24281
+   S1 561,24846
+   S2 562,24891
+   RP1 563,24936
+   RP2 564,24993
+function V 569,25057
+      c 581,25288
+      A 599,25685
+      A 600,25733
+      V 601,25771
+function V 607,25800
+      c 618,26023
+      A 632,26330
+      A 633,26378
+      V 634,26416
+
+getASS.m,217
+function M 1,0
+   ASSIGNTABLE=9,246
+ASSIGNTABLE=14,373
+   HM=18,500
+   HM=28,690
+M=30,703
+h=31,711
+elseif(34,752
+      in2=38,833
+      ind=39,852
+      ind=ind(in2);x=39,852
+      h=49,1075
+   h=52,1102
+
+checkNOEs2.m,200
+useOrigData 1,0
+mu=10,244
+%  NTH=13,305
+NTH 19,357
+fprintf(1, 'NTH = %f\n', NTH)20,399
+maxViolation 24,509
+      residue2 29,619
+fprintf(1, 'maxViolationDistance = %f\n', maxViolation)43,1022
+
+autoAdjustAnd_SSE_InfoToSHIFTX_File.m,222
+%based on the template SHIFTX file,3,83
+%and the SHIFTX file,4,119
+%and the SHIFTX file, where SHIFTX file is defined below,4,119
+%the same information as in the original SHIFTX file,6,269
+outputShiftxFilename 14,638
+
+lockdown.m,88
+function 1,0
+  myCOLIN 5,139
+  NP 7,206
+  NP 8,267
+  NP 10,296
+ASSIGNTABLE=13,362
+
+noeCheck.m,91
+function noesAreOK 1,0
+myresidueIndices 3,114
+noesAreOK 12,349
+differenceMatrix 14,365
+
+hungarian.m,1079
+function 1,0
+orig=33,917
+A=36,946
+    LC=45,1165
+    CH=46,1185
+    RH=47,1205
+    SLC=50,1264
+    r=53,1326
+    SLR=57,1441
+            r=85,2388
+            l=87,2466
+        % While the column l is labelled,98,2800
+                r=109,3228
+            l=113,3341
+            break;131,3933
+            SLC=139,4153
+            r=142,4252
+            SLR=148,4415
+T=154,4499
+function A=159,4558
+colMin=171,4891
+A=172,4907
+rowMin=175,4981
+A=176,4999
+function 191,5292
+U=207,5802
+LZ=210,5862
+NZ=211,5878
+	j=216,5965
+		j=224,6156
+		lj=252,6649
+		j=253,6660
+			lm=261,6867
+			m=262,6881
+				lm=272,7098
+				m=273,7109
+				j=279,7225
+				break;311,7942
+r=320,8065
+rows=321,8080
+empty=323,8110
+U=326,8185
+function 330,8233
+    m=357,8899
+        l=373,9284
+        r=380,9497
+function 385,9533
+coveredRows=408,10183
+coveredCols=411,10255
+r=413,10277
+c=414,10300
+m=417,10363
+            row=437,10973
+            colsInList=438,10998
+                l=443,11158
+r=452,11374
+c=453,11396
+i=458,11488
+j=459,11497
+T=474,11742
+
+betterNVR.m,5338
+function 1,0
+%    License as published by the Free Software Foundation;59,3345
+%    version 2.1 of the License,60,3411
+%    version 2.1 of the License, or 60,3411
+HSHIFTS 97,5011
+NSHIFTS 98,5033
+RDC1 108,5188
+RDC2 109,5206
+VECTORS 111,5225
+numPeaks 113,5252
+unassignablePeaks 114,5289
+NOES 117,5330
+ALLDISTS 118,5353
+mu=122,5430
+   NTH=NTH+(mu-12.9); NTH=124,5469
+ASSIGNTABLE 129,5514
+MASTER 132,5621
+ROWIN=140,5813
+COLIN=141,5842
+HDE 147,5901
+ASSIGNTABLE 148,5950
+nlast 153,6079
+   nlast 160,6356
+%prune via BMRB stats163,6396
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=164,6418
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP 164,6418
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 164,6418
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 = CP;RP2 164,6418
+ASSIGNTABLE 165,6547
+nlast 168,6673
+  nlast 175,6943
+%prune via the program shiftx178,6981
+ASSIGNTABLE 181,7136
+   nlast 184,7266
+      nlast 192,7570
+%prune via the program shifts198,7627
+ASSIGNTABLE 202,7891
+finalAssignments 230,8867
+%  done 246,9169
+%      relPeakIndex 255,9381
+%      numUnassignedPeaks 256,9406
+%        set the new state parameters,260,9557
+%        set the new state parameters, ASSIGNTABLE,260,9557
+%        set the new state parameters, ASSIGNTABLE, ROWIN,260,9557
+%        set the new state parameters, ASSIGNTABLE, ROWIN,COLIN,260,9557
+function 270,9737
+depth 277,10005
+numAssignedPeaks 279,10025
+fprintf('at depth %d, numAssignedPeaks = %d\n', depth, numAssignedPeaks)282,10130
+else286,10331
+  myCOLIN 306,10941
+  NP 308,11020
+  NP 309,11101
+  NP 311,11147
+ASSIGNTABLE 315,11224
+numCombinations 318,11409
+fprintf(1, 'after NOE pruning num potential combinations is %d\n',numCombinations)324,11539
+function SAUPE 329,11724
+M 333,11785
+vec 334,11801
+ct=335,11810
+      ct=346,12134
+   M 356,12285
+s 359,12335
+function 375,12553
+%first,first377,12667
+recur=378,12696
+terminate 379,12705
+rm=380,12720
+cm=381,12742
+ain=382,12764
+            recur=394,13028
+            recur=405,13251
+     %       terminate 417,13442
+% $$$       x=418,13486
+     x 427,13823
+% from OROWIN,445,14327
+% from OROWIN, COLIN,445,14327
+% from OROWIN, COLIN, CP,445,14327
+function 448,14361
+ASSIGNTABLE=454,14840
+function 456,14883
+bin=458,14960
+ct=459,14967
+ct=1;row=459,14967
+ct=1;row=[1:size(A,1)];col=459,14967
+   elseif 465,15104
+col=493,15701
+B=494,15716
+ROWIN=507,15978
+COLIN=508,15996
+function 515,16216
+sizeROWINATENTRANCE 518,16298
+sct=532,16788
+      sct=537,16885
+SIZErowinatExit 541,16914
+function V 549,17047
+%doublesdoubles556,17380
+%triplestriples567,17957
+%quadsquads578,18638
+V 585,19126
+function V 588,19200
+%doublesdoubles593,19434
+%triplestriples597,19617
+V 599,19695
+function M 601,19715
+   ASSIGNTABLE=609,19961
+ASSIGNTABLE=614,20088
+   HM=618,20215
+   HM=628,20405
+M=630,20418
+h=631,20426
+elseif(634,20467
+      in2=638,20548
+      ind=639,20567
+      ind=ind(in2);x=639,20567
+      h=649,20790
+   h=652,20817
+function h 658,20878
+      r 665,21008
+function V 683,21218
+%doublesdoubles690,21462
+%triplestriples701,21929
+%quadsquads712,22500
+V 719,22922
+function score=722,22996
+bpg 723,23044
+bpg 724,23070
+score 725,23094
+function M 730,23290
+function 740,23411
+V2 742,23559
+V3 743,23604
+V 744,23649
+numVoters 745,23668
+  S1  = ones(3);S2=748,23711
+  S1 749,23734
+  S2 750,23777
+  RP1 751,23820
+  RP2 752,23871
+  V4 753,23922
+  V5 754,23976
+  V 755,24030
+  numVoters 756,24051
+V 759,24073
+V 761,24162
+function 763,24215
+maxProbabilityOfAssignment 765,24349
+bestAssignmentPeak 766,24381
+bestAssignmentResidue 767,24406
+      bestAssignmentPeak 780,24802
+      bestAssignmentResidue 781,24835
+function 793,25084
+end801,25498
+function 808,25703
+  S1 = ones(3);S2=812,25834
+  S1 813,25856
+  S2 814,25898
+  RP1 815,25940
+  RP2 816,25991
+  S1 818,26047
+  S1 = ones(3);S2=818,26047
+  RP1 819,26069
+  RP2 823,26151
+function 827,26170
+distinction 830,26311
+  sortedWeights 841,26549
+end844,26652
+sortedDistinction 847,26721
+function 849,26762
+residueCandidatesRelIndices 854,26971
+numCandidateResidues 855,27036
+AGGREGATE_VOTE 857,27097
+residueCandidatesRelIndices;869,27578
+AGGREGATE_VOTE;870,27607
+relResidueIndices 873,27663
+function 876,27770
+nlast 879,27993
+  nlast 899,28713
+function 903,28752
+a 906,28883
+assignments=907,28910
+correct=908,28925
+incorr=909,28936
+  x 913,29004
+    %     rn 916,29059
+    rn 917,29078
+    rn=919,29100
+  foo 925,29213
+assignmentAccuracy 938,29365
+fprintf('Assignment Accuracy = %f percent \n',assignmentAccuracy)939,29414
+   missing=961,30040
+         ct=967,30181
+end975,30345
+numAssignedPeaks 992,30947
+end1002,31469
+numAssignedPeaks 1022,32176
+fprintf('numAssignedPeaks = %d\n', numAssignedPeaks)1024,32214
+  numUnassignedPeaks 1028,32324
+  %numCandidatesPerPeak numCandidatesPerPeak1029,32382
+numTriedPeaks 1045,32837
+  %VERY_BIG_NUMBER VERY_BIG_NUMBER1056,33154
+  relPeakIndex 1060,33289
+    end1090,34645
+  relPeakIndex 1099,34942
+  numTriedPeaks 1100,34977
+
+HD_HD2PROB.m,313
+function M 2,2
+%NVR_HD2PROB: This computes assignment probabilities based on amide exchange rates,4,55
+%    This library is free software;29,1052
+%    License as published by the Free Software Foundation;31,1185
+%    version 2.1 of the License,32,1252
+%    version 2.1 of the License, or 32,1252
+M 67,2504
+
+voteAccordingToMarsScore.m,1175
+function 1,0
+%bestRelPeakIndex bestRelPeakIndex3,175
+%bestRelResidueIndex bestRelResidueIndex4,202
+MAX_NUMCANDIDATES 6,230
+relCandidatePeakIndices 7,263
+relCandidateResidueIndices 8,321
+scores 9,375
+numCandidates 10,429
+V 18,524
+%V V21,546
+%maxVotesBeforeMaskingWithASSIGNTABLE maxVotesBeforeMaskingWithASSIGNTABLE22,607
+V 24,661
+LARGE_VALUE 26,683
+stopGeneratingCandidates 37,933
+% $$$ combinedVoter 41,966
+% $$$ 47,1227
+% $$$   relResidueIndex 55,1647
+% $$$   score 57,1829
+% $$$     score 61,1981
+% $$$   fprintf(1, 'score of this assignment is %f\n', score)63,2073
+  %endend82,2527
+    bestRelResidueIndex 89,2706
+  numCandidates 95,2778
+      stopGeneratingCandidates 104,3188
+      break;105,3224
+% $$$ 	stopGeneratingCandidates 115,3523
+% $$$ 	break;116,3560
+end125,3905
+sortedRelCandidatePeakIndices 128,3976
+sortedRelCandidateResidueIndices 129,4036
+relCandidatePeakIndices 137,4297
+relCandidateResidueIndices 138,4357
+scores 139,4420
+function totalVotes 145,4565
+      c 151,4730
+         elseif(155,4859
+      c 178,5596
+         elseif(182,5725
+	totalVotes 199,6451
+% $$$ function 204,6507
+% $$$ ASSIGNTABLE=208,6698
+
+checkAssignmentScoresVsCorrectness.m,195
+MASTER 2,31
+count 3,59
+MASTER 5,109
+score 7,223
+    count 11,293
+    correct 13,323
+  residue 15,346
+  score 16,377
+fprintf(1, 'assignment accuracy = %f\n', count/numRows)numRows24,518
+
+computeScore.m,53
+function score 1,0
+numPeaks 4,69
+    score 10,232
+
+initializeVoters.m,133
+function voter 1,0
+voter{voter4,92
+voter{voter5,110
+voter{voter6,128
+voter{voter7,144
+voter{voter8,160
+voter{voter9,177
+
+analyzeFirstAssignment.m,316
+numPeaks 1,0
+numPeaks = size(foundMASTERs{1},1); foundIt 1,0
+%      fprintf(1, 'peak %d is incorrectly assigned to residue %d\n',peakIndex,residueIndex)19,389
+      foundIt 29,747
+% $$$     break;34,862
+  fprintf(1, 'numCorrectPeaks = %d\n',numCorrectPeaks)37,888
+    foundPosition 40,1030
+%  figure;54,1628
+
+initialize_backup_04_03_09.m,1023
+HSHIFTS 20,688
+NSHIFTS 21,710
+RDC1 22,732
+RDC2 23,753
+mu=27,824
+   NTH=NTH+(mu-12.9); NTH=29,863
+fprintf(1, 'NTH is originally equal to %f\n', NTH)32,906
+NTH 34,959
+fprintf(1, 'NTH manually set to %f\n', NTH)36,973
+ASSIGNTABLE 39,1028
+OASSIGNTABLE=40,1097
+ROWIN=43,1211
+COLIN=44,1240
+MASTER=46,1306
+  HDE=52,1450
+ASSIGNTABLE 54,1504
+TP 68,1791
+ASSIGNTABLE 76,2024
+else90,2346
+ASSIGNTABLE 93,2450
+else106,2821
+ASSIGNTABLE 110,2963
+else124,3367
+ASSIGNTABLE 128,3522
+SSCP=141,3722
+SSCP=SSCP.*ASSIGNTABLE;SXCP=141,3722
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=141,3722
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=141,3722
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=141,3722
+%origMASTER origMASTER143,3829
+  S1 = []; S2 149,3943
+  S1 = []; S2 = []; RP1 149,3943
+  S1 = []; S2 = []; RP1 = []; RP2 149,3943
+  S1 154,4163
+  S2 155,4202
+  RP1 156,4241
+  RP2 157,4306
+%MASTER MASTER159,4375
+marsShiftScore 161,4398
+
+checkNOEs.m,2049
+useOrigData 1,0
+ H_CS 6,172
+ N_CS 7,197
+  unadjustedNOEs 9,222
+  order 10,260
+numCorrespondingNOEs 13,366
+correct 16,449
+correct = 0; incorrect 16,449
+correct = 0; incorrect = 0; missingNOE 16,449
+correct = 0; incorrect = 0; missingNOE = 0;absentNOE 16,449
+HN_EPS 19,531
+HN_EPS = 0.015; N_EPS 19,531
+HN_EPS = 0.015; N_EPS = 0.35; H_EPS 19,531
+HN_EPS = 0.015; N_EPS = 0.35; H_EPS = 0.05; NOE_TH 19,531
+%      noe2 25,784
+	elseif 46,1987
+	  incorrect 60,2821
+fprintf(1, 'total %d foundNOE %d absentNOE %d spurious NOE cases.\n',foundNOE, absentNOE, incorrect)69,2922
+fprintf(1, 'total %d missing NOEs\n',missingNOE)70,3024
+% $$$ maxH_ppm 72,3075
+% $$$ maxH_ppm = 0;max_N_ppm_diff_case1 72,3075
+% $$$ maxH_ppm = 0;max_N_ppm_diff_case1 = 0; max_N_ppm_diff_case2 72,3075
+% $$$ v_H1_diff 73,3146
+% $$$ v_H1_diff = []; v_N_diff_case1 73,3146
+% $$$ v_H1_diff = []; v_N_diff_case1 = [];v_N_diff_case2 73,3146
+% $$$ v_H2_diff 74,3209
+% $$$   residue2Index 84,3401
+% $$$   ppm1 85,3446
+% $$$   ppm2 86,3491
+% $$$   ppm3 87,3536
+% $$$   peak1Index 88,3581
+% $$$   peak2Index 89,3635
+% $$$   hsqc_ppm1 90,3689
+% $$$   hsqc_ppm2 91,3731
+% $$$   hsqc_ppm3_case1 92,3773
+% $$$   hsqc_ppm3_case2 93,3821
+% $$$   fprintf(1, 'NOE between %d and %d, ppm1 = %f ppm2 = %f, ppm = %f\n', residue1Index,residue2Index,ppm1,ppm2,ppm3)94,3869
+% $$$   fprintf(1, 'H ppm of residue %d = %f, H ppm of residue %d = %f\n',residue1Index,hsqc_ppm1,residue2Index,hsqc_ppm2)95,3991
+% $$$   fprintf(1, 'N ppm of residue %d = %f, %d = %f\n', residue1Index,hsqc_ppm3_case1,residue2Index,hsqc_ppm3_case2)96,4115
+% $$$ 	   - hsqc_ppm3_case1, ppm3 - hsqc_ppm3_case2)98,4311
+% $$$   v_H1_diff=106,4581
+% $$$   v_H2_diff=107,4630
+% $$$   v_N_diff_case1=108,4682
+% $$$   v_N_diff_case2=109,4748
+% $$$ fprintf(1, 'max H difference ppm is %f\n',maxH_ppm)124,5187
+% $$$ fprintf(1, 'max N ppm difference is %f (case1), %f (case2)\n',max_N_ppm_diff_case1,max_N_ppm_diff_case2)125,5246
+% $$$ figure;128,5393
+% $$$ figure;130,5435
+% $$$ figure;132,5482
+
+initialize.m,1316
+HSHIFTS 25,793
+NSHIFTS 26,815
+RDC1 27,837
+RDC2 28,858
+mu=32,929
+   %   NTH=35,991
+NTH 39,1023
+NTH=40,1087
+%fprintf(1, 'NTH is originally equal to %f\n', NTH)41,1106
+%NTH NTH43,1160
+%fprintf(1, 'NTH manually set to %f\n', NTH)45,1175
+fprintf(1, 'NTH = %f\n', NTH)50,1415
+ASSIGNTABLE 52,1447
+OASSIGNTABLE=53,1516
+ROWIN=56,1630
+COLIN=57,1659
+MASTER=59,1725
+  HDE=65,1869
+ASSIGNTABLE 67,1923
+foundZeroEntryOnDiagonal 69,1960
+     foundZeroEntryOnDiagonal 73,2121
+TP 78,2183
+ASSIGNTABLE 86,2416
+     foundZeroEntryOnDiagonal 94,2596
+else104,2791
+ASSIGNTABLE 108,2930
+     foundZeroEntryOnDiagonal 113,3096
+else122,3342
+ASSIGNTABLE 127,3514
+     foundZeroEntryOnDiagonal 132,3687
+else142,3959
+ASSIGNTABLE 147,4147
+     foundZeroEntryOnDiagonal 155,4320
+SSCP=166,4510
+SSCP=SSCP.*ASSIGNTABLE;SXCP=166,4510
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=166,4510
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=166,4510
+SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=166,4510
+%origMASTER origMASTER168,4617
+  S1 = []; S2 174,4731
+  S1 = []; S2 = []; RP1 174,4731
+  S1 = []; S2 = []; RP1 = []; RP2 174,4731
+  S1 179,4951
+  S2 180,4990
+  RP1 181,5029
+  RP2 182,5094
+%MASTER MASTER184,5163
+marsShiftScore 186,5186
+
+NVR_SHIFTX2PROB.m,1523
+function 1,0
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on the program SHIFTX,8,233
+%    This library is free software;33,1237
+%    License as published by the Free Software Foundation;35,1370
+%    version 2.1 of the License,36,1437
+%    version 2.1 of the License, or 36,1437
+FILTERS=load('~/speech/NVR/trunk/CHEMSHIFTSTATS/SHIFTXFILTERS');FILTERS=65,2621
+PRED 69,2802
+differenceMatrixH 74,2896
+differenceMatrixN 75,2945
+% $$$ fid 76,2994
+% $$$   n 83,3230
+% $$$      h 97,3519
+% $$$      n 98,3558
+       printDetails 113,3812
+      T 116,3855
+      S 117,3880
+      h 119,3913
+      n 120,3947
+      %      fprintf(1, 'h = %f n= %f\n',h,n)134,4410
+      elseif(140,4598
+%     fprintf(1, 'shiftx bpg construction removed all entries from row #%d',i)193,6835
+% $$$ nlast 200,6984
+% $$$    nlast 207,7248
+% $$$ M 210,7302
+% $$$ %     fprintf(1, 'shiftx bpg construction removed all entries from row #%d',i)217,7444
+function p 224,7614
+   xHS 230,7811
+   xN 231,7840
+   xNS 232,7868
+   xHMX 233,7897
+   xHMN 234,7927
+   xNMX 235,7957
+   xNMN 236,7987
+elseif(238,8022
+       fprintf(1, 'Ratio : %f\n',(h-xH)/xHS/xHMX)xHMX285,9055
+       coeff1 286,9107
+       p1 297,9312
+	coeff2 308,9589
+       p1=316,9750
+        fprintf(1, 'Ratio : %f\n',(n-xN)/xNS/xNMX)xNMX325,9976
+	coeff3 327,10032
+       p2 336,10200
+        fprintf(1, 'Ratio : %f\n',-(n-xN)/xNS/xNMN)xNMN345,10427
+	coeff4 347,10484
+      p2 355,10644
+  p1=364,10751
+  p2=365,10775
+p 367,10804
+
+divideAndConquer_CH.m,1061
+function 1,0
+NUM_PEAKS_TO_ASSIGN_WITHOUT_RECURSION=10,458
+fprintf(1, 'wanna assign %d peaks and %d residues in divideAndConquer\n',numPeaks,numResidues)14,548
+  voterR 19,729
+    voterR{voterR23,822
+  ASSIGNTABLE_L 26,890
+  ASSIGNTABLE_R 27,944
+  peakIndicesL 32,1060
+  peakIndicesR 33,1112
+% $$$   MASTER_L 35,1176
+% $$$   MASTER_L      = []; MASTER_R 35,1176
+% $$$   totalNumPeaks 37,1226
+% $$$     relPeakIndexR 41,1387
+% $$$       MASTER_R 47,1695
+% $$$       MASTER_L 50,1842
+% $$$       MASTER_R 53,1989
+% $$$       keyboard;56,2166
+% $$$   end58,2202
+    totalNumAssignments 84,3279
+    foundMASTERs 85,3309
+    finalScores 86,3347
+    assignmentAccuracies 87,3378
+		       residueIndices, voter,numVoters,ASSIGNTABLE,NOES,ALLDISTS,IALLDISTS,NTH,peakIDs,RESNUMS,RDC1,RDC2,VECTORS);%,totalNumPeaks)94,3692
+%  keyboard;96,3864
+function resolveConflicts(115,4323
+    voterConflicting 132,4897
+    conflictingRelPeakIndices 134,4944
+    unassignedRelResidueIndices 135,5023
+    end140,5275
+    ASSIGNTABLE_Conflicting 158,5957
+
+adjustAndSSE_InfoToSHIFTX_File.m,185
+%based on the template SHIFTX file,3,78
+%and the SHIFTX file,4,114
+%the same information as in the original SHIFTX file,6,231
+outputShiftxFilename 13,553
+%resIndex resIndex17,727
+
+computeMB_NoeScore.m,1739
+function 1,0
+%could also skip passing HSQCDATA,7,210
+%could also skip passing HSQCDATA,ALLDISTS,7,210
+  numNOES 20,582
+  hn_closePeaksCell 22,629
+  secondProtonClosePeaksCell 23,677
+  distances 24,725
+    secondProtonClosePeaksCell{secondProtonClosePeaksCell28,912
+%  smallDistanceThreshold 32,1101
+%  largeDistanceThreshold 33,1136
+  smallDistanceThreshold 35,1170
+  largeDistanceThreshold 36,1201
+noeScore 42,1252
+noeScore   = 0; numHN_NOES 42,1252
+distanceDiffs 43,1291
+structureDistances 44,1312
+structureDistances = []; correspondingNoeDistances 44,1312
+%  secondProtonClosePeaks 48,1495
+  foundVeryCloseNoe 51,1774
+  bestScoreAddition 52,1825
+    foundDebugPeakIndex 58,2023
+	break;64,2268
+      foundSecondDebugPeakIndex 74,2460
+	  break;81,2764
+%	foundVeryCloseNoe 93,3108
+       distance 97,3231
+       distanceDiff 99,3362
+% $$$ 		 debugPeakIndex, debugSecondPeakIndex)106,3785
+% $$$ 	   correspondingNoeDistances 110,3939
+	 foundVeryCloseNoe 118,4203
+        break;126,4313
+% $$$       		 debugPeakIndex, debugSecondPeakIndex)131,4726
+	 scoreAddition 133,4783
+% $$$       	     structureDistances 140,5118
+% $$$       	     correspondingNoeDistances 141,5216
+	   bestScoreAddition 143,5352
+% $$$ 	   fprintf(1, 'best score addition changed to %f\n', bestScoreAddition)144,5422
+% $$$       	 distanceDiffs 147,5530
+% $$$ 	 fprintf(1, 'distance diff is too large. It is %f\n',distanceDiff)149,5621
+% $$$ 	 fprintf(1, 'the noe # is %d\n',noeIndex)150,5696
+% $$$ 		 debugPeakIndex, debugSecondPeakIndex)153,5957
+% $$$ 	 fprintf(1, 'the distance in the structure is %f\n', distance 154,6005
+% $$$ 	 distanceDiffs 156,6156
+  noeScore 165,6360
+% $$$ figure;167,6407
+% $$$ figure;168,6446
+
+doIndividualPieceManually.m,364
+relPeakIndicesToBeAllowed 8,343
+relPeakIndicesToBeAllowed = 1:size(ASSIGNTABLE,1);filename 8,343
+%relPeakIndicesToBeAllowed relPeakIndicesToBeAllowed9,491
+%relPeakIndicesToBeAllowed = 1:5;filename 9,491
+ASSIGNTABLE 14,713
+origPeakIndices 15,783
+peakIndices 16,814
+figure;29,1419
+    residueIndex 35,1673
+      numCorrectPeaks 40,1806
+    break;45,1994
+
+computeG.m,39
+function g 1,0
+g 7,154
+    g 14,304
+
+computeHD_Score.m,93
+function HD_SCORE 1,0
+S2 8,268
+MASTER 12,511
+JOINT 14,617
+JOINT 15,693
+HD_SCORE 16,727
+
+compareHydrogenExchangeProtectionFactors.m,461
+name 1,0
+count1 8,259
+count1 = 0; count2 8,259
+slowExchangerRates 9,283
+fastExchangerRates 10,308
+  exchangeRate 14,461
+  indexInMyInputFile 15,530
+  slowExchangerAccordingToMyInputFile 16,579
+  fprintf(1, '%d %d %d\n', residueNumber, exchangeRate, slowExchangerAccordingToMyInputFile)18,660
+%    count1 23,855
+    slowExchangerRates 25,894
+    fastExchangerRates 27,961
+%    fprintf(1, '%d %d\n', count2, exchangeRate)30,1073
+%    count2 31,1123
+
+RDC2PROB.m,331
+function M 2,2
+%NVR_SHIFTX2PROB: This computes assignment probabilities based on RDCs,4,52
+%    This library is free software;29,1025
+%    License as published by the Free Software Foundation;31,1158
+%    version 2.1 of the License,32,1225
+%    version 2.1 of the License, or 32,1225
+M 66,2466
+%M M74,2581
+elseif(86,2894
+
+prepareDC_Table.m,98
+chRdc 2,16
+%fout fout10,367
+fout 11,411
+  lineIndex 15,490
+nhRdc 26,871
+  lineIndex 29,956
+
+AssignFirstFiveResidues.m,6146
+function 1,0
+%    License as published by the Free Software Foundation;51,2971
+%    version 2.1 of the License,52,3037
+%    version 2.1 of the License, or 52,3037
+% $$$ HSHIFTS 89,4758
+% $$$ NSHIFTS 90,4786
+% $$$ RDC1 91,4814
+% $$$ RDC2 92,4841
+% $$$ mu 96,4941
+% $$$    NTH = NTH + (mu-12.9); NTH 99,5005
+% $$$ ASSIGNTABLE 102,5072
+% $$$ OASSIGNTABLE 103,5148
+% $$$ ROWIN 106,5282
+% $$$ COLIN 107,5326
+% $$$ MASTER 109,5413
+% $$$ HDE 114,5515
+% $$$ ASSIGNTABLE 115,5578
+% $$$ TP 117,5628
+% $$$ TP 118,5662
+% $$$ ASSIGNTABLE 119,5769
+% $$$ 121,5819
+% $$$ ASSIGNTABLE 122,5927
+% $$$ 125,6012
+% $$$ ASSIGNTABLE 126,6140
+% $$$ 129,6230
+% $$$ ASSIGNTABLE 131,6389
+% $$$ SSCP=133,6440
+% $$$ SSCP=SSCP.*ASSIGNTABLE;SXCP=133,6440
+% $$$ SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=133,6440
+% $$$ SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=133,6440
+% $$$ SSCP=SSCP.*ASSIGNTABLE;SXCP=SXCP.*ASSIGNTABLE;CP=CP.*ASSIGNTABLE;TP=TP.*ASSIGNTABLE;HDE=133,6440
+% $$$ S1 136,6595
+% $$$ S2 137,6638
+% $$$ RP1 138,6681
+% $$$ RP2 139,6736
+% $$$ numIncorrectAssignmentsAtStart 143,6841
+% $$$ numAssignmentsAtStart 144,6883
+% $$$   absoluteResidueIndex 148,7035
+% $$$   residueIndex 149,7093
+% $$$ numCorrectAssignmentsAtStart 156,7397
+% $$$ 158,7497
+% $$$ 159,7570
+% $$$ 160,7623
+% $$$ 162,7762
+% $$$ fprintf(1, 'loaded %d incorrect, %d correct assignments\n',numIncorrectAssignmentsAtStart,numCorrectAssignmentsAtStart)163,7815
+% $$$ figure;177,8179
+% $$$ figure;178,8216
+% $$$ figure;179,8249
+% $$$ figure;180,8283
+% $$$ figure;181,8334
+% $$$ figure;182,8373
+origSSCP 185,8423
+origMASTER 186,8447
+origASSIGNTABLE 187,8473
+origROWIN 188,8504
+origCOLIN 189,8529
+origCP 190,8554
+origSSCP 191,8576
+origSXCP 192,8600
+origTP 193,8624
+origHDE 194,8646
+origRP1 195,8669
+origRP2 196,8692
+nlast 199,8717
+   nlast 208,9264
+ilast 212,9361
+   V = vote5(CP,TP,SSCP,SXCP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);V=214,9405
+   V2 215,9500
+   V3 216,9593
+   FOO 217,9676
+   FOO = or(V2,or(V,V3));ASSIGNTABLE=217,9676
+   nlast 218,9731
+      nlast 227,10305
+   ilast 232,10406
+   V2 238,10600
+   V 239,10693
+   ASSIGNTABLE 240,10710
+   nlast 241,10792
+      nlast 250,11366
+   end258,11536
+   S1 267,12213
+   S2 268,12253
+   RP1 269,12293
+   RP2 270,12357
+last 277,12518
+      V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 281,12628
+      nV=282,12719
+      onV=285,13123
+      V=286,13137
+      V=thresh(oV,7);nV 286,13137
+      X 287,13181
+   last 304,13921
+   V2 310,14122
+   V3 311,14215
+   X 314,14422
+   V 315,14467
+   ASSIGNTABLE 316,14484
+   nlast 317,14566
+      nlast 326,15140
+   end335,15302
+   S1 344,15979
+   S2 345,16019
+   RP1 346,16059
+   RP2 347,16123
+scores 352,16323
+  assignedResidueIndex 355,16513
+end367,17119
+MASTER 370,17179
+ASSIGNTABLE 371,17231
+ROWIN 372,17288
+COLIN 373,17339
+CP 374,17390
+SSCP 375,17438
+SXCP 376,17488
+TP 377,17538
+HDE 378,17586
+RP1 379,17635
+RP2 380,17684
+correctAssigntable 384,17786
+end387,17907
+marsRdcScore 394,18165
+fullyCorrectAssigntable 399,18303
+end402,18434
+  residueIndex 416,19008
+end420,19261
+RP1 427,19505
+RP2 428,19612
+%marsRdcScore marsRdcScore430,19720
+   nlast 445,20510
+% $$$ 494,23575
+% $$$    RP1 498,23713
+% $$$ 501,23765
+% $$$    RP2 505,23904
+% $$$       V = vote5(CP,SXCP,SSCP,TP,HDE,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,1);oV 510,24039
+% $$$       nV=511,24136
+% $$$ 514,24418
+% $$$       onV=516,24584
+% $$$       V=517,24604
+% $$$       V=thresh(oV,16);nV 517,24604
+% $$$       X 518,24655
+% $$$ 530,25121
+% $$$ 531,25246
+% $$$    last 536,25510
+% $$$ 538,25559
+% $$$ 539,25612
+% $$$ RP1 543,25690
+% $$$ RP2 544,25745
+% $$$ isum 546,25807
+% $$$    V2 549,25958
+% $$$    V3 550,26068
+% $$$    X 554,26325
+% $$$    V 555,26377
+% $$$    ASSIGNTABLE 556,26400
+% $$$    nlast 557,26488
+% $$$ 560,26641
+% $$$ 561,26730
+% $$$ 562,26855
+% $$$       nlast 566,27116
+% $$$    isum 571,27247
+% $$$ fail=575,27310
+% $$$ 581,27654
+% $$$ 583,27755
+% $$$ 585,27887
+% $$$    S1 588,28088
+% $$$    S2 589,28134
+% $$$    RP1 590,28180
+% $$$    RP2 591,28238
+% $$$ currsize=594,28313
+% $$$ sthr=595,28351
+% $$$ sthr=10;VTH=595,28351
+% $$$ sthr=10;VTH=79;BTH=595,28351
+% $$$    nV=601,28512
+% $$$    onV=602,28668
+% $$$    V 605,28720
+% $$$    V = vote(CP,SXCP,SSCP,TP,RP1,RP2,HDE, ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,lv);oV=605,28720
+% $$$ 607,28938
+% $$$    V=609,29098
+% $$$    V=thresh(oV,VTH);nV 609,29098
+% $$$    X 610,29150
+% $$$       V=614,29343
+% $$$       V=thresh(oV,VTH);nV 614,29343
+% $$$       X 615,29398
+% $$$       X = thresh(V,max(max(V)));X 619,29607
+% $$$       X = thresh(V,max(max(V)));X = X(1:size(ASSIGNTABLE,1),1:size(ASSIGNTABLE,2));X=619,29607
+% $$$ 636,30127
+% $$$ 637,30252
+% $$$       S1 638,30430
+% $$$       S2 639,30479
+% $$$       RP1 640,30528
+% $$$       RP2 641,30589
+% $$$ 653,31105
+% $$$ 654,31197
+% $$$ 655,31325
+% $$$       S1 657,31522
+% $$$       S2 658,31571
+% $$$       RP1 659,31620
+% $$$       RP2 660,31681
+% $$$       V2 666,31900
+% $$$       V 667,32013
+% $$$       ASSIGNTABLE 668,32039
+% $$$       nlast 669,32130
+% $$$ 672,32292
+% $$$ 673,32385
+% $$$ 674,32513
+% $$$          S1 675,32692
+% $$$          S2 676,32744
+% $$$          RP1 677,32796
+% $$$          RP2 678,32860
+% $$$          nlast 682,33018
+% $$$    sthr=685,33093
+% $$$       VTH=688,33186
+% $$$    BTH=694,33340
+% $$$          break;703,33581
+% $$$          break;710,33750
+% $$$ HD_SCORE 716,33844
+% $$$ weightedHD_Score 717,33868
+% $$$ %HD_SCORE HD_SCORE720,33914
+% $$$ %weightedHD_SCORE weightedHD_SCORE726,34196
+% $$$ 732,34486
+ ASSIGNTABLE=753,35294
+ function 756,35341
+ THR;757,35534
+    S1 764,36106
+    S2 765,36147
+    RP1 766,36188
+    RP2 767,36253
+% $$$ function V 772,36329
+% $$$       c 784,36632
+% $$$       A 802,37137
+% $$$       A 803,37191
+% $$$       V 804,37235
+ function V 810,37300
+       c 821,37534
+       A 835,37855
+       A 836,37904
+       V 837,37943
+
+initialize_withCH.m,1461
+function 1,0
+HSHIFTS 8,471
+NSHIFTS 9,493
+%dontUseRDC1 dontUseRDC110,515
+%dontUseRDC2 dontUseRDC211,541
+RDC1 12,567
+RDC2 13,586
+mu=17,655
+   NTH=NTH+(mu-12.9); NTH=19,694
+fprintf(1, 'the original NTH is %f\n',NTH)21,736
+NTH 22,780
+%NTH NTH24,818
+%NTH NTH25,832
+fprintf(1, 'set NTH to %f Angstroms.\n',NTH)26,855
+ASSIGNTABLE 28,910
+ROWIN 31,1073
+COLIN 32,1110
+MASTER 34,1184
+%HDE HDE36,1214
+HDE 37,1264
+ASSIGNTABLE 42,1429
+% $$$ nlast 43,1465
+% $$$    nlast 49,1684
+% $$$ end50,1725
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=52,1736
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP 52,1736
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 52,1736
+[CP] = NVR_CS2PROB(ASSIGNTABLE,HSHIFTS,NSHIFTS,TYPES,SSTRUCT,NOES,ALLDISTS,NTH,ROWIN,COLIN);SXCP=CP;SSCP = CP;RP1 = CP;RP2 52,1736
+%%%ASSIGNTABLE ASSIGNTABLE53,1865
+% $$$    V2 58,2062
+% $$$    V 59,2151
+% $$$    nlast 62,2269
+% $$$       nlast 68,2505
+%prune via the program shiftx73,2573
+%%%ASSIGNTABLE ASSIGNTABLE76,2784
+% $$$    V2 82,3034
+% $$$    V 83,3133
+% $$$    nlast 85,3241
+% $$$       nlast 91,3477
+%prune via the program shifts96,3545
+%%%ASSIGNTABLE ASSIGNTABLE101,3815
+function V 110,3901
+%doublesdoubles117,4234
+%triplestriples128,4811
+%quadsquads139,5492
+V 146,5980
+
+analyzeMarsOutput.m,131
+assignments 1,0
+%assignments assignments2,49
+correct 4,110
+correct = 0; incorrect 4,110
+  peakId 7,200
+    incorrect 12,325
+
+generateModelData.m,128
+%normalModeCoordsFilename is defined below,5,140
+%which contains updated H and NH bond info,6,209
+  modelDataFilename 17,533
+
+normpdf.m,63
+function y 1,0
+    mu 23,732
+end28,817
+y 37,982
+k 39,1003
+
+NVR.m,4380
+function 1,0
+%    License as published by the Free Software Foundation;47,2804
+%    version 2.1 of the License,48,2870
+%    version 2.1 of the License, or 48,2870
+HSHIFTS 85,4489
+NSHIFTS 86,4511
+RDC1 87,4533
+RDC2 88,4551
+mu=92,4619
+   NTH=NTH+(mu-12.9); NTH=94,4658
+fprintf(1, 'the original NTH is %f\n',NTH)96,4700
+%NTH NTH97,4744
+%NTH NTH98,4758
+%fprintf(1, 'set NTH to %f Angstroms.\n',NTH)99,4771
+ASSIGNTABLE 103,4893
+ROWIN 106,5050
+COLIN 107,5087
+MASTER 109,5161
+HDE 112,5217
+ASSIGNTABLE 113,5266
+nlast 114,5302
+   nlast 120,5485
+TP 123,5525
+ASSIGNTABLE 124,5626
+nlast 126,5664
+   nlast 132,5847
+%prune via BMRB stats135,5887
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=137,5980
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP 137,5980
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP = CP;RP1 137,5980
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities);SXCP=CP;SSCP = CP;RP1 = CP;RP2 137,5980
+ASSIGNTABLE 138,6071
+   V2 141,6215
+   V 142,6298
+   nlast 145,6398
+      nlast 151,6598
+%prune via the program shiftx155,6647
+ASSIGNTABLE 159,6843
+   V2 163,7032
+   V 164,7125
+   nlast 166,7221
+      nlast 172,7421
+%prune via the program shifts178,7472
+ASSIGNTABLE 182,7675
+   V2 188,7867
+   V 189,7960
+   nlast 193,8064
+      nlast 205,8823
+end208,8868
+   S1 = ones(3);S2=218,9548
+   S1 219,9571
+   S2 220,9611
+   RP1 221,9651
+   RP2 222,9717
+   S1 224,9788
+   S1 = ones(3);S2=224,9788
+   RP1 225,9811
+   RP2 229,9898
+   V2 236,10080
+   V 237,10169
+   nlast 240,10269
+      nlast 250,11019
+last 255,11109
+      nV=259,11286
+      nV=260,11420
+      V=264,11714
+      X 266,11742
+   ilast 277,12043
+      S1 286,12961
+      S2 287,13004
+      RP1 288,13047
+      RP2 289,13114
+      ilast 296,13317
+   last 302,13420
+ilast 311,13555
+   end316,13654
+   S1 325,14464
+   S2 326,14504
+   RP1 327,14544
+   RP2 328,14608
+   ilast 335,14790
+S1 338,14829
+S2 339,14866
+RP1 340,14903
+RP2 341,14964
+   end346,15108
+   S1 355,15957
+   S2 356,15997
+   RP1 357,16037
+   RP2 358,16101
+  V 372,16360
+   V2 373,16441
+   V 374,16530
+   nlast 377,16630
+      S1 384,17313
+      S2 385,17356
+      RP1 386,17399
+      RP2 387,17466
+      nlast 391,17600
+lv 396,17658
+   V 403,17768
+   V = vote(CP,SXCP,SSCP,RP1,RP2,ASSIGNTABLE,NOES,ALLDISTS,NTH,ROWIN,COLIN,1,0);oV=403,17768
+   %compute the assignment, given the distribution in the vote table408,18022
+   V 411,18285
+   nV=414,18374
+   nV=415,18406
+   dontrun=416,18444
+   X 423,18599
+         V = thresh(oV,max(max(max(V))-ct,1));ct=427,18787
+         X 428,18842
+   nlast 442,19161
+      S1 449,19844
+      S2 450,19887
+      RP1 451,19930
+      RP2 452,19997
+      nlast 456,20131
+      S1 475,21246
+      S2 476,21289
+      RP1 478,21375
+      RP2 479,21442
+   V 490,21674
+   V2 491,21756
+   lv 492,21845
+   V 493,21866
+   nlast 495,21962
+      S1 502,22645
+      S2 503,22688
+      RP1 504,22731
+      RP2 505,22798
+      nlast 509,22932
+         break;519,23139
+         break;526,23266
+ASSIGNTABLE 535,23367
+ROWIN=536,23393
+COLIN=537,23422
+NTH=539,23452
+NTH=5.5;minval=539,23452
+RP1_A 540,23475
+RP1_A = NVR_RDC2PROB(ASSIGNTABLE,RDC1,VECTORS,S1,ROWIN,COLIN)+minval;RP1_A 540,23475
+RP2_A 541,23563
+RP2_A = NVR_RDC2PROB(ASSIGNTABLE,RDC2,VECTORS,S2,ROWIN,COLIN)+minval;RP2_A 541,23563
+HDE_A 542,23651
+HDE_A = NVR_HD2PROB(ASSIGNTABLE ,HDEXCHANGE,HBOND)+minval;HDE_A=542,23651
+CP_A 543,23727
+		   ALLDISTS,NTH,ROWIN,COLIN, truncateProbabilities)+minval;CP_A 544,23799
+SXCP_A 545,23877
+			NOES,ALLDISTS,NTH,ROWIN,COLIN, SHIFTX_Filename,truncateProbabilities)+minval;SXCP_A 546,23949
+SSCP_A 547,24050
+			SHIFTX_Filename, truncateProbabilities)+minval;SSCP_A 549,24177
+NVR_SCORE 551,24255
+JOINT 553,24386
+oldNVR_SCORE=554,24414
+ASSIGNTABLE=572,24925
+function 574,24968
+THR;575,25144
+   S1 585,25977
+   S2 586,26017
+   RP1 587,26057
+   RP2 588,26121
+function V 593,26192
+%doublesdoubles600,26525
+%triplestriples611,27102
+%quadsquads622,27783
+V 629,28271
+function V 632,28345
+%doublesdoubles637,28579
+%triplestriples641,28762
+V 643,28840
+function V 652,28867
+%doublesdoubles659,29111
+%triplestriples670,29578
+%quadsquads681,30149
+V 688,30571
+function score=691,30645
+bpg 692,30693
+bpg 693,30719
+score 694,30743
+
+extractAnswerkey.m,70
+filename 3,27
+load order.mm6,149
+fout 11,200
+newAnswerKey 12,235
+
+templateModelDataGenerate.m,24
+modelDataFilename 2,52
+
+findCloseToHN.m,144
+function hnClosePeaks 1,0
+HN_EPS = 0.015; N_EPS 3,63
+numPeaks 4,94
+hnClosePeaks 5,123
+  H_CS_Diff 9,207
+  N_CS 10,240
+  N_CS_Diff 11,277
+
+makesquare.m,16
+function m=1,0
+
+checkIfFileExists.m,37
+function exists 1,0
+  exists 8,109
+
+prepareCS_Table.m,564
+function prepareCS_Table1,0
+printInOriginalFormat 4,186
+printInGuohuiLinsFormat 5,213
+elseif 9,304
+elseif 23,731
+  line_CA_1 34,1180
+  line_CA 36,1269
+%  line_H 38,1356
+  line_CB_1 40,1445
+  line_CB 42,1533
+%  line_CO_1 44,1620
+  line_H 46,1710
+  cs_N 48,1794
+  cs_CA_1 49,1851
+  cs_CA 50,1911
+  cs_H 51,1969
+  cs_CB_1 52,2026
+  cs_CB 53,2086
+%  cs_CO_1 54,2144
+function lineNumber 71,2803
+lineNumber 73,2904
+possibleLineNumbers 74,2921
+    break;78,3119
+fprintf(1, 'lineNumber = %d\n',lineNumber)81,3140
+function cs 82,3184
+  cs 86,3288
+
+noePrune.m,236
+function 3,79
+mypeakIndices 8,304
+myresidueIndices 9,359
+                                                             %PEAKINDICES,PEAKINDICES14,614
+    v 25,1221
+      impossibleToAssign 31,1532
+      break;32,1562
+NP 36,1593
+
+MC_AroundCorrectAssignment_v1.1.2.5.m,1432
+%MB_Score MB_Score9,498
+%MB_Score MB_Score12,600
+%MB_Score MB_Score14,674
+%+ 70 * numRDC)15,725
+%MB_Score MB_Score17,743
+printAssignmentAccuracy 18,788
+%numVoters numVoters19,817
+%voter voter20,833
+%voter voter21,888
+%numVoters numVoters23,980
+%voter voter24,996
+%voter voter25,1020
+%voter     = MB_Score; %MB_ShiftScore;MB_ShiftScore25,1020
+%myMASTER myMASTER26,1059
+%MASTER MASTER27,1089
+%candidateScores candidateScores30,1114
+%csCoefficient = 0.22; rdcCoefficient 37,1177
+%csCoefficient = 0.22; rdcCoefficient = 0.05; noeCoefficient 37,1177
+%csCoefficient csCoefficient39,1247
+%csCoefficient = 0.35; rdcCoefficient 39,1247
+%csCoefficient = 0.35; rdcCoefficient = 0.06; noeCoefficient 39,1247
+csCoefficient 41,1317
+csCoefficient = 0.19; rdcCoefficient 41,1317
+csCoefficient = 0.19; rdcCoefficient = 0.03; noeCoefficient 41,1317
+numPeaks 52,1426
+MASTER 54,1455
+%score score59,1522
+score 60,1567
+%score score61,1610
+%score score62,1650
+prevScore 63,1796
+scores 68,1829
+assignmentAccuracy 69,1845
+scoreIndex 70,1870
+iter 75,2071
+maxNumIters 76,2086
+    iter 81,2196
+%      score 84,2339
+        score 86,2403
+%       score 87,2452
+      %      score 88,2497
+  scoreIndex 99,2785
+  MASTER 103,3005
+  prevScore 104,3051
+  fprintf(1, 'iter = %d\n', iter)105,3072
+figure;110,3127
+figure;113,3195
+figure;116,3239
+correlationOfScore 118,3284
+correlationOfScore 119,3342
+
+learnWeightsThroughExhaustiveSearch.m,1216
+numAdditions 5,135
+numAdditions = 0; csWeight 5,135
+numAdditions = 0; csWeight = 0; rdcWeight 5,135
+numAdditions = 0; csWeight = 0; rdcWeight = 0; noeWeight 5,135
+myAlmostCompleteMASTER 9,238
+end13,353
+correctAssignmentNoeScore 15,464
+correctAssignmentNoeScore              = correctAssignmentNoeScore;%/numHN_NOEs;numHN_NOEs15,464
+%normalizedMB_Noe_Score normalizedMB_Noe_Score18,547
+	continue;32,1033
+      newNoeScore 39,1191
+%csCoefficientList csCoefficientList52,1585
+%rdcCoefficientList rdcCoefficientList53,1619
+%noeCoefficientList noeCoefficientList54,1655
+%csCoefficientList csCoefficientList56,1690
+%rdcCoefficientList rdcCoefficientList57,1724
+%noeCoefficientList noeCoefficientList58,1760
+csCoefficientList 60,1795
+rdcCoefficientList 61,1829
+noeCoefficientList 62,1865
+coefficientIsBest 64,1900
+%normalizedMB_Shift_Score normalizedMB_Shift_Score66,2010
+%normalizedMB_RDC_Score normalizedMB_RDC_Score67,2060
+numCases 69,2110
+  csCoefficient 73,2197
+	  normalizingConstant 85,2813
+	numCases 101,3525
+maxValue 107,3580
+linearIndexOfBestCoefficient 108,3674
+  fprintf(1, ' ranked the correct assignment first=%f\n',maxValue/numCases)numCases120,4532
+figure;125,4616
+
+computeMarsShiftScore.m,366
+function 1,0
+%    License as published by the Free Software Foundation;30,1194
+%    version 2.1 of the License,31,1261
+%    version 2.1 of the License, or 31,1261
+%FILTERS=load('/home/home4/apaydin/Mist/NVR/CHEMSHIFTSTATS/SHIFTSFILTERS');FILTERS=60,2445
+PRED 66,2693
+sigma_h 73,2804
+sigma_n 74,2821
+%S S80,2908
+      h 82,2929
+      n 83,2956
+M 91,3073
+
+docopt.m,681
+function 1,0
+%   Remove the comment symbol. In the quotes,19,715
+%   that launches your Web browser,20,779
+%   52      doccmd 22,848
+%	See also DOC,26,938
+%	See also DOC, HELPBROWSER,26,938
+%   Copyright 1984-2006 The MathWorks,28,973
+%   The MathWorks,29,1017
+doccmd = []; options 36,1323
+doccmd = []; options = []; docpath 36,1323
+% default to be different from that shown above,40,1489
+cname 45,1639
+%   options 49,1714
+%   docpath 50,1732
+   doccmd 52,1789
+%   options 53,1812
+%   docpath 54,1830
+%   doccmd 56,1885
+%   options 57,1902
+%   docpath 58,1920
+%   doccmd 60,1978
+%   options 61,1995
+%   docpath 62,2013
+cname 70,2297
+        doccmd 77,2429
+
+HD_SHIFTX2PROB.m,708
+function 1,0
+%NVR_HD2PROB: This computes assignment probabilities based on the program SHIFTX,4,121
+%    This library is free software;29,1125
+%    License as published by the Free Software Foundation;31,1258
+%    version 2.1 of the License,32,1325
+%    version 2.1 of the License, or 32,1325
+FILTERS=load('~/speech/NVR/CHEMSHIFTSTATS/SHIFTXFILTERS');FILTERS=61,2509
+PRED 65,2685
+      S 76,2878
+      h 78,2911
+      n 79,2945
+      elseif(83,3059
+   TABLE 137,4693
+   nlast 138,4715
+      nlast 145,4961
+   M 147,5001
+function p 160,5168
+   xHS 166,5278
+   xN 167,5307
+   xNS 168,5335
+   xHMX 169,5364
+   xHMN 170,5396
+   xNMX 171,5428
+   xNMN 172,5460
+elseif(174,5497
+p 226,6458
+
+ren.m,16
+function M 1,0
+
+computeBayesianScore.m,1522
+function bayesianScore 1,0
+  USE_CDF = 0; USE_HIST 17,514
+  EPSILON 23,726
+  LARGE_VALUE 24,769
+  voter 27,865
+%  numVoters 28,951
+  numVoters 29,992
+  fprintf(1,'numVoters = %f\n',numVoters)32,1034
+  correctAssignmentProbability 35,1083
+  incorrectAssignmentProbability 36,1138
+    incorrectAssignmentProbability{incorrectAssignmentProbability39,1277
+	incorrectAssignmentProbability{incorrectAssignmentProbability52,1688
+  meanCorrect 57,1849
+  meanIncorrect 58,1900
+  standardDeviationCorrect 59,1951
+  standardDeviationIncorrect 60,2002
+  N_histCorrect 70,2485
+  N_histCorrect = cell(numVoters,1); X_histCorrect 70,2485
+  N_histIncorrect 72,2570
+  N_histIncorrect = cell(numVoters,1); X_histIncorrect 72,2570
+% $$$   figure;80,2928
+% $$$   figure;84,3058
+bayesianScore 92,3204
+% $$$ distCorrect 99,3262
+% $$$ distIncorrect 100,3301
+% $$$   distIncorrect{distIncorrect104,3424
+% $$$     distIncorrect{distIncorrect108,3633
+% $$$ x 113,3811
+relativeProbabilityCorrectGivenVoters 121,4029
+pCorrect 122,4097
+  num 137,4361
+  num = zeros(numVoters,1); denum 137,4361
+      elseif 143,4739
+	    minDifference 149,5031
+       bestBin = -1; minDifference 165,5430
+ 	   minDifference 170,5715
+      elseif 180,6080
+%      pCorrectGivenVoterValue 212,7421
+   bayesianScore 222,7938
+% $$$ relativeProbabilityCorrectGivenVotersForIncorrectAssignments 225,8042
+% $$$     relativeProbabilityCorrectGivenVotersForIncorrectAssignments 232,8273
+% $$$ figure;237,8512
+% $$$ figure;240,8655
+
+examineFoundMASTERs.m,0

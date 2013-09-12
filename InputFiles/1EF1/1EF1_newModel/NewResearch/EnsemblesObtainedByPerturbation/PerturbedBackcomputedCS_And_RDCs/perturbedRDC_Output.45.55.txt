@@ -1,0 +1,21 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.4.0.336 (R2007a)
+                              January 29, 2007
+
+Encountered unexpected end-of-file (line 6921) while loading toolbox cache.
+Error occurred loading: /home/home4/apaydin/.matlab/R2007a/toolbox_cache-7.4.0.336-1055673943-glnx86.xml
+Cache file ignored.
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+168     error('File not found.');
+K>> 
+>> 

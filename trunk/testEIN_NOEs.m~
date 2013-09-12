@@ -1,0 +1,3 @@
+load unambiguousNOEs.txt
+
+numResidues = max(max(unambiguousNOEs));

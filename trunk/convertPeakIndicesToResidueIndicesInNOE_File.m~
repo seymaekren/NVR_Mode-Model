@@ -1,0 +1,49 @@
+function convertPeakIndicesToResidueIndicesInNOE_File;
+
+order = load ('order.m.XinGao');
+unadjustedNOEs = load('NOE_List_peakIndices.txt.XinGao'); 
+outFilename = 'NOEs_withResidueIndices.txt'; 
+
+%order          : contains the residue indices as they appear in the modeldata file.
+%unadjustedNOEs : contains the HSQC peak indices of the NOEs.
+
+%writes the absolute residue indices to a file.
+
+%This is written to convert the NOEs obtained directly from raw
+%data and containing no info on the residue indices into
+%the residue indices so the program readNMR_Data2.m can read them.
+
+
+
+[m,n] = size(unadjustedNOEs);
+noes  = zeros(m,2);
+
+for i = 1:m
+  index1    = unadjustedNOEs(i,1);
+  index2    = unadjustedNOEs(i,2);
+  assert ((index1 >= 1) & (index1 <= length(order)));
+  assert ((index2 >= 1) & (index2 <= length(order)));
+
+  newIndex1 = order(index1);
+  newIndex2 = order(index2);
+
+  if ((isempty(newIndex1)) | (isempty(newIndex2)))
+    continue;
+  end
+  
+  
+  assert (~isempty(newIndex1));
+  noes(i,1) = newIndex1;
+
+  assert (~isempty(newIndex2));  
+  noes(i,2) = newIndex2;
+
+end
+
+
+fprintf(1, 'check out %s\n', outFilename);
+fid   = fopen(outFilename,'w');
+for i = 1:size(noes,1)
+  fprintf(fid, '%d %d\n', noes(i,1),noes(i,2));
+end
+fclose(fid);

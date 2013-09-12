@@ -1,0 +1,42 @@
+function simulateNOEs(parsedPdbFilename);
+
+[protonName aaName residueIndex HX HY HZ] ...
+    = textread(parsedPdbFilename,'%s %s %d %f %f %f');
+
+
+ALLDISTS=zeros(length(HX));
+for(i=1:size(ALLDISTS,1))
+   for(j=1:size(ALLDISTS,1))
+      ALLDISTS(i,j)  = sqrt((HX(i)-HX(j)).^2+(HY(i)-HY(j)).^2+(HZ(i)-HZ(j)).^2);
+   end   
+end
+
+numSimulatedNOEs = 250;
+NTH = 6;
+outputFilename = 'simulatedNOEs.txt';
+fid = fopen(outputFilename, 'w');
+fprintf(1, 'check out %s\n', outputFilename);
+
+
+for noeIndex = 1:numSimulatedNOEs
+
+  foundA_PeakResiduePair   = 0;
+
+  while (~foundA_PeakResiduePair)
+    randomRelResidue1Index   = randi(length(HX),1,1);
+    relResidueIndices        = find(ALLDISTS(randomRelResidue1Index, :) < NTH);
+    if (~isempty(relResidueIndices))
+      relResidue2Index       = relResidueIndices(randi(length(relResidueIndices),1,1));
+      if (relResidue2Index ~= randomRelResidue1Index)
+	foundA_PeakResiduePair = 1;
+	fprintf(1, 'found a pair at a distance of %f ', ...
+		ALLDISTS(randomRelResidue1Index, relResidue2Index));
+      end
+    end
+  end
+  
+  fprintf(1,   'for residues %d and %d\n', residueIndex(randomRelResidue1Index), residueIndex(relResidue2Index));
+  fprintf(fid, '%d %d\n', residueIndex(randomRelResidue1Index), residueIndex(relResidue2Index));
+end
+
+fclose(fid);

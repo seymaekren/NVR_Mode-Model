@@ -1,0 +1,138 @@
+clear all
+
+%input filenames
+
+%resonanceFilename = sprintf('parsedResonances.txt')
+%resonanceFilename = sprintf('1dmb_cs_parsed.txt');
+
+resonanceFilename  = 'parsedResonances.txt.1AAR';
+
+
+%  protonCoordinatesFilename = sprintf('2A7O.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UBQH.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UBI.parsedPDB');
+%  protonCoordinatesFilename = sprintf('1UD7.parsedPDB');
+%  protonCoordinatesFilename = sprintf('FF2Final31_90wSCs306.parsedPDB');
+%  protonCoordinatesFilename =  sprintf('withMetMethyl_noTemplate_refined.parsedPDB');
+%  protonCoordinatesFilename = sprintf('2E71_firstModel.parsedPDB');
+%  protonCoordinatesFilename    = sprintf('1dmb.10.model6.parsedPDB');
+protonCoordinatesFilename    = '1AARH.parsedPDB';
+
+rdcInFilename1       = 'nhRdc.m.1AAR.1';
+rdcInFilename2       = 'nhRdc.m.1AAR.2';
+%rdcInFilename3       = 'ccaRdc.txt';
+
+
+
+%output filenames
+
+answerkeyFilename    = 'answerkey.m';
+%  answerkeyFilename = 'answerkey.m.hSRI';
+
+rdc1OutFilename      = 'N-H_medium1.m';
+
+%  rdc2Outfilename = 'C-H_medium1.m';
+%  rdc2Outfilename = 'N-C_medium1.m';
+rdc2Outfilename      = 'N-H_medium2.m';
+
+%rdc3Outfilename      = 'C-Ca_medium1.m';
+
+orderFilename        = 'order.m';
+
+combinedResonancesAndProtonsFilename          = 'combinedResonancesAndProtonCoordinates.txt';
+  
+[protonName protonAA_Name protonAA_Index protonX protonY protonZ] ...
+    = textread(protonCoordinatesFilename, '%s %s %d %f %f %f');
+  
+writeAnswerkeyFile (answerkeyFilename, protonAA_Index);
+
+weightRDCs  = 0;
+writeRdcFile       (rdc1OutFilename, rdcInFilename1, protonName, ...
+		    protonAA_Index, weightRDCs);
+
+writeRdcFile       (rdc2OutFilename, rdcInFilename2, protonName, ...
+		    protonAA_Index, weightRDCs);
+  
+%writeRdcFile       (rdc3OutFilename, rdcInFilename3, protonName, ...
+%		    protonAA_Index, weightRDCs);
+
+writeOrderFile     (orderFilename, protonAA_Index);
+
+writeCombinedResonancesAndProtonCoords (combinedResonancesAndProtonsFilename, protonAA_Index, protonAA_Name, protonX, protonY, protonZ, resonanceFilename);
+
+function writeCombinedResonancesAndProtonCoords(combinedResonancesAndProtonsFilename, protonAA_Index, protonAA_Name, protonX, protonY, protonZ, resonanceFilename);
+
+[resonanceAA_Index H_CS N_CS] = textread(resonanceFilename,'%d %f %f');
+%[resonanceAA_Index resonanceAA_Name H_CS N_CS] = textread(resonanceFilename,'%d %s %f %f');
+
+fprintf(1, 'check out %s\n',combinedResonancesAndProtonsFilename);
+  
+fid         = fopen(combinedResonancesAndProtonsFilename,'w');
+
+for i = 1:length(protonName)
+  relResonanceIndex = find(resonanceAA_Index == ...
+			   protonAA_Index(i));
+  if (isempty(relResonanceIndex))
+    fprintf(fid, '%d\t%s\t%d\t%d\t%f\t%f\t%f\n', protonAA_Index(i), protonAA_Name{i},-999,-999,protonX(i),protonY(i),protonZ(i));
+  else
+    fprintf(fid, '%d\t%s\t%f\t%f\t%f\t%f\t%f\n', protonAA_Index(i), protonAA_Name{i},H_CS(relResonanceIndex),N_CS(relResonanceIndex),protonX(i),protonY(i),protonZ(i));
+  end
+end
+
+fclose(fid);
+
+function writeAnswerkeyFile (answerkeyFilename, protonAA_Index)
+fprintf(1, 'check out %s\n',answerkeyFilename);
+
+fid         = fopen(answerkeyFilename,'w');
+
+for i = 1:length(protonAA_Index)
+  fprintf(fid, '%d %d\n',i, protonAA_Index(i));
+end
+fprintf(1, 'type return to continue.\n');
+keyboard
+
+function writeRdcFile       (rdc1OutFilename, rdcInFilename1, protonName, ...
+			     protonAA_Index, weightRDCs);
+
+fprintf(1, 'check out %s\n',rdc1OutFilename);
+
+fid         = fopen(rdc1OutFilename,'w');
+
+nhRdcs      = load (rdcInFilename1);
+
+for i = 1:length(protonName)
+  relRDC_Index = find(nhRdcs(:,1) == ...
+		      protonAA_Index(i));
+  if (isempty(relRDC_Index))
+    fprintf(fid, '%d\t%d\n', protonAA_Index(i), -999);
+  else
+    if (weightRDCs)
+      %fprintf(fid, '%d\t%f\n', protonAA_Index(i), chRdcs(relRDC_Index,2)*1.000);      
+      %      fprintf(fid, '%d\t%f\n', protonAA_Index(i),
+      %      chRdcs(relRDC_Index,2)*.491);
+      fprintf(1, 'uncomment code here.\n');
+      keyboard
+    end
+    fprintf(fid, '%d\t%f\n', protonAA_Index(i), nhRdcs(relRDC_Index,2));
+  end
+end
+
+fclose(fid);
+
+
+
+fprintf(1, 'type return to continue.\n');
+keyboard
+  
+function writeOrderFile     (orderFilename, protonAA_Index);
+fprintf(1, 'check out %s\n',orderFilename);
+    
+fid         = fopen(orderFilename,'w');
+  
+for i = 1:length(protonAA_Index)
+  fprintf(fid, '%d\n',protonAA_Index(i));
+end
+fclose(fid);
+fprintf(1, 'type return to continue.\n');
+keyboard

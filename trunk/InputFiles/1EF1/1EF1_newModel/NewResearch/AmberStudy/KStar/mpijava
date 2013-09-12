@@ -1,0 +1,107 @@
+#!/bin/sh
+
+working_dir=/usr/project/dlab/Code/Other-people/mpiJava
+
+prefix=/usr/project/dlab/Code/Other-people/mpiJava
+exec_prefix=${prefix}
+
+JAVA=/usr/java/jdk1.6.0
+JARCH=i386
+
+MPI=mpich
+
+LIBJSIG=yes
+
+JAVAOPTIONS=
+
+if [ $# -lt 1 ]
+then
+  echo "Usage: mpijava <procnum> <java options> <classname> <arguments>"
+  exit 1
+fi
+
+PNUMBER=$1
+
+shift
+
+VM=client
+while [ "$*" ] ; do
+  case $1 in
+    -server)
+      VM=server
+      JAVAOPTIONS="$1 $JAVAOPTIONS"
+      shift
+      ;;
+    -*)
+      JAVAOPTIONS="$1 $JAVAOPTIONS"
+      shift
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+
+
+# MPICH2
+CLASSNAME=$1
+shift
+
+ARGUMENTS=$*
+
+if test -f $CLASSNAME.jig
+then
+  rm -f $CLASSNAME.jig
+fi
+
+# Enable signal chaining for JDK 1.4
+if test "$LIBJSIG" = "yes"
+then
+  set_preload1="LD_PRELOAD=$JAVA/jre/lib/$JARCH/$VM/libjsig.so"
+  set_preload2="export LD_PRELOAD"
+fi
+
+# This is slightly complicated.  We create a script that reproduces
+# relevant parts of the local environment on the remote host, then
+# invokes the `java' command.  This "jig" script is then run with `mpirun'.
+#
+# In many cases this may not be necessary---the local environment may be
+# automatically copied by mpirun.  In these cases you may be able to
+# just set `CLASSPATH', `LD_LIBRARY_PATH', etc locally and run
+# an mpiJava program by:
+#
+#   mpirun <mpirun options> java <java command arguments>
+#
+
+  cat > $CLASSNAME.jig <<EOF
+#!/bin/sh
+
+working_dir=/usr/project/dlab/Code/Other-people/mpiJava
+
+prefix=/usr/project/dlab/Code/Other-people/mpiJava
+exec_prefix=${prefix}
+
+JAVA=/usr/java/jdk1.5.0_04
+
+#echo \$0
+cd \`dirname \$0\`
+
+$set_preload1
+$set_preload2
+
+#exec $JAVA/bin/java $JAVAOPTIONS $CLASSNAME $CLASSNAME \$* $ARGUMENTS
+exec java $JAVAOPTIONS $CLASSNAME $ARGUMENTS
+
+EOF
+
+chmod a+x $CLASSNAME.jig
+
+if [ -f ${working_dir}/lib/libmpijava.so ]
+then
+  ./mpic $PNUMBER ./$CLASSNAME.jig $*  
+else
+  echo " ${working_dir}/lib/libmpijava.so not found"
+fi
+
+rm -f $CLASSNAME.jig

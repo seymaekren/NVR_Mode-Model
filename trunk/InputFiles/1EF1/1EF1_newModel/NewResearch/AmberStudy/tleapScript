@@ -1,0 +1,4 @@
+source leaprc.ff03
+ef1 = loadPdb 1ef1.min1.pdb
+saveAmberParm ef1 prmtop prmcrd
+quit

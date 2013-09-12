@@ -1,0 +1,3 @@
+temp = loadpdb 1ef1.min1.xyz
+savepdb temp 1ef1.min1.pdb
+quit

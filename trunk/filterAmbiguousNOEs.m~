@@ -1,0 +1,8 @@
+fullNOE_List = load('HnHn.C...');
+ambiguousNOE_List = load('ambiguous...');
+
+for i = 1:size(fullNOE_List)
+  residueIndex1 = fullNOE_List(i,1);
+  residueIndex2 = fullNOE_List(i,2);
+  
+end

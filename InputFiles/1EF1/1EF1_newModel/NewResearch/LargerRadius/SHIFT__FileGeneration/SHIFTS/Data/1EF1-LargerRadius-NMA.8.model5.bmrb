@@ -1,0 +1,184 @@
+#---------------------------------------------------------------------
+# entry information saveframe:                                        
+#---------------------------------------------------------------------
+save_entry_information
+  _Saveframe_category entry_information
+  _Entry_title
+;
+  Calculated proton shifts for 1EF1-LargerRadius-NMA.8.model5
+;
+  _NMR_STAR_version       2.1
+  _Experimental_method    'theoretical calculation'
+  _Submission_date        2007-03-02
+  stop_
+save_
+
+#---------------------------------------------------------------------
+# contact persons saveframe:                                          
+#---------------------------------------------------------------------
+save_contact_persons
+   _Saveframe_category contact_persons
+  loop_
+  _Family_name
+  _Given_name
+  _Middle_initials
+  _Department_and_Insitution
+  _Mailing_address
+  _Phone_number
+  _Email_address
+  Case David A.
+;
+  Dept. of Molecular Biology
+  The Scripps Research Institute
+;
+;
+  10550 N. Torrey Pines Rd.
+  La Jolla, CA 92037
+;
+  '01 858 784 9768'
+  case@scripps.edu
+  stop_
+save_
+
+#---------------------------------------------------------------------
+# chemical shift reference saveframe:                                 
+#---------------------------------------------------------------------
+save_chemical_shift_reference
+  _Saveframe_category   chemical_shift_reference
+  _Details
+;
+   computed shifts are internally referenced to random-coil values,
+   but are reported relative to DSS/TMS
+;
+  loop_
+    _Atom_type _Atom_isotope_number_Chem_shift_units _Chem_shift_value
+   H 1 ppm 0.0
+ stop_
+save_
+
+#---------------------------------------------------------------------
+#  calculation type saveframe:                                        
+#---------------------------------------------------------------------
+save_proton_empirical_shifts
+   _Saveframe_category  shifts_calculation_type
+  loop_ _Software_label $shifts_v2 stop_
+  _Calculation_level empirical
+  _Chemical_shift_type  diamagnetic
+  _Sample_conditions_modeled
+;
+  aqueous solution
+;
+  _Chem_shift_reference_set_label shifts_v2
+save_
+
+#---------------------------------------------------------------------
+#  atomic coordinates saveframe:                                      
+#---------------------------------------------------------------------
+save_1EF1-LargerRadius-NMA.8.model5
+  _Saveframe_category     model_atomic_coordinates
+  _Coordinate_set_description
+;
+  Coordinates extracted from PDB entry 1EF1-LargerRadius-NMA.8.model5
+;
+  _Model_source_database  PDB
+  _Model_source_database_accession_number  1EF1-LargerRadius-NMA.8.model5
+save_
+
+#---------------------------------------------------------------------
+#  software saveframe:                                                
+#---------------------------------------------------------------------
+save_shifts_v2
+  _Saveframe_category calculation_type
+save_
+
+#---------------------------------------------------------------------
+#  theoretical chemical shifts saveframe:                             
+#---------------------------------------------------------------------
+save_theoretical_chemical_shifts
+  _Saveframe_category   theoretical_chemical_shifts
+  _Calculation_type_label  $shifts_v2 
+  _Model_atomic_coordinates_label  $1EF1-LargerRadius-NMA.8.model5
+  _Mol_system_component_name  1EF1-LargerRadius-NMA.8.model5
+  loop_
+    _Atom_shift_ID
+    _Residue_seq_code
+    _Residue_label
+    _Atom_name
+    _Atom_type
+    _Chem_shift_value
+    _Chem_shift_value_error
+   _Chem_shift_ambiguity_code
+    1	    2	   Q	H   	H	   8.10	0.2	1
+    2	    3	   I	H   	H	   8.06	0.2	1
+    3	    4	   F	H   	H	   8.57	0.2	1
+    4	    5	   V	H   	H	   7.47	0.2	1
+    5	    6	   K	H   	H	   9.50	0.2	1
+    6	    7	   T	H   	H	   8.32	0.2	1
+    7	    8	   L	H   	H	   8.09	0.2	1
+    8	    9	   T	H   	H	   7.64	0.2	1
+    9	   10	   G	H   	H	   7.92	0.2	1
+   10	   11	   K	H   	H	   8.18	0.2	1
+   11	   12	   T	H   	H	   7.98	0.2	1
+   12	   13	   I	H   	H	   8.24	0.2	1
+   13	   14	   T	H   	H	   7.92	0.2	1
+   14	   15	   L	H   	H	   8.15	0.2	1
+   15	   16	   E	H   	H	   8.01	0.2	1
+   16	   17	   V	H   	H	   7.16	0.2	1
+   17	   18	   E	H   	H	   8.34	0.2	1
+   18	   20	   S	H   	H	   7.88	0.2	1
+   19	   21	   D	H   	H	   7.70	0.2	1
+   20	   22	   T	H   	H	   7.99	0.2	1
+   21	   23	   I	H   	H	   7.59	0.2	1
+   22	   24	   E	H   	H	   8.21	0.2	1
+   23	   25	   N	H   	H	   7.86	0.2	1
+   24	   26	   V	H   	H	   8.07	0.2	1
+   25	   27	   K	H   	H	   7.87	0.2	1
+   26	   28	   A	H   	H	   8.05	0.2	1
+   27	   29	   K	H   	H	   7.97	0.2	1
+   28	   30	   I	H   	H	   8.12	0.2	1
+   29	   31	   Q	H   	H	   6.75	0.2	1
+   30	   32	   D	H   	H	   7.30	0.2	1
+   31	   33	   K	H   	H	   7.86	0.2	1
+   32	   34	   E	H   	H	   7.95	0.2	1
+   33	   35	   G	H   	H	   7.70	0.2	1
+   34	   36	   I	H   	H	   7.70	0.2	1
+   35	   39	   D	H   	H	   8.77	0.2	1
+   36	   40	   Q	H   	H	   8.23	0.2	1
+   37	   41	   Q	H   	H	   9.09	0.2	1
+   38	   42	   R	H   	H	   8.47	0.2	1
+   39	   43	   L	H   	H	   8.26	0.2	1
+   40	   44	   I	H   	H	   7.99	0.2	1
+   41	   45	   F	H   	H	   8.54	0.2	1
+   42	   46	   A	H   	H	   8.00	0.2	1
+   43	   47	   G	H   	H	   7.43	0.2	1
+   44	   48	   K	H   	H	   8.25	0.2	1
+   45	   49	   Q	H   	H	   8.14	0.2	1
+   46	   50	   L	H   	H	   8.21	0.2	1
+   47	   51	   E	H   	H	   7.81	0.2	1
+   48	   52	   D	H   	H	   8.11	0.2	1
+   49	   53	   G	H   	H	   8.01	0.2	1
+   50	   54	   R	H   	H	   7.84	0.2	1
+   51	   55	   T	H   	H	   8.05	0.2	1
+   52	   56	   L	H   	H	   8.95	0.2	1
+   53	   57	   S	H   	H	   8.13	0.2	1
+   54	   58	   D	H   	H	   7.26	0.2	1
+   55	   59	   Y	H   	H	   8.02	0.2	1
+   56	   60	   N	H   	H	   8.24	0.2	1
+   57	   61	   I	H   	H	   8.57	0.2	1
+   58	   62	   Q	H   	H	   8.35	0.2	1
+   59	   63	   K	H   	H	   7.81	0.2	1
+   60	   64	   E	H   	H	   8.67	0.2	1
+   61	   65	   S	H   	H	   8.19	0.2	1
+   62	   66	   T	H   	H	   7.78	0.2	1
+   63	   67	   L	H   	H	   8.51	0.2	1
+   64	   68	   H	H   	H	   8.32	0.2	1
+   65	   69	   L	H   	H	   9.26	0.2	1
+   66	   70	   V	H   	H	   9.86	0.2	1
+   67	   71	   L	H   	H	   8.74	0.2	1
+   68	   72	   R	H   	H	   8.95	0.2	1
+   69	   73	   L	H   	H	   8.04	0.2	1
+   70	   74	   R	H   	H	   8.01	0.2	1
+   71	   75	   G	H   	H	   7.90	0.2	1
+   72	   76	   G	H   	H	   7.88	0.2	1
+  stop_
+save_

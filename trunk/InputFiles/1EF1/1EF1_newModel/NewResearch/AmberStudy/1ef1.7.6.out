@@ -1,0 +1,36 @@
+
+          -------------------------------------------------------
+          Amber 9  SANDER                              2006
+          -------------------------------------------------------
+
+| Run on 12/06/2007 at 13:59:08
+
+File Assignments:
+|  MDIN: min.in                                                                
+| MDOUT: 1ef1.7.6.out                                                          
+|INPCRD: PrmcrdFiles/prmcrd.7.6                                                
+|  PARM: prmtop                                                                
+|RESTRT: coords.7.6.xyz                                                        
+|  REFC: refc                                                                  
+| MDVEL: mdvel                                                                 
+|  MDEN: mden                                                                  
+| MDCRD: mdcrd                                                                 
+|MDINFO: mdinfo                                                                
+|INPDIP: inpdip                                                                
+|RSTDIP: rstdip                                                                
+
+
+ Here is the input file:
+
+# 200m steps of minimization, generalized Born solvent model                   
+ &cntrl                                                                        
+    maxcyc=200, imin=1, cut=12.0, igb=1, ntb=0, ntpr=10,                       
+ /                                                                             
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+
+  Unit    8 Error on OPEN: prmtop                                                                                                                                                                                                                                                          

@@ -1,0 +1,87 @@
+   shifts will be computed for atoms matching ::H
+=============================================================================
+          SHIFTS, version 4.1   [X.-P. Xu and D.A. Case, Mar. 2002]
+=============================================================================
+   shifts will be computed for atoms matching ::H
+found 4 rings
+        ring        int.           center             anis.    iso.
+       PHE  4     1.000    19.957  25.749  23.364  -99.200  -91.000
+       PHE 45     1.000     4.291  14.555  22.637  -99.200  -91.000
+       TYR 59     0.840     1.364  26.291  19.298  -99.200  -91.000
+       HID 68     0.900    17.009  20.389  23.091  -99.200  -91.000
+
+=============================================================================
+        Atom       RingCur  El   P_anis  Const   RC     pred    Obs
+=============================================================================
+1EF1.7.8.bidirectional.model107 GLN   2 H      0.01   0.08   0.08  -0.55   8.47     8.09
+1EF1.7.8.bidirectional.model107 ILE   3 H     -0.01   0.17   0.27  -0.55   8.25     8.12
+1EF1.7.8.bidirectional.model107 PHE   4 H      0.02   0.78   0.12  -0.55   8.34     8.70
+1EF1.7.8.bidirectional.model107 VAL   5 H     -0.35   0.16  -0.03  -0.55   8.24     7.46
+1EF1.7.8.bidirectional.model107 LYS   6 H      0.12   0.64   0.16  -0.55   8.42     8.79
+1EF1.7.8.bidirectional.model107 THR   7 H     -0.10   0.32   0.09  -0.55   8.28     8.05
+1EF1.7.8.bidirectional.model107 LEU   8 H      0.00   0.11   0.13  -0.55   8.37     8.06
+1EF1.7.8.bidirectional.model107 THR   9 H     -0.02  -0.02  -0.04  -0.55   8.28     7.65
+1EF1.7.8.bidirectional.model107 GLY  10 H     -0.09   0.09  -0.02  -0.55   8.43     7.86
+1EF1.7.8.bidirectional.model107 LYS  11 H     -0.18   0.28   0.24  -0.55   8.42     8.21
+1EF1.7.8.bidirectional.model107 THR  12 H     -0.09   0.20   0.09  -0.55   8.28     7.94
+1EF1.7.8.bidirectional.model107 ILE  13 H     -0.02   0.30   0.27  -0.55   8.25     8.24
+1EF1.7.8.bidirectional.model107 THR  14 H     -0.01   0.06   0.17  -0.55   8.28     7.95
+1EF1.7.8.bidirectional.model107 LEU  15 H      0.01   0.15   0.18  -0.55   8.37     8.16
+1EF1.7.8.bidirectional.model107 GLU  16 H      0.01   0.03  -0.11  -0.55   8.60     7.98
+1EF1.7.8.bidirectional.model107 VAL  17 H      0.01   0.09  -0.51  -0.55   8.24     7.29
+1EF1.7.8.bidirectional.model107 GLU  18 H      0.02   0.08   0.22  -0.55   8.60     8.38
+1EF1.7.8.bidirectional.model107 SER  20 H      0.03   0.15  -0.09  -0.55   8.46     8.00
+1EF1.7.8.bidirectional.model107 ASP  21 H      0.01   0.05  -0.35  -0.55   8.40     7.57
+1EF1.7.8.bidirectional.model107 THR  22 H     -0.01   0.46  -0.07  -0.55   8.28     8.12
+1EF1.7.8.bidirectional.model107 ILE  23 H     -0.02   0.98   0.07  -0.55   8.25     8.73
+1EF1.7.8.bidirectional.model107 GLU  24 H     -0.01   0.69  -0.20  -0.55   8.60     8.54
+1EF1.7.8.bidirectional.model107 ASN  25 H     -0.01   0.66  -0.03  -0.55   8.53     8.60
+1EF1.7.8.bidirectional.model107 VAL  26 H     -0.02   0.63  -0.21  -0.55   8.24     8.09
+1EF1.7.8.bidirectional.model107 LYS  27 H     -0.01   0.90  -0.01  -0.55   8.42     8.74
+1EF1.7.8.bidirectional.model107 ALA  28 H     -0.01   1.35  -0.00  -0.55   8.40     9.19
+1EF1.7.8.bidirectional.model107 LYS  29 H     -0.02   0.99  -0.04  -0.55   8.42     8.79
+1EF1.7.8.bidirectional.model107 ILE  30 H     -0.01   0.62  -0.13  -0.55   8.25     8.17
+1EF1.7.8.bidirectional.model107 GLN  31 H     -0.01   0.00  -0.39  -0.55   8.47     7.52
+1EF1.7.8.bidirectional.model107 ASP  32 H     -0.01   0.68  -0.08  -0.55   8.40     8.45
+1EF1.7.8.bidirectional.model107 LYS  33 H     -0.00   0.00  -0.03  -0.55   8.42     7.83
+1EF1.7.8.bidirectional.model107 GLU  34 H     -0.00   0.00  -0.27  -0.55   8.60     7.78
+1EF1.7.8.bidirectional.model107 GLY  35 H     -0.00   1.25   0.54  -0.55   8.43     9.67
+1EF1.7.8.bidirectional.model107 ILE  36 H     -0.00  -0.02  -0.07  -0.55   8.25     7.61
+1EF1.7.8.bidirectional.model107 ASP  39 H     -0.00   0.53   0.31  -0.55   8.40     8.69
+1EF1.7.8.bidirectional.model107 GLN  40 H     -0.02   0.18   0.18  -0.55   8.47     8.25
+1EF1.7.8.bidirectional.model107 GLN  41 H      0.01   0.59   0.30  -0.55   8.47     8.83
+1EF1.7.8.bidirectional.model107 ARG  42 H     -0.01   0.27   0.33  -0.55   8.46     8.49
+1EF1.7.8.bidirectional.model107 LEU  43 H     -0.02   0.17   0.21  -0.55   8.37     8.18
+1EF1.7.8.bidirectional.model107 ILE  44 H     -0.00  -0.00   0.33  -0.55   8.25     8.02
+1EF1.7.8.bidirectional.model107 PHE  45 H      0.33   0.44   0.12  -0.55   8.34     8.68
+1EF1.7.8.bidirectional.model107 ALA  46 H      0.18   0.05  -0.03  -0.55   8.40     8.05
+1EF1.7.8.bidirectional.model107 GLY  47 H      0.08  -0.21  -0.55  -0.55   8.43     7.20
+1EF1.7.8.bidirectional.model107 LYS  48 H      0.03   0.11   0.29  -0.55   8.42     8.29
+1EF1.7.8.bidirectional.model107 GLN  49 H      0.02   0.12   0.18  -0.55   8.47     8.23
+1EF1.7.8.bidirectional.model107 LEU  50 H     -0.05   0.28   0.23  -0.55   8.37     8.28
+1EF1.7.8.bidirectional.model107 GLU  51 H     -0.56   0.19   0.22  -0.55   8.60     7.91
+1EF1.7.8.bidirectional.model107 ASP  52 H     -0.02   0.15   0.14  -0.55   8.40     8.12
+1EF1.7.8.bidirectional.model107 GLY  53 H      0.05  -0.04   0.17  -0.55   8.43     8.06
+1EF1.7.8.bidirectional.model107 ARG  54 H      0.22   0.27  -0.72  -0.55   8.46     7.68
+1EF1.7.8.bidirectional.model107 THR  55 H      0.03   0.15   0.17  -0.55   8.28     8.09
+1EF1.7.8.bidirectional.model107 LEU  56 H      0.09   0.64   0.44  -0.55   8.37     8.98
+1EF1.7.8.bidirectional.model107 SER  57 H      0.08   0.22  -0.05  -0.55   8.46     8.16
+1EF1.7.8.bidirectional.model107 ASP  58 H      0.08  -0.04  -0.60  -0.55   8.40     7.28
+1EF1.7.8.bidirectional.model107 TYR  59 H      0.25   0.27  -0.27  -0.55   8.29     7.98
+1EF1.7.8.bidirectional.model107 ASN  60 H      0.16   0.07   0.12  -0.55   8.53     8.32
+1EF1.7.8.bidirectional.model107 ILE  61 H      0.19   0.71   0.03  -0.55   8.25     8.63
+1EF1.7.8.bidirectional.model107 GLN  62 H     -0.10   0.45   0.24  -0.55   8.47     8.51
+1EF1.7.8.bidirectional.model107 LYS  63 H     -0.17   0.04   0.20  -0.55   8.42     7.94
+1EF1.7.8.bidirectional.model107 GLU  64 H      0.05   0.29   0.24  -0.55   8.60     8.63
+1EF1.7.8.bidirectional.model107 SER  65 H      0.04   0.23   0.11  -0.55   8.46     8.29
+1EF1.7.8.bidirectional.model107 THR  66 H     -0.04   0.05   0.04  -0.55   8.28     7.78
+1EF1.7.8.bidirectional.model107 LEU  67 H     -0.05   0.49   0.22  -0.55   8.37     8.49
+1EF1.7.8.bidirectional.model107 HID  68 H      0.11   0.18   0.13  -0.55   8.41     8.29
+1EF1.7.8.bidirectional.model107 LEU  69 H      0.18   0.80   0.30  -0.55   8.37     9.11
+1EF1.7.8.bidirectional.model107 VAL  70 H      0.05   0.59   0.28  -0.55   8.24     8.61
+1EF1.7.8.bidirectional.model107 LEU  71 H      0.05   0.50  -0.13  -0.55   8.37     8.24
+1EF1.7.8.bidirectional.model107 ARG  72 H      0.01   0.43   0.01  -0.55   8.46     8.35
+1EF1.7.8.bidirectional.model107 LEU  73 H      0.01   0.05  -0.03  -0.55   8.37     7.85
+1EF1.7.8.bidirectional.model107 ARG  74 H      0.00   0.54  -0.11  -0.55   8.46     8.35
+1EF1.7.8.bidirectional.model107 GLY  75 H     -0.00   0.05  -0.03  -0.55   8.43     7.90
+1EF1.7.8.bidirectional.model107 GLY  76 H      0.00   0.00  -0.00  -0.55   8.43     7.88

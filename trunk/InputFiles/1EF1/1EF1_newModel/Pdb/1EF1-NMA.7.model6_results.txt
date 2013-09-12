@@ -1,0 +1,78 @@
+# --------------------------------------------------------------------
+# FILE INFO:
+
+ Input file name: ../1EF1-NMA.7.model6.pdb
+ Date: Mon Jul  2 13:40:59 2007
+
+# --------------------------------------------------------------------
+# INPUT PARAMETERS:
+
+ Command line: "/home/home4/apaydin/FRODA/FIRST -non -FRODA ../1EF1-NMA.7.model6.pdb -L /home/home4/apaydin/FRODA/"
+ Energy cutoff: -1.00 kcal/mol
+
+# --------------------------------------------------------------------
+# RESULTS:
+
+           1231 Sites included in the calculation.
+              0 Sites excluded in the calculation.
+             76 Unique residues found.
+              0 Isolated sites.
+              0 Isolated dimers.
+             29 Hydrogen bonds included.
+             38 Hydrophobic tethers included.
+              0 Stacked ring interactions included.
+            371 Rigid clusters.
+            338 Rigid clusters larger than size 1.
+              8 Stressed Regions.
+            215 Total independent degrees of freedom.
+
+# --------------------------------------------------------------------
+# WARNINGS: LEVEL 1 warnings are most severe.
+
+ LEVEL 1 WARNINGS: 0
+
+ LEVEL 2 WARNINGS: 0
+
+ LEVEL 3 WARNINGS: 0
+
+
+# --------------------------------------------------------------------
+# --------------------------------------------------------------------
+# FILE INFO:
+
+ Input file name: ../1EF1-NMA.7.model6.pdb
+ Date: Mon Jul  2 13:43:52 2007
+
+# --------------------------------------------------------------------
+# INPUT PARAMETERS:
+
+ Command line: "/home/home4/apaydin/FRODA/FIRST -non -FRODA ../1EF1-NMA.7.model6.pdb -L /home/home4/apaydin/FRODA/ -totconf 10000"
+ Energy cutoff: -1.00 kcal/mol
+
+# --------------------------------------------------------------------
+# RESULTS:
+
+           1231 Sites included in the calculation.
+              0 Sites excluded in the calculation.
+             76 Unique residues found.
+              0 Isolated sites.
+              0 Isolated dimers.
+             29 Hydrogen bonds included.
+             38 Hydrophobic tethers included.
+              0 Stacked ring interactions included.
+            371 Rigid clusters.
+            338 Rigid clusters larger than size 1.
+              8 Stressed Regions.
+            215 Total independent degrees of freedom.
+
+# --------------------------------------------------------------------
+# WARNINGS: LEVEL 1 warnings are most severe.
+
+ LEVEL 1 WARNINGS: 0
+
+ LEVEL 2 WARNINGS: 0
+
+ LEVEL 3 WARNINGS: 0
+
+
+# --------------------------------------------------------------------

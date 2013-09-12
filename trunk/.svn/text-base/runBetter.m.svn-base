@@ -1,0 +1,158 @@
+fprintf(1, 'clearing environment variables...\n');
+clear all
+
+cd InputFiles/
+!./cleanSymbolicLinks.sh
+!./symbolicLinksForhSRI.sh
+!./checkFiles.sh
+cd ..
+
+useCH_RDCs                    = 0;
+refineWithRDCs                = 0;
+assignmentMatrixFilename      = '/home2/apaydin/Workdir/OptimizationFiles/1D3Z/1UBI/WithNVR_TOCSY/WithNTH=8.80/NOEsFromMZ_ubq/TruncatingWithLargerThresholds/WithRDC_FirstRound/With4RDCs/1UBI.txt';
+b_printOptimizationFiles      = 0;
+useHD_Routines                = 0; 
+useTOCSY                      = 1;
+runOriginalNVR                = 0;
+runOriginalHD                 = 0;
+b_printIndividualScores       = 1; %this is outputted to obtain the
+                                   %individual scores for weighting
+useFourRDCsPerResidue         = 0;
+b_printNumAvailableRDC_Values = 0;
+b_printIndividualScoringMatrix= 0; %this is outputted to test the
+                                   %contribution of each data
+                                   %source to the assignments
+b_printCP                     = 0;
+b_printSSCP                   = 0;
+b_printSXCP                   = 0;
+b_printHDE                    = 0;
+b_printTP                     = 0;
+b_printRP1                    = 0;
+b_printRP2                    = 0;
+truncateProbabilities         = 1; %this parameter only taken into
+                               %account if using NVR routines, not
+                               %HD routines, and in NVR_CS2PROB,
+                               %NVR_SHIFTS2PROB, NVR_SHIFTX2PROB.
+if (truncateProbabilities)
+  fprintf(1, 'truncating probabilities...\n');
+else
+  fprintf(1, 'not truncating probabilities...\n');
+end
+
+if (useFourRDCsPerResidue)
+  assert (useCH_RDCs == 1);
+  assert (refineWithRDCs == 1);
+  fprintf(1, 'using 4 RDCs/residue\n');
+end
+      
+if (b_printIndividualScoringMatrix)
+  fprintf(1, 'will print individual scoring matrix.\n');
+  assert (b_printOptimizationFiles == 1);
+end
+
+if (b_printIndividualScores)
+  fprintf(1, 'will print individual scores in libsvm format.\n');
+end
+
+
+dbstop if error
+dbstop if warning
+
+  if (~exist('HSQCDATA'))
+  
+    useOrigData      = 1;
+    [HSQCDATA, NOES] = readNMR_Data2(useOrigData);
+    
+    if (useOrigData)
+      
+      modeIndex = 7; modelIndex = 6;
+      
+      SHIFTX_Filename   = sprintf('InputFiles/SHIFTX/MySHIFTX.%d.model%d',modeIndex, modelIndex);
+      
+      SHIFTS_Filename   = sprintf('InputFiles/SHIFTS/MySHIFTS.%d.model%d',modeIndex, modelIndex);
+      
+      if (useCH_RDCs)
+
+	 CH_RDCS    = load('InputFiles/C-H_medium1.m');
+         NH_RDCS    = load('InputFiles/N-H_medium1.m');
+         VECTORS_CH = load('InputFiles/C-H_vectors.m');
+         VECTORS_NH = load('InputFiles/N-H_vectors.m');
+
+	 CH_RDCS    = CH_RDCS(:,2);
+	 NH_RDCS    = NH_RDCS(:,2);
+	 VECTORS_CH = VECTORS_CH(:,2:4);
+	 VECTORS_NH = VECTORS_NH(:,2:4);
+
+	 fprintf(1, 'total CH RDCs:%d\n', length(CH_RDCS));
+	 fprintf(1, 'total NH RDCs:%d\n', length(CH_RDCS));
+	 
+	 if (b_printNumAvailableRDC_Values)
+	 
+	   printNumAvailableRDC_Values(CH_RDCS, NH_RDCS);
+	   
+	 end
+	 
+	 fprintf(1, 'loaded CH vectors and RDCs.\n');
+	 [doNotUseVECTORS,TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,IALLDISTS, ignoredHSQCDATA] = loaddata('InputFiles/myinput.m');
+	 
+       else
+	 
+	 [VECTORS,TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,IALLDISTS, ignoredHSQCDATA] = loaddata('InputFiles/myinput.m');
+       end
+
+    else
+      %use distrib data
+      
+      assert (0);
+      
+      [VECTORS,TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,IALLDISTS] = ...
+	  loadmodeldata('modeldata.txt');
+      
+    end
+    
+    %betterHD(HSQCDATA(:,2:3),HSQCDATA(:,4:5),HSQCDATA(:,6),HSQCDATA(:,1),NOES,VECTORS, ...
+    % 	 TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,IALLDISTS, ...
+    % 	 SHIFTS_Filename, SHIFTX_Filename, useMBM_EM);
+    
+    
+    peaks      = HSQCDATA(:,2:3);
+    rdcs       = HSQCDATA(:,4:5);
+    HDEXCHANGE = HSQCDATA(:,6) ;
+    peakIDs    = HSQCDATA(:,1) ;
+  end
+
+  if ((~runOriginalNVR) & (~runOriginalHD))
+    betterHD
+  elseif (runOriginalNVR)
+    
+    if (useCH_RDCs)
+      [oldNVR_SCORE, assignmentAccuracy, assignments, NVR_SCORE]= NVR_withCH(peaks,NH_RDCS, CH_RDCS,HDEXCHANGE, peakIDs, NOES, VECTORS_NH, VECTORS_CH,TYPES, ...
+	     RESNUMS,SSTRUCT, HBOND, ALLDISTS, SHIFTS_Filename, ...
+						  SHIFTX_Filename, truncateProbabilities);
+    else
+      [oldNVR_SCORE, assignmentAccuracy, assignments, NVR_SCORE]= NVR(peaks,rdcs,HDEXCHANGE, peakIDs, NOES, VECTORS,TYPES, ...
+						  RESNUMS,SSTRUCT, ...
+						  HBOND, ALLDISTS, ...
+						  IALLDISTS, ...
+						  SHIFTS_Filename, ...
+						  SHIFTX_Filename, ...
+						  truncateProbabilities);
+    end
+    
+  elseif (runOriginalHD)
+    [HD_SCORE,assignmentAccuracy, assignments, weightedHD_Score] = HD(peaks,rdcs,HDEXCHANGE, ...
+						  peakIDs, NOES, ...
+						  VECTORS,TYPES, ...
+						  RESNUMS,SSTRUCT, HBOND, ALLDISTS, ...
+						  IALLDISTS, SHIFTS_Filename, SHIFTX_Filename)
+    
+  end
+  %keyboard
+%fprintf(1, 'the assignment accuracy is %f\n', assignmentAccuracy);
+
+
+% $$$ [assignmentAccuracy,NVR_SCORE,oldNVR_SCORE]= betterNVR(HSQCDATA(:,2:3),HSQCDATA(:,4:5),HSQCDATA(:,6),HSQCDATA(:, 1),NOES,VECTORS, ...
+% $$$ 						  TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,SHIFTS_Filename, SHIFTX_Filename);
+
+
+

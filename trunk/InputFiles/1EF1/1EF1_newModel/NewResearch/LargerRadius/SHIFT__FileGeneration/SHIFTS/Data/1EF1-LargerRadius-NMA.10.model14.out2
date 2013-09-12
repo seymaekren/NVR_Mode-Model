@@ -1,0 +1,87 @@
+   shifts will be computed for atoms matching ::H
+=============================================================================
+          SHIFTS, version 4.1   [X.-P. Xu and D.A. Case, Mar. 2002]
+=============================================================================
+   shifts will be computed for atoms matching ::H
+found 4 rings
+        ring        int.           center             anis.    iso.
+       PHE  4     1.000    19.675  25.887  24.279  -99.200  -91.000
+       PHE 45     1.000     5.440  14.239  22.683  -99.200  -91.000
+       TYR 59     0.840     2.082  25.677  18.136  -99.200  -91.000
+       HID 68     0.900    16.947  20.872  24.534  -99.200  -91.000
+
+=============================================================================
+        Atom       RingCur  El   P_anis  Const   RC     pred    Obs
+=============================================================================
+1EF1-LargerRadius-NMA.10.model14 GLN   2 H      0.00   0.07   0.10  -0.55   8.47     8.10
+1EF1-LargerRadius-NMA.10.model14 ILE   3 H     -0.01   0.16   0.25  -0.55   8.25     8.09
+1EF1-LargerRadius-NMA.10.model14 PHE   4 H      0.01   0.77   0.15  -0.55   8.34     8.72
+1EF1-LargerRadius-NMA.10.model14 VAL   5 H     -0.37   0.16  -0.03  -0.55   8.24     7.45
+1EF1-LargerRadius-NMA.10.model14 LYS   6 H      0.10   0.91   0.29  -0.55   8.42     9.17
+1EF1-LargerRadius-NMA.10.model14 THR   7 H     -0.09   0.35   0.18  -0.55   8.28     8.18
+1EF1-LargerRadius-NMA.10.model14 LEU   8 H      0.00   0.15   0.13  -0.55   8.37     8.10
+1EF1-LargerRadius-NMA.10.model14 THR   9 H     -0.01  -0.02  -0.08  -0.55   8.28     7.61
+1EF1-LargerRadius-NMA.10.model14 GLY  10 H     -0.10   0.11   0.07  -0.55   8.43     7.95
+1EF1-LargerRadius-NMA.10.model14 LYS  11 H     -0.17   0.27   0.24  -0.55   8.42     8.21
+1EF1-LargerRadius-NMA.10.model14 THR  12 H     -0.08   0.19   0.16  -0.55   8.28     8.00
+1EF1-LargerRadius-NMA.10.model14 ILE  13 H     -0.02   0.27   0.27  -0.55   8.25     8.22
+1EF1-LargerRadius-NMA.10.model14 THR  14 H     -0.00   0.04   0.16  -0.55   8.28     7.93
+1EF1-LargerRadius-NMA.10.model14 LEU  15 H      0.01   0.14   0.18  -0.55   8.37     8.15
+1EF1-LargerRadius-NMA.10.model14 GLU  16 H      0.01   0.03  -0.06  -0.55   8.60     8.04
+1EF1-LargerRadius-NMA.10.model14 VAL  17 H      0.01   0.08  -0.60  -0.55   8.24     7.18
+1EF1-LargerRadius-NMA.10.model14 GLU  18 H      0.02   0.06   0.24  -0.55   8.60     8.37
+1EF1-LargerRadius-NMA.10.model14 SER  20 H      0.02   0.11  -0.15  -0.55   8.46     7.90
+1EF1-LargerRadius-NMA.10.model14 ASP  21 H      0.01   0.10  -0.22  -0.55   8.40     7.73
+1EF1-LargerRadius-NMA.10.model14 THR  22 H     -0.01   0.46  -0.20  -0.55   8.28     7.99
+1EF1-LargerRadius-NMA.10.model14 ILE  23 H     -0.02   0.47  -0.30  -0.55   8.25     7.85
+1EF1-LargerRadius-NMA.10.model14 GLU  24 H     -0.01   0.46  -0.21  -0.55   8.60     8.30
+1EF1-LargerRadius-NMA.10.model14 ASN  25 H     -0.01   0.42  -0.31  -0.55   8.53     8.09
+1EF1-LargerRadius-NMA.10.model14 VAL  26 H     -0.02   0.44  -0.25  -0.55   8.24     7.85
+1EF1-LargerRadius-NMA.10.model14 LYS  27 H     -0.02   0.60  -0.09  -0.55   8.42     8.36
+1EF1-LargerRadius-NMA.10.model14 ALA  28 H     -0.01   0.50  -0.26  -0.55   8.40     8.08
+1EF1-LargerRadius-NMA.10.model14 LYS  29 H     -0.02   0.36  -0.33  -0.55   8.42     7.88
+1EF1-LargerRadius-NMA.10.model14 ILE  30 H     -0.02   0.50  -0.24  -0.55   8.25     7.94
+1EF1-LargerRadius-NMA.10.model14 GLN  31 H     -0.01   0.46  -0.19  -0.55   8.47     8.19
+1EF1-LargerRadius-NMA.10.model14 ASP  32 H     -0.01   0.42   0.10  -0.55   8.40     8.36
+1EF1-LargerRadius-NMA.10.model14 LYS  33 H     -0.00   0.00   0.09  -0.55   8.42     7.95
+1EF1-LargerRadius-NMA.10.model14 GLU  34 H     -0.00   0.00   0.12  -0.55   8.60     8.17
+1EF1-LargerRadius-NMA.10.model14 GLY  35 H     -0.00   0.16  -0.10  -0.55   8.43     7.94
+1EF1-LargerRadius-NMA.10.model14 ILE  36 H      0.00   0.00   0.03  -0.55   8.25     7.73
+1EF1-LargerRadius-NMA.10.model14 ASP  39 H     -0.01   0.66   0.32  -0.55   8.40     8.83
+1EF1-LargerRadius-NMA.10.model14 GLN  40 H     -0.03   0.25   0.16  -0.55   8.47     8.31
+1EF1-LargerRadius-NMA.10.model14 GLN  41 H      0.00   0.77   0.27  -0.55   8.47     8.97
+1EF1-LargerRadius-NMA.10.model14 ARG  42 H     -0.01   0.30   0.28  -0.55   8.46     8.47
+1EF1-LargerRadius-NMA.10.model14 LEU  43 H     -0.01   0.20   0.20  -0.55   8.37     8.22
+1EF1-LargerRadius-NMA.10.model14 ILE  44 H      0.01  -0.03   0.31  -0.55   8.25     7.99
+1EF1-LargerRadius-NMA.10.model14 PHE  45 H      0.32   0.42   0.07  -0.55   8.34     8.59
+1EF1-LargerRadius-NMA.10.model14 ALA  46 H      0.19   0.04  -0.11  -0.55   8.40     7.97
+1EF1-LargerRadius-NMA.10.model14 GLY  47 H      0.07  -0.23  -0.56  -0.55   8.43     7.17
+1EF1-LargerRadius-NMA.10.model14 LYS  48 H      0.03   0.10   0.26  -0.55   8.42     8.25
+1EF1-LargerRadius-NMA.10.model14 GLN  49 H      0.03   0.12   0.18  -0.55   8.47     8.25
+1EF1-LargerRadius-NMA.10.model14 LEU  50 H     -0.06   0.29   0.25  -0.55   8.37     8.30
+1EF1-LargerRadius-NMA.10.model14 GLU  51 H     -0.67   0.19   0.19  -0.55   8.60     7.76
+1EF1-LargerRadius-NMA.10.model14 ASP  52 H     -0.01   0.16   0.11  -0.55   8.40     8.12
+1EF1-LargerRadius-NMA.10.model14 GLY  53 H      0.04  -0.05   0.16  -0.55   8.43     8.03
+1EF1-LargerRadius-NMA.10.model14 ARG  54 H      0.18   0.20  -0.88  -0.55   8.46     7.41
+1EF1-LargerRadius-NMA.10.model14 THR  55 H      0.04   0.14   0.18  -0.55   8.28     8.09
+1EF1-LargerRadius-NMA.10.model14 LEU  56 H      0.09   0.63   0.39  -0.55   8.37     8.93
+1EF1-LargerRadius-NMA.10.model14 SER  57 H      0.08   0.22  -0.05  -0.55   8.46     8.15
+1EF1-LargerRadius-NMA.10.model14 ASP  58 H      0.08  -0.01  -0.57  -0.55   8.40     7.35
+1EF1-LargerRadius-NMA.10.model14 TYR  59 H      0.25   0.26  -0.32  -0.55   8.29     7.93
+1EF1-LargerRadius-NMA.10.model14 ASN  60 H      0.16   0.07   0.10  -0.55   8.53     8.31
+1EF1-LargerRadius-NMA.10.model14 ILE  61 H      0.18   0.68   0.10  -0.55   8.25     8.66
+1EF1-LargerRadius-NMA.10.model14 GLN  62 H     -0.10   0.42   0.19  -0.55   8.47     8.43
+1EF1-LargerRadius-NMA.10.model14 LYS  63 H     -0.31   0.04   0.20  -0.55   8.42     7.80
+1EF1-LargerRadius-NMA.10.model14 GLU  64 H      0.04   0.31   0.26  -0.55   8.60     8.66
+1EF1-LargerRadius-NMA.10.model14 SER  65 H      0.03   0.23   0.09  -0.55   8.46     8.27
+1EF1-LargerRadius-NMA.10.model14 THR  66 H     -0.03   0.05   0.03  -0.55   8.28     7.78
+1EF1-LargerRadius-NMA.10.model14 LEU  67 H     -0.05   0.52   0.25  -0.55   8.37     8.54
+1EF1-LargerRadius-NMA.10.model14 HID  68 H      0.11   0.19   0.13  -0.55   8.41     8.30
+1EF1-LargerRadius-NMA.10.model14 LEU  69 H      0.22   0.82   0.35  -0.55   8.37     9.22
+1EF1-LargerRadius-NMA.10.model14 VAL  70 H      0.04   0.92   0.42  -0.55   8.24     9.08
+1EF1-LargerRadius-NMA.10.model14 LEU  71 H      0.03   0.74   0.20  -0.55   8.37     8.79
+1EF1-LargerRadius-NMA.10.model14 ARG  72 H     -0.00   0.60   0.35  -0.55   8.46     8.86
+1EF1-LargerRadius-NMA.10.model14 LEU  73 H      0.00   0.07   0.15  -0.55   8.37     8.05
+1EF1-LargerRadius-NMA.10.model14 ARG  74 H     -0.00   0.65   0.20  -0.55   8.46     8.76
+1EF1-LargerRadius-NMA.10.model14 GLY  75 H      0.00   0.00   0.05  -0.55   8.43     7.93
+1EF1-LargerRadius-NMA.10.model14 GLY  76 H      0.00   0.00  -0.00  -0.55   8.43     7.88

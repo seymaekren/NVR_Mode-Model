@@ -1,0 +1,32 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.4.0.336 (R2007a)
+                              January 29, 2007
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+discarding 2 peaks...
+
+outputFilename =
+
+perturbedRDC_Results144_154.txt
+
+skipping perturbation index 144
+skipping perturbation index 145
+skipping perturbation index 146
+skipping perturbation index 147
+skipping perturbation index 148
+skipping perturbation index 149
+skipping perturbation index 150
+skipping perturbation index 151
+skipping perturbation index 152
+skipping perturbation index 153
+skipping perturbation index 154

@@ -1,0 +1,24 @@
+%[TH1,TH2,TN,TRN, str1, str2]=textread('TOCSY.m','%f %f %f %f %s
+%%s');
+%[TH1,TH2,TN,TRN]=textread('TOCSY.ff2.by.shiftx','%f %f %f %f');
+[TH1,TH2,TN,TRN]=textread('TOCSY.MBP','%f %f %f %f');
+load order.m
+m = length(TH1);
+newTRN = zeros(1,1);
+count = 1;
+rows = zeros(1,m);
+for i = 1:m
+  if (isempty(find(order == TRN(i))))
+    %data corresponding to this residue is not presented to nvr.
+  else
+    newTRN(count) = find(order == TRN(i));
+    count = count + 1;
+    rows(i) = 1;
+  end
+end
+rows = find(rows);
+newTOCSY = [TH1(rows), TH2(rows), TN(rows), newTRN'];
+%keyboard
+fout = fopen('newTOCSY.m','w');
+fprintf(fout, '%f %f %d %d\n', newTOCSY');
+fclose(fout);

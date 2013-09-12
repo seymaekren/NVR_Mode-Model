@@ -1,0 +1,31 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.4.0.287 (R2007a)
+                              January 29, 2007
+
+    ----------------------------------------------------------
+        Your MATLAB license will expire in 32 days.
+        Please contact your system administrator or
+        The MathWorks to renew this license.
+    ----------------------------------------------------------
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+discarding 2 peaks...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+computing assignments...
+loaded 0 incorrect, 25 correct assignments
+
+ans =
+
+    25
+
+jumping directly to the second phase.
+>> 

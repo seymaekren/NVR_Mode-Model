@@ -1,0 +1,11 @@
+ Coordinate FILENAME        = 1EF1-NMA.7.model6.pdb
+ INTERACtion DISTance CUTOF =      8.0
+ INTERACtion FORCE CONStant =     10.000
+ Origin of MASS values      =       CONS ! CONstant, or from COOrdinate file.
+ Output PRINTing level      =          1 ! =1: more detailled. =2: debug level.
+ Bond DEFINITION            =       NONE ! NONe, ALL, or between CONsecutive atoms.
+ Maximum bond LENGTH        =      0.000
+ BOND FORCE CONStant        =      0.000
+ ANGLE FORCE CONStant       =      0.000
+ LevelSHIFT                 =    1.0E-09 ! Non-zero value often required (numerical reasons).
+ Matrix FORMAT              =     BINARY ! FREE ! Free (pdbmat.sdijf), or Binary (pdbmat.sdijb), matrix saved. 

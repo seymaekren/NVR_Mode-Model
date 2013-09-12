@@ -1,0 +1,91 @@
+function parseXpkFile
+NOESY_Filename = 'Peak-CAM13C_Dieckmann-NNOESY-freq-Refined.dat';
+HSQC_Filename  = 'Peak-CAM13C_Dieckmann-NHSQC-freq-Refined.dat';
+[dummyString NOE_HN_ppm NOE_N_ppm NOE_H_ppm intensity] = ...
+    textread(NOESY_Filename, '%s %f %f %f %f');
+[dummyString HSQC_N_ppm HSQC_HN_ppm intensity] = ...
+    textread(HSQC_Filename, '%s %f %f %f');
+numNOEs  = length(NOE_HN_ppm);
+
+HSQCDATA = zeros(length(HSQC_N_ppm), 3);
+
+for i = 1:length(HSQC_N_ppm)
+  HSQCDATA(i,3) = HSQC_N_ppm(i);
+  HSQCDATA(i,2) = HSQC_HN_ppm(i);
+end
+
+NOEs = zeros(numNOEs, 3);
+for i = 1:numNOEs
+  NOEs(i, 1) = NOE_HN_ppm(i);
+  NOEs(i, 2) = NOE_N_ppm (i);
+  NOEs(i, 3) = NOE_H_ppm (i);
+end
+
+
+fid = fopen('unambiguousNOEs.txt', 'w');
+fprintf(1, 'check out unambiguousNOEs.txt\n');
+
+
+for noeIndex = 1:numNOEs
+  hnClosePeaks = findCloseToHN(NOE_HN_ppm(noeIndex), NOE_N_ppm(noeIndex), HSQCDATA);
+%  find the closest HSQC peak p1 TO HN, N.
+  hClosePeaks  = findCloseToH(NOE_H_ppm(noeIndex), HSQCDATA);
+%  find the closest HSQC peaks p2 to H.
+%   what if there are multiple peaks p1 and p2?
+
+  tecn = 0; %There Exists Close NOEs
+  for hnClosePeaksIndex = 1:length(hnClosePeaks)
+    for hClosePeaksIndex = 1:length(hClosePeaks)
+      p2_N = HSQCDATA(hClosePeaks(hClosePeaksIndex),3);
+      p2_H = HSQCDATA(hClosePeaks(hClosePeaksIndex),2);
+      p1_H = HSQCDATA(hnClosePeaks(hnClosePeaksIndex),2);
+      p1_N = HSQCDATA(hnClosePeaks(hnClosePeaksIndex),3);
+      [tecn, closeNoeIndices] = thereExistsCloseNOEs(p2_N, p2_H, p1_H, NOEs);
+      if (tecn == 1)
+	p1 = hnClosePeaks(hnClosePeaksIndex);
+	p2 = hClosePeaks (hClosePeaksIndex);
+	if (p1 ~= p2)
+	  fprintf(1, 'unambiguous NOE from HSQC peaks #%d to #%d\n', p1, p2);
+	  fprintf(1, 'HSQC peak #%d CS are %f %f\n', p1, p1_N, p1_H);
+	  fprintf(1, 'HSQC peak #%d CS are %f %f\n', p2, p2_N, p2_H);
+	  fprintf(1, 'NOE peak #%d is %f %f %f\n', noeIndex, ...
+		  NOE_HN_ppm(noeIndex), NOE_N_ppm(noeIndex), NOE_H_ppm(noeIndex));
+	  for foundSimilarNOEsIndex = 1:length(closeNoeIndices)
+	    noe2Index = closeNoeIndices(foundSimilarNOEsIndex);
+	    fprintf(1, 'NOE peak #%d is %f %f %f\n', noe2Index, NOE_HN_ppm(noe2Index), NOE_N_ppm(noe2Index), NOE_H_ppm(noe2Index));
+	  end
+	  
+	  fprintf(fid, '%d %d\n', p1, p2);
+	  break;
+	end
+      end
+    end
+    if (tecn == 1)
+      break;
+    end
+  end
+end  
+
+keyboard
+
+function [tecn, closeNoeIndices] = thereExistsCloseNOEs(p2_N, p2_H, ...
+						  p1_H, NOEs);
+
+tecn            = 0; %There Exists Close NOEs
+H_EPS           = 0.04; N_EPS = 0.3;  %these thresholds are also
+                                      %set in findCloseToHN and
+                                      %findCloseToH and findUnambiguousNOEs.m
+closeNoeIndices = [];
+
+for i = 1:size(NOEs,1)
+  HN_CS      = NOEs(i, 1);
+  N_CS       = NOEs(i, 2);
+  H_CS       = NOEs(i, 3);
+  HN_CS_DIFF = abs(HN_CS - p2_H);
+  N_CS_DIFF  = abs(N_CS  - p2_N);
+  H_CS_DIFF  = abs(H_CS  - p1_H);
+  if ((HN_CS_DIFF < H_EPS) & (N_CS_DIFF < N_EPS) & (H_CS_DIFF < H_EPS))
+    tecn            = 1;
+    closeNoeIndices = [closeNoeIndices i];
+  end
+end

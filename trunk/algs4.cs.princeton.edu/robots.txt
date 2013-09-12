@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /references/papers/
+Disallow: /31elementary/leipzig1M.txt
+Disallow: /31elementary/leipzig100K.txt
+Disallow: /31elementary/leipzig300K.txt
+Disallow: /35applications/movies.txt
+Disallow: /41undirected/movies.txt
+Disallow: /14analysis/mktsymbols.txt
+

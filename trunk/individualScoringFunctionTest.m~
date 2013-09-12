@@ -1,0 +1,24 @@
+clear all;
+automatedRun                      = 1;
+v_refineWithRDCs                  = [0 0 0 0 0 1 0];
+v_b_printIndividualScoringMatrix  = [1 1 1 1 1 1 0];
+v_b_printCP                       = [0 1 0 0 0 0 0];
+v_b_printSSCP                     = [1 0 0 0 0 0 0];
+v_b_printSXCP                     = [0 0 1 0 0 0 0];
+v_b_printTP                       = [0 0 0 1 0 0 0];
+v_b_printCS                       = [0 0 0 0 1 0 0];
+v_b_printRDC                      = [0 0 0 0 0 1 0];
+
+for i = 1:length(v_refineWithRDCs)
+
+  refineWithRDCs = v_refineWithRDCs(i);
+  b_printIndividualScoringMatrix = ...
+      v_b_printIndividualScoringMatrix(i);
+  b_printCP                      = v_b_printCP(i);
+  b_printSSCP                    = v_b_printSSCP(i);
+  b_printSXCP                    = v_b_printSXCP(i);
+  b_printTP                      = v_b_printTP(i);
+  b_printCS                      = v_b_printCS(i);
+  b_printRDC                     = v_b_printRDC(i);
+  runBetter
+end

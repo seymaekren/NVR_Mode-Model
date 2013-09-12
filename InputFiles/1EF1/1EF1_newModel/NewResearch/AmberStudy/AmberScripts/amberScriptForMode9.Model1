@@ -1,0 +1,4 @@
+source leaprc.ff03
+ef1 = loadPdb Pdb/1EF1-NMA.9.model1.pdb
+saveAmberParm ef1 prmtop.9.1 prmcrd.9.1
+quit

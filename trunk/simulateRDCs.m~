@@ -1,0 +1,3 @@
+VECTORS_NH = load('InputFiles/N-H_vectors.m');
+s1 = load ('s1Tensor.txt');
+s2 = load ('s2Tensor.txt');

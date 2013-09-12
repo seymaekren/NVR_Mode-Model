@@ -1,0 +1,4 @@
+for ($modeIndex = 7; $modeIndex <= 11; $modeIndex = $modeIndex + 1)
+    {
+	`parsePDB_File.pl Pdb/$pdbPrefix-NMA.$modeIndex.pdb`;
+    }

@@ -1,0 +1,40 @@
+function automatedRunBetterHD
+
+%normalModeHD: This script runs HD on 1EF1 homology models. 
+
+dbstop if error
+dbstop if warning
+
+
+addpath('/Users/student/Desktop/NVR')
+addpath('/Users/student/Desktop/NVR/trunk')
+addpath('/Users/student/Desktop/NVR/InputFiles/1EF1')
+addpath('/Users/student/Desktop/NVR/OutputFiles/1EF1')
+
+modeIndex                   = [7, 8, 9, 10, 11, 78];
+modelIndex                  = (1 :11 );
+modelIndexBidirectional     = (1 :121 );
+		
+  
+for i = modeIndex;
+    if(modeIndex == 78)
+        for j = modelIndexBidirectional;
+            runBetter(i,j);
+        end
+    else
+
+    end
+end
+
+[VECTORS,TYPES,RESNUMS,SSTRUCT, HBOND, ALLDISTS,IALLDISTS] = loadmodeldata(modelDataFilename);
+
+[HD_SCORE, assignmentAccuracy, assignments] = ...%HD
+    NVR(HSQCDATA(:,2:3),HSQCDATA(:,4:5),HSQCDATA(:,6), ...
+	HSQCDATA(:,1),NOES,VECTORS,TYPES,...
+	RESNUMS,SSTRUCT, HBOND, ALLDISTS, IALLDISTS, ...
+	SHIFTS_Filename, SHIFTX_Filename);
+
+
+
+
+

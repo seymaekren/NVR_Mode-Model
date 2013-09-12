@@ -1,0 +1,28 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.4.0.287 (R2007a)
+                              January 29, 2007
+
+    ----------------------------------------------------------
+        Your MATLAB license will expire in 32 days.
+        Please contact your system administrator or
+        The MathWorks to renew this license.
+    ----------------------------------------------------------
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+discarding 2 peaks...
+??? Error using ==> normalModeHD at 30
+please erase the Mode7_Model6_HD_vs_NMA.txt
+
+
+30    error ('please erase the %s\n',outputFilename);
+K>> 
+>> 

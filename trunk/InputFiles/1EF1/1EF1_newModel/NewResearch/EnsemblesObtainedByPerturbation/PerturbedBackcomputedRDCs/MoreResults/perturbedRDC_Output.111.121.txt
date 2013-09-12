@@ -1,0 +1,104 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2007 The MathWorks, Inc.
+                         Version 7.4.0.336 (R2007a)
+                              January 29, 2007
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+filename =
+
+myinput.m
+
+discarding 2 peaks...
+
+outputFilename =
+
+perturbedRDC_Results111_121.txt
+
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
+NOTE: This script is neither fully tested nor intended for general use as a piece of software. It is only guaranteed to work on the example data provided. You are encouraged to modify and improve it for your own needs. The original authors are presently implementing more robust and general purpose software based on the algorithms presented in this script.
+This is v 1.54
+Warning: Duplicate directory name: /home/home4/apaydin/Mist/Matlab/General.
+> In path at 110
+  In addpath at 89
+  In HD at 88
+  In normalModeHD at 60
+computing assignments...
